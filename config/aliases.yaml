@@ -1,0 +1,47 @@
+# Competitor name variants used to detect app mentions inside review text
+# (Phase 7 — brand-switching map). Keep lowercase; matching is done
+# case-insensitively with punctuation/spacing normalized.
+
+phonepe:
+  - phonepe
+  - phone pe
+  - phonpe
+  - fonepe
+  - phone-pe
+
+gpay:
+  - gpay
+  - g pay
+  - google pay
+  - googlepay
+  - tez          # Google Pay's original India name
+
+paytm:
+  - paytm
+  - pay tm
+  - paytym
+  - paytam
+
+bhim:
+  - bhim
+  - bhim upi
+
+cred:
+  - cred
+
+amazonpay:
+  - amazon pay
+  - amazonpay
+
+navi:
+  - navi upi
+  - navi app
+
+supermoney:
+  - super.money
+  - supermoney
+  - super money
+
+whatsapp_pay:
+  - whatsapp pay
+  - whatsapp upi

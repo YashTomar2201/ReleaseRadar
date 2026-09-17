@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Secrets
+.env
+
+# Data (raw & warehouse are large / regeneratable — never commit)
+data/raw/
+data/warehouse/
+data/interim/
+data/exports/
+*.duckdb
+*.duckdb.wal
+
+# dbt
+dbt/releaseradar/target/
+dbt/releaseradar/dbt_packages/
+dbt/releaseradar/logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Power BI (binary — commit only when ready; large files can be tracked with Git LFS later)
+*.pbix.bak

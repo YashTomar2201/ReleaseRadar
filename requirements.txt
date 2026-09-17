@@ -1,0 +1,17 @@
+google-play-scraper
+pandas
+pyarrow
+duckdb
+dbt-duckdb
+numpy
+scipy
+statsmodels
+scikit-learn
+sentence-transformers
+plotly
+matplotlib
+pyyaml
+tqdm
+python-dotenv
+jupyter
+anthropic

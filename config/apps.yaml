@@ -1,0 +1,35 @@
+# ReleaseRadar — target apps
+# Category: UPI payments (India)
+# IDs verified against the Play Store on 2026-09-17.
+
+apps:
+  phonepe:
+    id: com.phonepe.app
+    display: PhonePe
+    focus: true          # primary app for release-impact & early-warning deep dives
+    downloads_verified: "500M+"
+    rating_verified: 4.4
+    reviews_verified: "14.2M"
+
+  gpay:
+    id: com.google.android.apps.nbu.paisa.user
+    display: Google Pay
+    focus: false
+    downloads_verified: "1B+"
+    rating_verified: 4.3
+    reviews_verified: "11.4M"
+
+  paytm:
+    id: net.one97.paytm
+    display: Paytm
+    focus: false
+    downloads_verified: "500M+"
+    rating_verified: 4.7
+    reviews_verified: "24.2M"
+
+scrape:
+  lang: en
+  country: in
+  batch_size: 200
+  sleep_seconds: 1.0
+  max_reviews_per_app: 300000
