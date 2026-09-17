@@ -48,7 +48,7 @@ phase-by-phase plan.
 
 ## Status
 - [x] Phase 0 — Scoping & Setup
-- [ ] Phase 1 — Data Collection
+- [x] Phase 1 — Data Collection (291,200 reviews: PhonePe 101,600 / Google Pay 82,600 / Paytm 107,000; see decision_log.md for coverage windows and the ~24-25h review-indexing lag finding)
 - [ ] Phase 2 — Warehouse & dbt Staging Layer
 - [ ] Phase 3 — Exploratory Data Analysis
 - [ ] Phase 4 — Topic Taxonomy, Labeling & Classification
