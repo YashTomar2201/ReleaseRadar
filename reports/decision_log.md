@@ -152,6 +152,38 @@ not minutes) and its implication for Phase 6 hold regardless of the
 exact figure. Will revisit if an independently-dated real incident
 (Phase 6) gives a cleaner anchor for the true timezone/offset.
 
+## 2026-09-18 — Data sufficiency check across all planned analyses
+
+**Checked real volume against each phase's statistical needs before
+committing further, rather than assuming the roadmap's generic targets
+were automatically met.**
+
+- Release impact (Phase 5): PhonePe has 22 versions with ≥200 reviews,
+  Paytm 38, Google Pay 74 — far more candidate releases than needed.
+  PhonePe alone averages 552 reviews/day, giving strong power for
+  ±21-day DiD windows. **Sufficient, no change needed.**
+- Switching (Phase 7): direct regex scan for competitor names found
+  3,442 (PhonePe, 3.4%), 6,534 (Google Pay, 7.9%), 7,298 (Paytm, 6.8%)
+  candidate mentions — ~17,300 combined, well above the earlier rough
+  estimate of 1-3%. **Sufficient, no change needed.**
+- Issue cost / RICE (Phase 8): 291K total reviews gives stable rating-
+  penalty regression coefficients even for topics at 1-2% prevalence.
+  **Sufficient, no change needed.**
+- **Early warning (Phase 6) — genuine weak spot.** Hourly averages:
+  PhonePe 23.7 reviews/hr (2.22 negative), Paytm 14.0 (1.78), Google Pay
+  7.4 (1.54). A per-topic hourly count (a fraction of the negative
+  count) would be under 1/hour for Google Pay, too thin for reliable
+  Poisson-based spike detection at that granularity -- real signal
+  would need to be a large, sudden spike to separate from noise.
+  **Design change made before building Phase 6:** widen the detection
+  bin to 2-3 hours for Google Pay and Paytm; keep PhonePe (highest
+  volume, and the focus app) at hourly resolution where the roadmap's
+  original hourly design still holds. Treat PhonePe as the primary
+  early-warning validation case and Google Pay/Paytm as secondary for
+  this component specifically -- state this explicitly in the Phase 6
+  write-up rather than reporting one blended recall/lead-time number
+  across apps with very different statistical power.
+
 ## (Template for future entries)
 
 **Decision:** ...
