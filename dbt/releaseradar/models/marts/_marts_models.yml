@@ -16,3 +16,12 @@ models:
         tests: [not_null]
       - name: avg_rating
         tests: [not_null]
+      - name: is_complete_day
+        description: >
+          False for the most recent 2 days per app -- the Play Store's
+          ~24-25h review-indexing lag (Phase 1) leaves these
+          undercounted (confirmed in Phase 3: n_reviews drops from a
+          normal 170-650/day to 10-19), which corrupts negative_share
+          with small-sample noise if included. Filter to true for any
+          trend/spike analysis.
+        tests: [not_null]

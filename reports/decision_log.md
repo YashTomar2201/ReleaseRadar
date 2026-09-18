@@ -229,6 +229,34 @@ last 1-2 days are treated as complete. Worth remembering when writing
 Phase 3 EDA and any daily-trend chart: flag or exclude the last ~2 days
 per app as provisional.
 
+## 2026-09-18 — Phase 3: EDA complete, one more instance of the indexing-lag bug found and fixed project-wide
+
+Full write-up lives in `reports/methodology.md` ("Data Quality &
+Coverage" section) and `notebooks/01_eda.ipynb` -- not duplicated here.
+Headline items:
+- Confirmed J-shaped rating distribution; Google Pay's 1-star share
+  (17.8%) notably higher than PhonePe (7.7%) / Paytm (11.2%).
+- 78-87% of reviews are <=5 words -- carried into Phase 4 labeling
+  strategy (stratify by length).
+- **Caught the Phase 1 indexing-lag bug corrupting a SECOND model**
+  (`fct_daily_app_metrics` showed a same-day 42-60% negative-share spike
+  for all 3 apps simultaneously, driven by 10-19-review samples on the
+  final day). Fixed by adding an `is_complete_day` flag, matching the
+  pattern already used in `int_version_adoption`. Adopted as the
+  standard convention for any future daily-aggregation model --
+  documented in `methodology.md` so it isn't rediscovered a third time.
+- Found a genuine competitive-intelligence result with zero modeling:
+  developer reply strategy differs sharply by app (Paytm blanket-replies
+  96% of reviews; Google Pay replies to only 10% but very selectively
+  targets 1-star reviews; PhonePe partially targets). Strong README
+  headline-finding candidate.
+- Identified real spike-day candidates for Phase 6 (Google Pay
+  2026-05-18/19 most notably: 2-day sustained elevation + high volume)
+  and a genuine regime shift in Paytm's baseline negative share
+  starting ~Feb-Mar 2026, flagged for Phase 5's release-impact analysis
+  to investigate directly rather than treating it as several unrelated
+  spike days.
+
 ## (Template for future entries)
 
 **Decision:** ...

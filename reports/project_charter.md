@@ -50,7 +50,7 @@ phase-by-phase plan.
 - [x] Phase 0 — Scoping & Setup
 - [x] Phase 1 — Data Collection (291,200 reviews: PhonePe 101,600 / Google Pay 82,600 / Paytm 107,000; see decision_log.md for coverage windows and the ~24-25h review-indexing lag finding)
 - [x] Phase 2 — Warehouse & dbt Staging Layer (stg_reviews, int_version_adoption, fct_daily_app_metrics; 22/22 dbt checks pass; release-date inference validated via PhonePe's build-date-encoded version strings -- see decision_log.md)
-- [ ] Phase 3 — Exploratory Data Analysis
+- [x] Phase 3 — Exploratory Data Analysis (notebooks/01_eda.ipynb, 6 figures, methodology.md "Data Quality & Coverage" section; caught & fixed the indexing-lag bug corrupting fct_daily_app_metrics)
 - [ ] Phase 4 — Topic Taxonomy, Labeling & Classification
 - [ ] Phase 5 — Release Impact with Placebo Tests
 - [ ] Phase 6 — Early-Warning System
