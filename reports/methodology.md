@@ -390,3 +390,28 @@ Outputs: `data/interim/issue_backlog_with_sensitivity.csv`,
 `data/interim/rating_penalties.csv`, loaded as `fct_issue_backlog`.
 Example reviews: `reports/briefs/issue_backlog_examples.txt`. Figure:
 `15_issue_prevalence_vs_penalty.png`.
+
+## dbt Marts & Power BI (Phase 9)
+
+**Star schema completed in dbt:** `dim_date`, `dim_app`, `dim_topic`,
+`dim_version` (with Phase 5 impact fields joined in), plus the 6 fact
+marts built across Phases 3-8 (`fct_daily_app_metrics`,
+`fct_daily_topic_metrics`, `fct_release_impact`, `fct_alerts`,
+`fct_switching`, `fct_issue_backlog`) and a bounded, anonymized
+`fct_review_samples` for drill-through (5,182 rows — never the full
+291K-review corpus). All 74 dbt checks pass.
+
+**A real tooling limit, disclosed rather than worked around:** Power BI
+Desktop's report canvas is GUI-only with no scriptable/CLI surface, and
+this environment has no automation tool for arbitrary Windows desktop
+apps. Everything programmatically buildable is done — the star schema,
+all 11 tables exported to `data/exports/`, and the complete
+relationship/DAX-measure/page-by-page specification in
+`dashboards/POWERBI_BUILD_GUIDE.md` — but the final visual assembly
+into a `.pbix` requires a hands-on Power BI Desktop session, documented
+as a clear, mechanical handoff rather than skipped or faked.
+
+`sql/analysis_queries.sql`: 6 reference queries (window functions,
+QUALIFY, percentiles, a cohort-style first-topic analysis) validated
+directly against the warehouse, demonstrating SQL beyond what the dbt
+pipeline itself needed.

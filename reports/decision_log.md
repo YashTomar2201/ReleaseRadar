@@ -669,6 +669,38 @@ independently -- consistent across apps with different reach scales and
 unaffected by the ui_ux issue, a genuinely convergent result worth
 leading with.
 
+## 2026-09-19 — Phase 9: a real tooling limitation, disclosed rather than worked around
+
+**Cannot actually assemble the `.pbix` file.** Power BI Desktop's
+report-building surface (dragging visuals onto a canvas, wiring up
+fields) is GUI-only with no CLI/scripting interface, and this session
+has no GUI-automation tool for arbitrary Windows desktop apps (only web
+browser tooling). Rather than skip Power BI entirely or pretend to
+produce a `.pbix` that wasn't actually built, did everything that IS
+buildable programmatically -- the full star schema in dbt (`dim_date`,
+`dim_app`, `dim_topic`, `dim_version`, plus the 6 fact marts already
+built in Phases 3-8), all 11 tables exported to CSV
+(`data/exports/`), every relationship and DAX measure fully specified,
+and a page-by-page build spec -- in
+`dashboards/POWERBI_BUILD_GUIDE.md`, written so the remaining GUI
+assembly step is a mechanical follow-along, not a design task.
+
+**One modeling simplification worth remembering:** `dim_version`
+already has the Phase 5 release-impact fields (`real_effect`,
+`q_value`, `is_significant`) joined in via a left join to
+`fct_release_impact` in the dbt model itself -- so the Power BI model
+should relate to `dim_version` directly for the Release Impact page
+rather than ALSO relating `fct_release_impact` (that table is exported
+mainly for direct SQL/Python reference, not intended as a second
+Power BI relationship to the same conceptual data).
+
+**`fct_switching`'s double relationship to `dim_app`** (source and
+dest) needs `USERELATIONSHIP()` in DAX for the inactive direction --
+documented explicitly in the build guide with a worked `[Inflow Count]`
+example, since this is a common Power BI modeling gotcha that produces
+silently wrong numbers if missed (the inactive relationship just
+returns 0/blank instead of erroring).
+
 ## (Template for future entries)
 
 **Decision:** ...

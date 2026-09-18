@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_date
+    columns:
+      - name: date
+        tests: [unique, not_null]
+
+  - name: dim_app
+    columns:
+      - name: app_key
+        tests: [unique, not_null]
+
+  - name: dim_topic
+    columns:
+      - name: topic_key
+        tests: [unique, not_null]
+
+  - name: dim_version
+    columns:
+      - name: app_key
+        tests: [not_null]
+      - name: review_version
+        tests: [not_null]
+
+  - name: fct_review_samples
+    description: Bounded anonymized example reviews for Power BI drill-through.
+    columns:
+      - name: review_id
+        tests: [not_null]
