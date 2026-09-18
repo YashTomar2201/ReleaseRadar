@@ -11,5 +11,21 @@ sources:
           src/scrape/scrape_reviews.py. Not deduplicated -- a review may
           appear more than once across weekly re-scrapes; dedup happens
           in stg_reviews.
-      # review_topics and incidents are added here once Phase 4 (topic
-      # classification) and Phase 6 (incident log) produce those tables.
+      - name: review_topics
+        description: >
+          Long format (one row per review-topic pair) output of the
+          Phase 4 multi-label topic classifier
+          (src/classify/apply_classifier_to_corpus.py), applied to every
+          review in stg_reviews. Macro-F1 0.556 on a 450-review held-out
+          test set (see decision_log.md, 2026-09-18) -- per-topic
+          reliability varies significantly; treat low-F1 topics
+          (login_otp_kyc, ads_spam, investments_gold) as directional.
+      - name: review_flags
+        description: >
+          churn_intent prediction from a dedicated binary classifier
+          (src/classify/apply_churn_to_corpus.py). Recall 0.615,
+          precision 0.178 on the held-out test set -- tuned to favor
+          recall (catch more true churn signals at the cost of false
+          positives) rather than precision. competitor_mentioned is
+          handled separately in Phase 7, not here.
+      # incidents is added here once Phase 6 produces that table.

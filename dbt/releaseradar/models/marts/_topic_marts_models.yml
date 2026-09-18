@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fct_daily_topic_metrics
+    description: >
+      One row per (app, day, topic) with review count and share of that
+      day's total reviews. Filter to is_complete_day for any trend or
+      spike analysis (see fct_daily_app_metrics for why).
+    columns:
+      - name: app_key
+        tests: [not_null]
+      - name: review_date
+        tests: [not_null]
+      - name: topic
+        tests: [not_null]
+      - name: n_topic_reviews
+        tests: [not_null]

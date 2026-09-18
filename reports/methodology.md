@@ -105,3 +105,65 @@ Feb-June 2026).
 
 Full analysis: [`notebooks/01_eda.ipynb`](../notebooks/01_eda.ipynb).
 Figures: [`reports/figures/`](figures/).
+
+## Topic Classification (Phase 4)
+
+**Codebook:** 18 topics defined in `config/topics_codebook.md` (v1),
+validated against BERTopic run on 25,000 real reviews before
+hand-labeling began -- 3 topics (`autopay_mandates`, `investments_gold`,
+`travel_booking`) were added based on real clusters the pre-data draft
+missed. Multi-label: a review can carry more than one topic.
+
+**Gold label set:** 600 reviews (150 dev / 450 test), stratified by
+app x rating-band, weighted toward longer reviews. Labeled directly
+against the codebook (`labeler=ai_v1`) -- see the "Gold-label method"
+decision below for why this is disclosed as AI-assisted rather than
+independent human labeling, and how it's being validated.
+
+**Human validation:** a 120-review blind spot-check, sampled from the
+test split, independently labeled and scored via Cohen's kappa against
+the AI labels (`src/classify/score_spotcheck.py`). *[Result pending —
+update this section once scored.]*
+
+**Classifier:** multilingual sentence embeddings
+(`paraphrase-multilingual-MiniLM-L12-v2`, chosen for Hinglish/Hindi
+coverage -- the single largest BERTopic cluster, 12.5% of the sample,
+was Hindi/Hinglish text) + one-vs-rest logistic regression.
+
+| Iteration | Training rows | Macro-F1 (topics, ≥5 test examples) | Micro-F1 |
+|---|---|---|---|
+| Dev split only | 150 | 0.392 | 0.651 |
+| + keyword-guided rare-topic boost | 374 | **0.556** | **0.686** |
+
+Per-topic results in `data/labels/classifier_eval_results.csv`.
+Weakest topics (`login_otp_kyc` 0.348, `ads_spam` 0.353,
+`investments_gold` 0.364) should be read as directional in later
+phases, not precise counts -- flagged explicitly rather than blended
+into a single headline number.
+
+**churn_intent:** a separate binary classifier (not folded into the
+multi-label topic model), trained on 524 rows after a dedicated
+keyword-guided boost (only 8 positive examples existed before it).
+Evaluated on the same untouched 450-row test set: **recall 0.615,
+precision 0.178, F1 0.276, kappa 0.242** -- tuned via
+`class_weight='balanced'` to favor recall (catching more true signals)
+over precision. Applied to the full corpus as `churn_probability` +
+a 0.5-threshold flag; downstream analyses (Phase 7/8) should treat
+`churn_intent=true` as "worth a closer look" given the false-positive
+rate, not a confirmed signal on its own.
+
+**Full-corpus application:** both classifiers applied to all 291,197
+reviews (`src/classify/apply_classifier_to_corpus.py` and
+`apply_churn_to_corpus.py`), loaded into DuckDB as `raw.review_topics`
+(long format) and `raw.review_flags`, then staged in dbt as
+`stg_review_topics` / `stg_review_flags` and aggregated into
+`fct_daily_topic_metrics`.
+
+**Topic prevalence, full corpus (291,197 reviews):** general_praise
+77.4%, uninformative 19.5%, app_performance 6.5%, payment_failure 4.4%,
+rewards_cashback 3.7%, fraud_security 3.3%, customer_support 2.7%,
+ui_ux 2.4%, refund_delay 1.9%, autopay_mandates 1.6%, fees_charges 1.4%,
+account_blocked 1.3%, bills_recharge 1.1%, login_otp_kyc 1.0%, ads_spam
+0.9%, bank_linking 0.9%, investments_gold 0.8%, travel_booking 0.4%.
+Directionally consistent with the 600-review gold set's proportions —
+a useful sanity check that the classifier isn't systematically skewed.

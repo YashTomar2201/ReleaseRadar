@@ -257,6 +257,168 @@ Headline items:
   to investigate directly rather than treating it as several unrelated
   spike days.
 
+## 2026-09-18 — Phase 4: topic discovery, codebook v1, and the gold label set
+
+**Topic discovery:** ran BERTopic locally (it installed cleanly on
+Windows/Python 3.11 despite the roadmap's Colab fallback plan) on 25,000
+reviews with 5+ words. Found 59 real topics + a 26.3% outlier bucket
+(typical for short review text). Used this to revise the codebook from
+v0 (pre-data draft) to v1: added 3 topics the draft missed
+(`autopay_mandates`, `investments_gold`, `travel_booking` -- all
+reflecting product features these "UPI apps" have expanded into beyond
+payments), confirmed Hinglish/Hindi is central to the corpus (the single
+largest cluster, 12.5% of the sample, was Hindi/Hinglish text -- a
+stronger finding than Phase 3's rough keyword-marker EDA proxy
+suggested), and confirmed `general_praise` as one bucket is correct
+despite BERTopic fragmenting it into ~15 clusters (a phrasing artifact,
+not distinct sub-topics). Full detail in `config/topics_codebook.md`'s
+revision log.
+
+**Gold label set — method decision (user-directed, 2026-09-18):**
+presented three options for the 600-review gold set: (1) fully human
+hand-labeled by the user (~8-10h, most rigorous), (2) AI-labels
+everything, disclosed as such, or (3) hybrid -- AI labels all 600, user
+blind-spot-checks a subset. **User chose the hybrid approach.**
+Rationale recorded here because it materially affects how the resulting
+accuracy numbers should be described in interviews: an AI grading its
+own labels is circular and not real validation; a human-labeled subset,
+even if smaller than the full 600, gives a genuine independent check.
+
+**Execution:** stratified 600-review sample built via
+`src/classify/sample_for_labeling.py` (app x rating-band, 9 strata x 67,
+weighted toward longer reviews since Phase 3 found short reviews carry
+little topic signal), 150 dev / 450 test split. All 600 labeled directly
+against codebook v1 (topics, `churn_intent`, `competitor_mentioned`) in
+6 batches of 100, saved to `data/labels/batch_*.json` and merged via
+`src/classify/merge_labels.py` into `data/labels/gold_labels.csv`.
+Labeler recorded as `ai_v1` in the output -- **not** presented as blind
+independent human labels; that check is the separate spot-check below.
+
+**Label distribution (600 reviews, multi-label):** general_praise 46.5%,
+app_performance 16.7%, payment_failure 9.2%, customer_support 8.5%,
+uninformative 7.8%, rewards_cashback 5.7%, fraud_security 5.0% (more
+prevalent than the codebook v1 revision log worried it might be, given
+low BERTopic visibility), ui_ux 4.8%, login_otp_kyc/account_blocked 3.0%
+each, autopay_mandates/fees_charges 2.3% each, refund_delay 2.0%,
+bills_recharge 1.7%, investments_gold 1.5%, bank_linking 1.3%, ads_spam
+1.0%, travel_booking 0.8%. churn_intent=true on 2.7% (16/600) --
+consistent with the codebook's strict definition (explicit statement of
+leaving required, not just a low rating). competitor_mentioned on 2.0%
+(12/600) of this stratified sample -- lower than Phase 3's raw regex
+scan (3.4-7.9%) because that scan flagged any alias-word occurrence
+including false positives, while this is a confirmed, contextual read.
+
+**Human validation (in progress):** built a 120-review blind spot-check
+packet (`src/classify/build_spotcheck_packet.py`), sampled specifically
+from the **test split** (not dev) since that's what final accuracy
+numbers are reported against -- stratified 40/40/40 across the three
+apps. Instructions in `data/labels/SPOTCHECK_INSTRUCTIONS.md`,
+scoring script at `src/classify/score_spotcheck.py` (computes per-topic
+Cohen's kappa, precision/recall/F1, treating the human as ground truth).
+**Result pending user completion** -- will update this entry and
+`methodology.md` with the real kappa once scored. Until then, any
+accuracy number quoted for the classifier should be caveated as
+"AI-labeled, human-verified on a 120-review blind subset" rather than
+"independently human-validated" outright.
+
+**Known limitation carried into classifier training (Step B):** the
+gold set's dev split (150 reviews) is the only human/AI-verified
+training data available -- there was no budget/API access to run the
+roadmap's original Step A (a separate LLM bulk-labeling pass on ~5,000
+reviews) as its own independent process, since I *am* the labeler here
+rather than a callable API. This means the embeddings+LogisticRegression
+classifier (Step B) will be trained on a much smaller set than the
+roadmap envisioned, and rare topics (travel_booking: 5 total examples in
+600, ~1 expected in the 150-row dev split) will likely have too little
+support for a meaningful per-topic accuracy score. This will be reported
+honestly per-topic (flagging "insufficient support" rather than a
+misleadingly precise number) rather than papered over with a single
+blended accuracy figure.
+
+## 2026-09-18 — Phase 4: classifier trained, rare-topic boost, honest results
+
+**First pass** (trained on the 150-review dev split only): macro-F1
+0.392 across the 17 topics with 5+ test examples. Several topics scored
+literally 0.0 (`ads_spam`, `investments_gold`) because they had 0-3
+training examples in a random 150-row sample -- exactly the risk
+flagged when the dev split was built. This is well below the roadmap's
+aspirational 0.75 macro-F1 target, which assumed ~5,000 LLM-labeled
+training examples (not available here -- see the labeling-method
+decision above).
+
+**Fix: keyword-guided rare-topic training boost.** Rather than accept
+the weak result or fabricate a larger random sample, built a targeted
+224-review training set (`src/classify/sample_rare_topic_boost.py`) by
+regex-matching candidate reviews likely to carry each of the 9
+lowest-prevalence topics (ads_spam, investments_gold, travel_booking,
+autopay_mandates, bank_linking, refund_delay, bills_recharge,
+account_blocked, fees_charges) directly from the full corpus --
+**explicitly excluding every review_id already in gold_sample.csv**, so
+this can never leak into the held-out test split. Labeled all 224
+against codebook v1, same process as the main 600. Retrained on
+dev(150) + boost(224) = 374 total, re-evaluated on the **same untouched
+450-review test set**.
+
+**Result: macro-F1 improved from 0.392 to 0.556** (a 42% relative
+gain), micro-F1 0.651 -> 0.686. Every previously-zero topic now scores
+non-trivially (ads_spam 0.0->0.353, investments_gold 0.0->0.364,
+autopay_mandates 0.125->0.467, account_blocked 0.118->0.462,
+bank_linking 0.364->0.667). `general_praise` (the majority class)
+remains strongest at F1=0.909. Full per-topic table in
+`data/labels/classifier_eval_results.csv`.
+
+**Honest framing for the methodology doc/README:** 0.556 macro-F1 is a
+real, defensible number for a classifier trained on 374 examples across
+18 multi-label topics -- but it is NOT 0.75+, and should not be
+presented as such. `login_otp_kyc` (F1=0.348), `ads_spam` (0.353), and
+`investments_gold` (0.364) remain the weakest, meaning topic-share
+metrics for these three should be treated as **directional/exploratory**
+in later phases (especially Phase 8's RICE backlog), not precise counts.
+This is a legitimate engineering trade-off to discuss in interviews:
+"I identified a rare-class data shortage through evaluation, fixed it
+with targeted keyword-guided sampling rather than brute-force scaling,
+and reported the resulting per-topic reliability honestly rather than
+hiding behind a single blended metric."
+
+## 2026-09-18 — Phase 4: churn_intent classifier (separate from topics)
+
+Same rare-class problem as the topics: only 8 positive `churn_intent`
+examples across dev+rare-topic-boost (374 rows) -- far too thin for a
+binary classifier at a real-world ~2-3% base rate. Applied the same
+keyword-guided boost technique: 150 candidates matched on explicit
+leaving/switching/uninstalling language (`sample_churn_boost.py`),
+excluding every review_id already used in gold_sample or
+rare_topic_boost_sample so the test split stays uncontaminated. Labeled
+all 150 (90 positive, 60% -- confirming the keyword filter worked as a
+precision-boosting prior, not just a volume booster). This also forced
+a genuine labeling-consistency decision: many matched reviews describe
+**uninstall-reinstall as a troubleshooting step** (intending to keep
+using the app) rather than **leaving** -- e.g. "uninstalled and
+reinstalled, now working" is churn_intent=false, but "uninstalling and
+using other apps" is true. Also treated bare imperatives ("uninstall
+karo", "delete this app") as ambiguous by default (false) unless the
+review's own rating disambiguates (a 1-star review consisting only of
+the word "uninstall" is very likely the reviewer's own stated action; a
+5-star review saying the same is probably confused/miswritten) --
+applied this rule retroactively to 3 early judgment calls for
+consistency once the pattern became clear partway through labeling.
+
+**Trained a dedicated binary LogisticRegression** (not folded into the
+multi-label topic model) on dev+rare-topic-boost+churn-boost = 524 rows
+(98 positive, 18.7%), `class_weight='balanced'`, evaluated on the same
+untouched 450-row test split (13 true positives, 2.9% -- realistic
+real-world rarity, unlike the enriched training set).
+**Result: recall 0.615, precision 0.178, F1 0.276, Cohen's kappa
+0.242.** Honest reading: the classifier catches most (8/13) of the
+test set's genuine churn statements, but at a real cost in false
+positives -- expected and defensible given `class_weight='balanced'`
+was chosen to prioritize recall (better to flag a possible at-risk
+review for a human/downstream process to check than to silently miss
+it), not because the model is highly precise. This number will be
+reported as-is in the methodology doc, not rounded up or hidden behind
+a single "accuracy" figure (which would look artificially high, ~91%,
+purely from the 97%-negative base rate).
+
 ## (Template for future entries)
 
 **Decision:** ...

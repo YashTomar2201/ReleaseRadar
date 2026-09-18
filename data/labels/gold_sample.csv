@@ -1,0 +1,601 @@
+review_id,app_key,rating,rating_band,review_text,text_length,stratum,split
+39645d86-de72-4f1d-961c-5caedffcb75b,gpay,5,positive,yashavant,9,gpay_positive,test
+9260ba24-4b4c-457a-9efa-78a887b202aa,gpay,5,positive,Great Appreciation With Great Hospitality,41,gpay_positive,test
+34ea7702-638c-40e9-bfb9-9a8530389350,phonepe,5,positive,very good for billing payment.,30,phonepe_positive,dev
+6b54a9d2-a813-46c4-9079-c3baf3122684,paytm,1,negative,Paytm bhai agar aapke pass mere message pahunch raha hai to bich mein disturb mat Kiya Karo,91,paytm_negative,dev
+3e147390-5d99-44f3-b596-bde9c3435ff8,paytm,3,neutral,sir customer care se baat kerne ke liye to AI ka prayog mat kijiye. mera payment ho gaya hai aur seller ke pas pahucha nahi hai aur na mere pe payment hone ka mail aaya hai. kabhi se customer care baat kerne ki koshish kar raha hu ho nahi pa raha hai. balki pahle paytm sahi tha ki direct customer care se baat ho pata tha,322,paytm_neutral,test
+df37c041-61fb-44f9-b757-4ee166425776,paytm,4,positive,superb,6,paytm_positive,test
+bacb2d78-ba34-478d-9299-5a04c45d8bdc,gpay,1,negative,vadhu bro install cheyekandii bro 1000 amount kotinna ma friend ke but vadike send kale naku cut ayenayee 16 may ke vallaku call chesi ticket ress chesina 48 hours annaruu 8days ayethundhii inkka refund kalee eamoina ante 48hours anturru wast broo nake anukunna chala madhike jarigindhii ipodue reviews chadhivinaa,314,gpay_negative,test
+6ec8e9ce-347e-4540-83f4-5a9c6741ddd3,phonepe,1,negative,worst user experience in recent days. phonepe protection is being activated for self account transfer also and it is not allowing me to transfer the funds. Even after raising request the issue is not resolved. worst experience ever,231,phonepe_negative,test
+cf069576-03a7-490d-a096-7c804cd57621,phonepe,5,positive,good👍,5,phonepe_positive,test
+bea49703-56ab-4a43-b483-b642c220b607,paytm,3,neutral,"app was running fine till now. From 3-4 days I am getting the message that device environment is not ok and paytm app is not opening. Why is it happening?? I have uninstalled and reinstalled it 3-4 times, still same msg flashed.",228,paytm_neutral,test
+5cb5b325-9bc2-4a5d-9e3c-78e96e101e35,paytm,5,positive,Good,4,paytm_positive,test
+9b10c91f-e2db-4017-b013-272e4c7f0507,phonepe,3,neutral,is a very good payment app,26,phonepe_neutral,test
+39a43d96-fa4b-403c-ac06-7da10a477658,phonepe,1,negative,"please provide the function to track all wealth for example PPF, EPFO, SUKANYA",78,phonepe_negative,dev
+2e89d9d4-46ae-42ff-9376-07a0f06b2c6c,gpay,3,neutral,fix the upi pin interface...this interface is fade out and mixed it with notification panel or battery percentage area,118,gpay_neutral,test
+b4d61726-d0b9-47d6-9f19-a3db6a9d6993,paytm,3,neutral,"getting alert malicious app found for paytm downloaded from playstore, still this alert",87,paytm_neutral,test
+e5a4dc8c-6ba1-4685-a650-7c2740f96b54,phonepe,3,neutral,Punda marii irukku,18,phonepe_neutral,test
+55e25abe-a52b-4ef5-b476-876468189e2b,phonepe,5,positive,tq so much phone pay,20,phonepe_positive,dev
+5c792151-524e-4f22-8917-08621d52b6d0,phonepe,1,negative,"do not use this app I am already closed EMI and i cont remove auto pay when I rise a Mail they said please contact bank like saying please don't use this app, Use Bhim app... I am already collected I have screenshots it's already shared with your team",251,phonepe_negative,test
+8cfa4423-0390-4bf4-bfec-1bacc3b63876,phonepe,2,negative,It is running very badly...PhonePe is getting uninstalled automatically...please fix it as soon as possible.,108,phonepe_negative,dev
+9c421bf5-5014-41f6-b1c5-111e0b48d187,gpay,5,positive,super,5,gpay_positive,test
+0dca3353-a911-4db6-acf7-15098f87c2f6,phonepe,5,positive,phonepe UpI paraments Loan app the Best app phonepe app हे ॲप बहुत बढ़िया हे भारत का नं 1 UPI parament phonepe app phonepe download Now he app fake nahi he he Real ✅ app he 100% गारंटी Thankyou,193,phonepe_positive,test
+25ed50ec-2180-4bdf-84a1-80ee165cd7d6,paytm,3,neutral,I like the feature that this app provides although I have a few issues. 1. Interface is not clean. Google Pay is much more easy to use. 2. I can't see Dynamic QR code feature that lets me set the amount to receive in a particular QR code. Google Pay provides it and is easy to use.,281,paytm_neutral,test
+4ed8fa50-9da9-4416-bdb2-e447232e1fda,phonepe,1,negative,Very Bad experience 😕 😞... excessive advertisement 😕...,55,phonepe_negative,test
+72d57901-7087-4acc-904b-5330ced05ac8,gpay,3,neutral,my cabel skor is not sho,24,gpay_neutral,test
+beb1664f-c251-4380-8c98-d8c0631a342b,paytm,3,neutral,the problem is no cashback is given...silly offers are given in the Garb of cashback...where is the real cash that we want in return????,136,paytm_neutral,test
+5f452874-d6bd-43ff-8e73-48236682c6e9,paytm,2,negative,achha laga raha hai,19,paytm_negative,test
+fd475b69-3b3d-40fd-9bb5-5b3f57aefcdf,phonepe,1,negative,please don't use this app there is no safety measures at all once u lost ur money by miss there is no any safety one guy game his scanner and payed my 10k money and ran away there is no any details in that scanner only name chutya app don't use this app no safety measures to any business people stay safe this app never help us middle class people just use safety measures transaction apps plz and in my shop there will be no sound after payment biggest scam app in India is phone payyyyy.........,498,phonepe_negative,dev
+f0a8dbbb-41dd-455b-882a-90070a7a2d2d,gpay,5,positive,good gfdhfh,11,gpay_positive,test
+d92918c7-4116-45f6-b6da-95930ceaf388,paytm,5,positive,ok,2,paytm_positive,test
+c6ea2ae7-244e-4499-963e-0fb5f49c4293,gpay,3,neutral,Default account selection on QR code UPI payment should be like below. 1. if merchant payment and merchant accepting rupay credit card payment then default account selection should credit card. 2. if merchant payment and merchant not accepting rupay credit card but UPI lite is active and sufficient balance then default selection should UPI lite. 3. if merchant payment and merchant not accepting rupay credit card and UPI lite has low balance then default payment selection should saving account.,498,gpay_neutral,dev
+a665c283-eab5-44ce-9f80-918d347deca0,phonepe,2,negative,I have closed the phonepe wallet but I want to reactivate it .. but the feature is not available... please add this feature...,126,phonepe_negative,dev
+2cf7d885-a723-4fab-b9fd-5b7ebcf25bcb,paytm,5,positive,excellent,9,paytm_positive,test
+4a21b51e-7af6-43dd-aa86-63f1e2017b6f,phonepe,1,negative,app is not working properly in my mobile,40,phonepe_negative,test
+5a2e0131-66da-443f-bafe-b1664ec6f765,paytm,1,negative,"since yesterday morning from 27th Feb after updation of Android 16 version the app is not compatible with Android 16 version it says device is rooted , after going to Vivo service centre they told that application is not compatible with Android 16 , update the version immediately so that it can be compatible with Android 16",325,paytm_negative,test
+6eaba3b3-ca16-468b-bfe6-3b109271a91c,gpay,3,neutral,"I am unable to reset my UPI PIN on Google Pay as the number is not linked to Bank Accounts and Aadhar. I recently register on another UPI app using the same bank accounts and the number linked to it, which trigger UPI PIN reset command from bank. However, since the mobile number registered with GPay is not liked to my bank, I am locked out of the app as old PIN does not work anymore and I am unable to reset (unable to transact or delete active mandates) I just want to delete all active mandates",499,gpay_neutral,dev
+94422194-53c3-4e8e-9d6b-4e19a727eaa0,gpay,1,negative,"the app isn't available to my country anymore, and it won't allow me to access my profile on the app, but it still uses my Google wallet to pay for a service I have tried to cancel. and it doesn't leave any way to delete my information off of that app.",252,gpay_negative,test
+38b282ff-d393-4896-9bf4-73aecee4ac38,gpay,5,positive,wow 😲wonderful✨😍,16,gpay_positive,dev
+69bf059e-121b-4603-bdbf-d0e2e3884eeb,paytm,5,positive,"I’m a permanent Paytm user and would love to share my experience with you all. It is one of the best payment gateways that allows you to pay your bills, recharge your phones, and make other payments through it securely. I’ve been using it for more than 5 years and trust me I have never faced any issues. Its app is so smooth, with no technical glitches or other payment-related issues. The payment gets processed within a few seconds, which is just amazing. Also, it allows you to go cashless, so no",500,paytm_positive,test
+02b937c0-1522-4022-b2ee-52637bbeb6b1,phonepe,1,negative,it's a skam aap it's making payments dirrectly to hotstar without any password please don't use it third party skam aap,119,phonepe_negative,dev
+e525df07-d2dd-4860-a749-cf64554038dd,paytm,5,positive,ok ji serv safe,15,paytm_positive,test
+e6c9618b-4aa4-4411-bc64-66324146e043,gpay,5,positive,ok,2,gpay_positive,test
+c0f96a61-423e-4028-9c81-79225a882685,phonepe,1,negative,why are you block my phone account,34,phonepe_negative,test
+a5d5aa2c-5e6b-4d5b-973a-8920432047b9,gpay,2,negative,good but i received a 1000 rupess but the accout balance was still 0 and i cant used any money that i received please fis this issue,132,gpay_negative,test
+2a540986-1470-49da-a59f-9c05fdc30ac8,gpay,5,positive,very nice app,13,gpay_positive,dev
+4d84c4cf-9500-4ad1-aba7-201041cf1b1f,paytm,5,positive,This app is ausome,18,paytm_positive,test
+d9c84f49-4b70-4c4c-87f6-477be67de855,phonepe,5,positive,Very nice super app good serviceing.,36,phonepe_positive,test
+90dc60b1-a75f-440c-8f59-96ca30eb2feb,phonepe,3,neutral,My father sent me money 500/- and the transaction failed multiple times...but the money was deducted from his bank account.Still there's no refund or no money credited to my account....Plz look at this once and solve Thankyou,225,phonepe_neutral,test
+bdd33ca3-f638-4f6d-b499-91e749a02778,gpay,3,neutral,very good,9,gpay_neutral,test
+a21d6b70-b9f1-4c8d-9abd-19ad62d59a00,phonepe,5,positive,"Great payment app , seldom miss the payment, easy going, keep it up and kudos to the phonepe team, let us all help bharat to be digitally strong",144,phonepe_positive,test
+41ef9678-2be5-4f63-96dd-dc04c981d122,phonepe,5,positive,thank you,9,phonepe_positive,test
+2778401b-ba51-44bf-880c-23ee39312d1f,paytm,3,neutral,for almost 1 day i tryna Open its not working,45,paytm_neutral,test
+998feeb6-25d4-4e24-93ee-dd1868e9fb56,gpay,5,positive,There is no facility to get or download transaction history from Google pay. can this be included,97,gpay_positive,test
+ab4e900f-9812-4e3e-8b17-2cc537e6fd46,paytm,1,negative,don't even take this app and there services is totally waste of time Im suffering from last 7 days I have not get an any solution about pan problem 2-3 costumer service boys came yes ill do I'll do they tell and nothing happen anything from last 7 days I request to don't take any risk about ur business money for that I'm suffering that's why I'm telling to u to do not suffer thank,383,paytm_negative,test
+a4835477-6218-4bfd-9ce6-ca00b071413e,paytm,5,positive,yas,3,paytm_positive,test
+b5033626-1bb4-4fd0-95c5-8d83682504f2,gpay,3,neutral,Best app for money transition. also provide best security and privacy policy...,79,gpay_neutral,test
+e96e3bb4-85c1-44cf-8e7a-4c64ebbf0a93,gpay,5,positive,kishan dev sharma,17,gpay_positive,dev
+14fdca29-1d47-4cbd-815f-01d32e397d80,phonepe,2,negative,Too many ads and invisible charges. Advise to use other competent apps there are many.,86,phonepe_negative,test
+8168aa5b-12c2-48c7-b67b-e543672c238e,gpay,5,positive,fine,4,gpay_positive,dev
+7c0737bd-b9c1-4991-9604-433cb19709d2,gpay,3,neutral,My gpay suddenly stopped working after 21st Aug. I uninstalled and now was trying to install. Now it's says incompatible device. How can I install it again on my phone.?,169,gpay_neutral,dev
+915e5702-8e18-4f98-9de8-09fe8d06fde2,paytm,3,neutral,"Digital Wallet aur UPI: Paytm ne cashless economy ko badhava diya. Iske zariye log turant paise bhej sakte hain aur QR code scan karke dukano par payment kar sakte hain. Bill Payments: Bijli, pani, gas, aur broadband ke bill bharna ab chutkiyon ka kaam hai. Booking Services: Is app se movie tickets, flight, bus, aur train ki booking aasani se ki ja sakti hai. Paytm Payments Bank: Yeh users ko savings account aur fixed deposit jaisi suvidhayein deta hai. Paytm Money: Iske madhyam se log Mutual Fu",500,paytm_neutral,test
+4b3ada5e-2dca-4bad-8a1c-833fbe53d493,paytm,3,neutral,"App not working after update. Massage showing ""DEVICE ENVIRONMENT IS NOT CORRECT."" Please resolve the Issue as soon as possible.",128,paytm_neutral,test
+7174875d-d7c7-45b0-a058-705cbbb8555c,phonepe,3,neutral,little slower performance,25,phonepe_neutral,test
+61caa134-7aa5-4366-a61f-ae7a43c93c84,gpay,1,negative,loan offer dikha kar aap log cibil enquiry kyu karte ho nahi dena hai to bar bar message kyu bhej te ho fake service is Google pay frod kar rahe ho 👎 complete to RBI 😏jan dena hi nahi hai to check kara kara ke cibil kyu kharab karte ho 👎👎or tumare hi app par cibil 771 hai 😏,274,gpay_negative,dev
+08cedb07-e968-4cfb-b775-85f3fcd7c43f,phonepe,1,negative,excellent service,17,phonepe_negative,test
+5dd5758b-894f-4f06-aa27-28186fdb5370,paytm,1,negative,"unable to open app it automatically closes, website does not have contact number while it only mention it has a dedicated customer support. farzi app no doubt rbi imposing so much fine hello support, your team has shared a link to register ticket however fyi it redirect to the same app for ticket which fails to open then how am I supposed to register a ticket is this technique is used to reduce load on your servers",418,paytm_negative,test
+b4a42344-8861-4686-a043-2e2a6e462925,paytm,3,neutral,App is very good and easier but for me...Paytm return policy is not good they didn't give the exact product what I ordered and now they neither returned or exchanged the product,177,paytm_neutral,test
+a16733df-66a7-43f0-9ddd-e362c98d472a,paytm,3,neutral,"I love for using the app paytm, but now some problem I can't login access denied problem.... please guide me how I can do, because I like some this app..",153,paytm_neutral,test
+4df018ac-a4a2-4f3a-9b50-6ce9b0e7b5ab,gpay,3,neutral,I can't update this app,23,gpay_neutral,test
+bb8ef797-1cc5-49d0-9d08-19488c8a94f6,paytm,4,positive,यह एक सुरक्षित और सबसे अच्छा ऐप है जिसे मैंने अपनी यूपीआई पेमेंट के लिए चुना है,79,paytm_positive,dev
+6c380ed3-d342-4a55-94d3-b53ae92684b2,phonepe,3,neutral,"everyone is using phonepe. it's good to all transaction. smooth and fast. but please add cashback. atleast every month fixed cashback not every transaction. like amazon, bhim upi, paytm, mobikwik.",196,phonepe_neutral,dev
+4f6a3288-54ad-4ffe-86ce-0a77e3e0c541,gpay,3,neutral,"Is there any new update/app change progressed, in the last couple of days facing a problem that it's got struck in between and getting message that the gpay is not responding, just check",186,gpay_neutral,test
+39c723aa-fa22-491b-996e-be216a179633,gpay,1,negative,Kyon google pay khul nahi raha hai bahut dikkt ho रहीं हैं,58,gpay_negative,test
+12633721-501e-4ab3-9d22-e874e152bd2b,gpay,3,neutral,"All of a sudden this app is not working, pls resolve th his issue",65,gpay_neutral,test
+fd306bc2-4a88-458a-9d4e-199379faad73,paytm,1,negative,"worst app ever, I have applied for Paytm AU credit card, the card has been approved and even delivered to me but the app still showing credit card application rejected alouth it has been already a month.Worst customer support ever they have not the solution and saying wait a few days",284,paytm_negative,test
+484ffc25-4cc1-42ef-b8da-15985a5477bc,phonepe,5,positive,nice,4,phonepe_positive,test
+695744e7-ab22-45f4-88f4-5354e1bb6d81,phonepe,5,positive,good,4,phonepe_positive,test
+1a70f62d-07d5-4781-b2d8-8c3f8f4c9a50,paytm,5,positive,this is a best aap,18,paytm_positive,test
+091c8713-54b4-4586-b08a-dde666617676,phonepe,1,negative,"I had a very bad experience using this app. My money was deducted, but the transaction was not completed successfully. It took a long time to get any response, and customer support was not helpful at all. I had to wait without getting a proper solution or a clear explanation. This app is becoming unreliable for payments. Losing money because of failed transactions is very frustrating. The support team should respond quickly and resolve issues instead of making customers wait.",480,phonepe_negative,test
+eeb19c60-904d-41c5-8337-ac5ad49ab0df,paytm,3,neutral,I have been using this app for the last 6 years. But from the last 20 days my number is blocked and the application is not open on my mobile phone. I request the team to please on the concern.,192,paytm_neutral,test
+df741e2a-36c5-403c-8a72-5840ab469337,gpay,3,neutral,some time round and round work,30,gpay_neutral,test
+3022075e-76ca-46a5-9896-700afa1a4638,paytm,3,neutral,cashback come ata hai,21,paytm_neutral,test
+1d555649-e39d-450d-9211-34701bbed155,paytm,5,positive,very good upi app,17,paytm_positive,dev
+c92f9ba9-53fd-4ff0-b8c8-751aeaa087be,gpay,3,neutral,very good,9,gpay_neutral,dev
+b8fe1562-ab39-4fdd-8ca6-7a55133aa4a5,gpay,3,neutral,recently gpay is showing incorrect balance in my account,56,gpay_neutral,test
+e7b74e9a-63fd-4e3c-8a04-400552c76394,paytm,5,positive,fast payment 😃,14,paytm_positive,test
+c769214e-b88a-4144-9c6f-cda21978493f,paytm,3,neutral,cholbe,6,paytm_neutral,test
+9d9f968d-95a5-4b3b-8cda-ba710f843e80,paytm,1,negative,hi sir my account is blocked,28,paytm_negative,test
+d6c0669a-42f1-40ba-882d-eee6fc58aa49,phonepe,3,neutral,"It's is good but digital gold & silver selling price is irritating & frustating no need to invest in this way where our profits are cut out from our investments tell me then what is the meaning of investments, no proper mutual fund investments plan showing min 10 everyday while invest it shows 100, no genuine & trusted lender for instant loan with low interest, no real cashback amount for bill payment, recharges & expenses only you are just providing service as a middle man nothing else.",492,phonepe_neutral,dev
+5d964dc1-b017-45ef-93e2-89ed7020a894,paytm,3,neutral,good,4,paytm_neutral,test
+05e34dd5-3237-48b2-b32c-1cbea0141648,paytm,5,positive,hi good,7,paytm_positive,dev
+5b1c2035-b149-45c5-865e-1f11dd182347,gpay,1,negative,"Never going to trust this app again, there is no way to delete specific transaction history even after trying numerous time I have tried all way",144,gpay_negative,dev
+f340f259-84c9-4d55-b296-5b6a35937dca,phonepe,5,positive,very good 👍,11,phonepe_positive,test
+b4f17c13-dff2-46b2-a6d2-2699f0282972,gpay,3,neutral,good,4,gpay_neutral,test
+182cb23a-2d8b-4800-9f02-702a96a8384f,gpay,5,positive,excellent,9,gpay_positive,test
+464f750a-14a5-4438-a688-6c8fe137ac5a,paytm,3,neutral,integrity checking makes it hard to use the app.,48,paytm_neutral,test
+6e844f9e-8738-4a62-bcc9-8a5ec4a8d1f1,phonepe,5,positive,very smooth payment,19,phonepe_positive,test
+79cbac7a-b003-46b0-a5b3-e5f321e7baed,gpay,2,negative,"Though nowadays we are totally dependent on gpay for all our purchases, but since last 15-20 days I'm experiencing dissatisfaction while using this app as the app becomes unresponsive while reaching up to the payment step. I have re installed it multiple times in the hope of working it normally but is of no use. Kindly resolve this technical glitch asap.",356,gpay_negative,test
+061d9ede-1454-4ff4-9b33-5d15c01cd3e0,gpay,3,neutral,If I send money to another person it will be debited after a huge amount of time also whenever someone sends me then it takes so much time to show the amount on balance and notification does not come on the time of transaction so there are many issues I'm facing with this UPI app,280,gpay_neutral,test
+7296b4c2-bfd4-4869-9f30-87b7c0b4fc71,paytm,1,negative,worst application 😪 har payment k bola jata payment cash milega Lakin kuch nhi milta.,85,paytm_negative,dev
+46ccd30e-a740-4ae3-ba1d-f4a2c5c4004b,paytm,5,positive,good 👍,6,paytm_positive,dev
+f1a32b6d-ed8c-4e41-bfed-a97610281e73,paytm,1,negative,fraud app...........I'm trying paytm postpaid from 3 years.....it always shows try again after 90 days....... I don't know how many 90 days passed......I'm using paytm from 7 years......but this is last day......now onwards i don't use........I'm tired,252,paytm_negative,dev
+c0a1b233-f96d-40ee-8ffb-fd348d0e3184,paytm,1,negative,i have installed the app on my new phone but it is not even working. It keeps showing device integrity failed. how is it possible it is a brand new phone.,154,paytm_negative,dev
+231367e0-b917-40b2-80df-8f3611c81cc1,paytm,3,neutral,🥰,1,paytm_neutral,dev
+33c3ab07-85df-482c-a83e-f2e6cd914448,paytm,5,positive,very fast payment,17,paytm_positive,dev
+661165b8-755d-479b-968f-edfa9f26cd46,phonepe,1,negative,installed PhonePe yesterday. tried to make upi payment and credit card payment. PhonePe said my account is phonepe protect and I cannot make any payments. what is the purpose of this app if they lock your account. also cannot contact the support team using call or text. its such a cheap company. they dont hire support.,320,phonepe_negative,test
+40b1bbf1-e7c1-4c8f-bcce-4a5420a6f74a,paytm,3,neutral,"ooopomoi li Ami okkoooo to make no of the,. n. r. m",51,paytm_neutral,test
+f51eab0f-450c-4520-bcfa-6c38b02e7431,gpay,1,negative,Gpay is not safe,16,gpay_negative,test
+5065b71b-f7f3-411d-ace4-806ff5a2bd2a,gpay,1,negative,"Extremely frustrating experience with Google Pay. My account was flagged for ""suspicious activity"" without any clear reason, and all payments are getting declined. Support only sends copy-paste replies with no real help. This is damaging my credibility as others see ""risky transaction"" warnings. No transparency, no proper review, and no accountability. I've followed all guidelines yet being treated unfairly. Fix this ASAP or I'll stop using this service and escalate further.",479,gpay_negative,test
+b4081438-e0ef-412d-8b9c-084648952ce8,gpay,5,positive,good,4,gpay_positive,test
+473aea43-bb0e-4e4e-be71-ef83902424d0,phonepe,2,negative,"Hi Team, My account has been blocked. I My accour haven't done anything wrong. Please review it and unblock it Mobile",117,phonepe_negative,test
+1edac7d4-2267-4d1b-89de-b8d7a3d3cbbc,gpay,5,positive,good,4,gpay_positive,test
+fca69893-9e4d-42c0-b574-ff205716bb1b,paytm,1,negative,It is not functional even after uninstalling and reinstalling and even after restarting the phone. while opening the app some error weird message is coming saying that screen sharing is not allowed. At least three times I have reinstalled the app. No use.,255,paytm_negative,dev
+793d82c3-0517-4437-9727-a1484806feee,phonepe,4,positive,good so use fuli,16,phonepe_positive,dev
+416f7854-b01a-4570-bf7e-40fc4c86a3a1,phonepe,1,negative,"worst customer support. I raised a concern on ticket and they can't check ongoing offer and internally or ongoing public offer. each time they will ask proof and attach screenshot. after that they will and in each call they can't see ticket description and will ask from you and will put on hold for 10-15 minutes. not sure, will they have access of tickets or not but it's a serious concern where you frustrate the customer and not solving the issue after few days.",466,phonepe_negative,dev
+7c3193a4-bf36-42fc-9a5f-135b0f7306f8,phonepe,3,neutral,good app to money transection,29,phonepe_neutral,dev
+bf4b9f4a-3df7-419b-b6f9-82c6bfc452b6,paytm,3,neutral,it's an amazing but some time cheating with refferal system,59,paytm_neutral,test
+d99bc803-d284-45bb-826c-746908835c93,paytm,1,negative,"showing error 617001 and never resolve switching to other app, I was using from last 12 years but now very disappointed",119,paytm_negative,test
+392b2569-c3ca-44cc-ab41-fd0f39a7d313,gpay,1,negative,ya app frued ha or recharge ka refund nahi agya abhi tak,56,gpay_negative,dev
+683832d7-e177-4135-92cd-2f142a66d7fb,gpay,3,neutral,bahut acha nahi hai,19,gpay_neutral,test
+c45e4ca9-4fc8-4d91-bfd9-92421e90a016,phonepe,1,negative,App uses lots charges on Mobile recharges,41,phonepe_negative,test
+a035a964-0b33-4d1e-9e22-6bc58d555c7b,gpay,3,neutral,"I have been using gpay for a long time. For reset mpin option debit card no and bank account no verification should be mandatory. In every time same account activation , bank account linking with mobile no activation shouldn't be automatic. Debit card no should be mandatory. Mpin change in keypad phone should be with debit card no and bank account no .",354,gpay_neutral,dev
+316cc20f-d782-4b41-ad44-683a2cd5ef3e,paytm,5,positive,excellent,9,paytm_positive,test
+1c6433b7-e9aa-4202-a845-c0e3c5ea03c7,paytm,3,neutral,"The app is not properly compatible with dark mode (mobile default). While entering the payment amount, the amount is not clearly visible. Please fix the dark mode compatibility issue.",183,paytm_neutral,test
+39e533ed-b3fc-43b6-a498-dc1f7416a1d0,gpay,1,negative,"I am writing this review for your feedback, please consider it. subject: Show Timing after Processing transfer when stuck Recently I did a transaction which got stuck in processing due to the bank server, the money was deducted from my account but my money did not reach the other person So I called customer care and they said it will reach in 48 hours, however the money reached his account after 36 hours but I want to say that When my money reaches that person, its timing should also be seen up.",500,gpay_negative,test
+ff41c9fe-8697-478a-92bb-062d9edc4ef4,paytm,5,positive,very nice,9,paytm_positive,test
+5f502ea0-9f5d-4856-956d-32f20c5e68f0,phonepe,1,negative,security pin code nahi mangate direct open hota hai,51,phonepe_negative,test
+ca952e12-95e2-473d-bfef-c2996a1ae4bd,phonepe,3,neutral,he is the best app,18,phonepe_neutral,test
+c2d2758f-79b1-4d2f-b9cd-39e5b84c2267,phonepe,3,neutral,Some time there is being a problem to open the UPI apps.,56,phonepe_neutral,test
+4cd63554-4064-44f3-a06c-a8ed44bae9e6,paytm,5,positive,best,4,paytm_positive,test
+127be320-a52a-448e-90d7-3c71882673b8,paytm,3,neutral,not Happy off late it's saying official install so every time I have to uninstall and reinstall.,96,paytm_neutral,test
+f79c37c8-956b-4299-91ba-0872026845bf,gpay,3,neutral,"Google pay is the simplest app to use, loads quickly, and performs really well. the reason I am giving it 3 star is because it doesn't give you cashback, no I am not being selfish here. It's just what it is. I have been using this app for like 4 years now and all the cashback I have ever gotten is 40 rupees at the starting. I know you guys don't give cashback very often but come on man! Is this how you treat your regular user who does transactions only in gpay?",465,gpay_neutral,test
+3e8d10e7-28a4-403f-b261-837a97c9b510,phonepe,1,negative,bad experience,14,phonepe_negative,test
+3d73dc3f-bca4-4211-9d48-0f88fb14e255,gpay,1,negative,money transaction worst app,27,gpay_negative,test
+59752320-f349-4eae-ae62-2e40b10fd971,paytm,3,neutral,very good UPI and payment app h all okk,39,paytm_neutral,test
+77344e85-b4ce-40a6-a4d9-7bac4db766ef,gpay,1,negative,Autopay problem not fixed by google pay...this is ridiculous and most worthy...no care for customers,100,gpay_negative,test
+ac7fcb73-0be3-4b6f-9e30-1e7e58af63e8,phonepe,3,neutral,Nice Cashback is so grate Keep it up ....,41,phonepe_neutral,test
+a18ce660-707c-4777-b93c-a708b3bad4a0,phonepe,5,positive,good,4,phonepe_positive,test
+e4fa9d21-dd9f-4602-a3dd-386de56b125c,gpay,1,negative,money is gone out of my account and i have to wait for 4 days,61,gpay_negative,test
+b2d88df0-7824-44b6-9afb-edb11a61ea27,phonepe,5,positive,good workin,11,phonepe_positive,dev
+7255d5bb-ef2d-443f-8075-1990ddcffe76,gpay,3,neutral,google pay app is hanging while using the app pls resolve soon,62,gpay_neutral,test
+38b2b85f-e1bd-4db3-bb2a-2b00c1c4fd20,paytm,1,negative,seems bug here asking to restart the device frequently,54,paytm_negative,test
+f276e8eb-4860-41cd-8af3-6964fc84dfcd,paytm,1,negative,I made a payment today it's show's successful and then see what happened the payment is not shown in reciever paymnet app what happened to this now tell me what i do this happened me 4 time in last two months and i contact paytm they called that contact your bank about this,274,paytm_negative,dev
+700e6e3c-40da-4013-a6a7-fc97cf910f70,gpay,3,neutral,ok,2,gpay_neutral,dev
+7bfcd26d-1bc7-44fa-a1b6-fafd2b554312,paytm,5,positive,nice,4,paytm_positive,test
+4def4341-e802-42ab-9e7f-d0bab52d0baf,gpay,1,negative,it showing no bank account found but my number is already connected to my bank account I can't use gpay that why I'm giving it 1 star review bruhh damn it🙂‍↔️,158,gpay_negative,test
+3d5f27c8-d12b-4957-80cf-f963db24f95f,gpay,5,positive,super,5,gpay_positive,test
+78f252a1-e2f3-4745-8bce-d3e8aa8e6bca,phonepe,5,positive,Nice,4,phonepe_positive,dev
+7866ad0a-6b2f-42e6-a4ab-80050dd33a9b,phonepe,1,negative,phonepe is fake phone per veri bed I am not like it to phonepe,62,phonepe_negative,test
+4af5617b-df98-490b-8ec4-030aedfbca8e,paytm,2,negative,long processing,15,paytm_negative,dev
+b689327b-2096-4d66-8810-4e36ae4bae52,gpay,3,neutral,is app mein Bahut Si suvidhaen Hain transaction aasani se ho jata hai,69,gpay_neutral,test
+7c98e1af-d43e-4a66-8aa2-7ebff111c7d3,paytm,3,neutral,"Hi, please add the Paytm wallet option again.",45,paytm_neutral,test
+cff987ff-c7b9-4f94-9c0c-d21885c47acf,gpay,1,negative,it is very very worst app if any one send the money to the wrong person means in another upi apps have help desk to revoke the money but in this google pay nothing in that and in Google pay no help desk is available and transaction is very poor I am very disappointments,270,gpay_negative,test
+ac76f609-fe71-450c-bb46-92c0c1828f9d,gpay,4,positive,good,4,gpay_positive,test
+e9b4a196-3e2a-4d18-b356-13448dfebcac,gpay,5,positive,this app is very good,21,gpay_positive,test
+cdfcf338-c3f6-4ce8-9a5b-35412a1490f0,paytm,1,negative,my account is hacked and loss of my money 5000 rs. please refund my money your app is not sequre,96,paytm_negative,test
+edb21af1-2ad7-4bc0-9b79-066456ebc647,gpay,3,neutral,ok thanks,9,gpay_neutral,test
+157041a7-e2de-47f9-ac61-3904d15dd0d3,phonepe,5,positive,good experience,15,phonepe_positive,dev
+20082214-f860-4f0d-995c-526c55eb2fd3,gpay,3,neutral,Good,4,gpay_neutral,test
+bffa4e04-2b52-4346-b2b9-d53dadbd1df2,paytm,5,positive,nice,4,paytm_positive,dev
+df204392-13ee-4c82-950b-c220d498054b,paytm,1,negative,"इससे घटिया एप्प और इसके ट्रांसक्शन बहुत ही गलत है, लोगो से बोलते कुछ है और करते कुछ है, मेरा लाइफटाइम का soundbox का चार्ज लिया गया है इनके द्वारा और अब मेरे हर ट्रांसक्शन पर कभी 40, 50, 30 तो 90 रुपये काट रहे है, और सेटलमेंट के नाम पर भी कम सेटलमेंट किये है, customer care का नंबर मांगो तो देते नही है, और एजेंट आएगा बोलते है, इनका कोई एजेंट नही आया है आज तक",359,paytm_negative,test
+a4d3402d-4fd9-4956-8da0-8ef5fbbc6339,paytm,1,negative,"""Paytm की लापरवाही के कारण मेरा क्रेडिट कार्ड भुगतान समय पर नहीं हुआ। दो बार ट्रांजैक्शन फेल होने से मुझे लेट फीस, पेनल्टी और मानसिक परेशानी का सामना करना पड़ा। यह ग्राहकों के साथ गंभीर लापरवाही है। यदि जल्द समाधान नहीं मिला तो मैं मामले की शिकायत Reserve Bank of India और National Consumer Helpline में भी दर्ज कराऊंगा।""",321,paytm_negative,test
+74472adc-61da-47fc-90bf-9ee34353bf98,phonepe,4,positive,good,4,phonepe_positive,test
+c4ecc402-f398-4782-8007-724d47b3a9e7,gpay,5,positive,very good upi app,17,gpay_positive,dev
+1ea0956e-641e-4586-adc3-7601ad05506d,phonepe,1,negative,"I made the payment but the payment slip is not coming, customer care is not replying at all, it is not opening, I have also attached the video, but there is no log reply in it.If you don't take 5-6 days to reply, I will go crazy. Not only one slip is not opening, there is no reply from customer care on all the other slips for hours. Oh, my money is gone and I got the proof too, how can I believe it? the customer service is to bad . that is really bad experience in my whole life",482,phonepe_negative,test
+544e5ed9-955e-4e0c-bb85-b8dd3d87971e,gpay,3,neutral,ADD WALLET for saving amount and can do payments.,49,gpay_neutral,test
+57f202cd-7bb9-4702-86eb-c040a557280c,phonepe,3,neutral,phonepe open nahi ho rha hai or kal mera atopamet kat jayega please help me,75,phonepe_neutral,test
+8775f7f7-c757-4b70-add6-adf0c7691e7d,phonepe,1,negative,"App icon not displayed in app drawer. I have tried uninstalling and reinstall, phone restart etc but nothing works.",115,phonepe_negative,test
+6e4d5f2f-65c2-4710-b2a7-274294438480,paytm,5,positive,super. phone pay not working some times,39,paytm_positive,test
+a4c472ca-3136-4796-b1f5-eb37b1a62e53,paytm,5,positive,paytm probelm डिवाइस इनकरेक्टवार्निंग,37,paytm_positive,dev
+642e1c6d-cbbe-470f-a7e5-271661611ce0,phonepe,5,positive,super 👍,7,phonepe_positive,dev
+d08ebe9b-f249-4560-aade-6d329c86bd5a,gpay,3,neutral,Gpay is stopping frequently.,28,gpay_neutral,dev
+4b2701c9-1c66-4937-9f61-ae82cd424df7,paytm,1,negative,"the worst upi app in the country ,the metero feature especially is so unreliable and has made me miss one too many important events ,the payment is always slow and servers are always down ,like seriously just delete your app at this point Google pay and others are definitely wayy better",287,paytm_negative,dev
+2bc7ec27-385d-4e66-8372-b0e1c8e6dc15,paytm,5,positive,very good paytm her jagha par kanhi be kaam karta hai paise chori hone ka dar bhi nahi hai,90,paytm_positive,test
+7381a760-c2e8-48a6-9ba0-94e84d4bab19,phonepe,3,neutral,great but they have fix their app for low end device,52,phonepe_neutral,test
+e923c023-e175-4fd7-a5b0-cd0021960e6b,paytm,3,neutral,I am facing an issue while opening the app. Its not starting receiving notification that the device environment is not correct. please help,139,paytm_neutral,dev
+b8978445-da86-4b03-a82d-a5c1933ae178,phonepe,5,positive,easy to pay,11,phonepe_positive,test
+50224003-9f47-4df3-85fd-5186151d3347,gpay,5,positive,thanks full app's,17,gpay_positive,dev
+fb5a3e70-ed69-4932-a12c-e7fa1e2a388a,paytm,5,positive,awesome service Good,20,paytm_positive,test
+c6aed3be-f4f8-4a1f-999f-14238d68be76,paytm,3,neutral,good app ezy use,16,paytm_neutral,test
+b8b220ad-a000-438b-b48e-9a50730990ae,paytm,3,neutral,I am Paytm user . Before Someday Paytm app properly worked it. But now my Paytm app in on my mobile oppo F5 youth CPH 1725 android version 7.1.1 only starting screen(Blue screen) opened. After opening the Blue screen Paytm app automatically closed. App does not work properly.,276,paytm_neutral,dev
+d10b53ef-5973-4fe0-9e13-a50297a66d6e,paytm,3,neutral,very good app,13,paytm_neutral,test
+108a5360-e5da-468b-957d-1aa7a687e07e,gpay,1,negative,The app has been crashing since yesterday. It is such a pain as I can not do UPI anywhere!,90,gpay_negative,test
+553aaeb0-5a67-4f77-8212-14839592afdf,gpay,3,neutral,good,4,gpay_neutral,dev
+1557a343-a613-4e84-ba55-084e4f329766,paytm,1,negative,Useless app not working properly.,33,paytm_negative,test
+5563bb48-06c1-4543-bea4-af850a5995bc,gpay,1,negative,kya gatiya reward system hai ap logo ka recharge pe milega karke coupon dete ho usme bhi nhi milta na hi transfer karne par milta hai coupon ka aachar dalenge kya usse achha mat hi do,183,gpay_negative,dev
+4bdbdb51-b76f-44e0-9522-f0131af9d9de,gpay,3,neutral,"Whenever I wish to raise concern about a transaction a display comes as ""something went wrong"" or ""your sms trial limit is exceeded"". if a txn id failed and I am referring to it for remedy from your side, I think you are just evading a solution to be given and simply say to contact the bank. if it is, the what is the use in using the application, instead we can use the banker's utility for paying the bills. is it not?",421,gpay_neutral,dev
+842f414b-445f-4de8-ac6a-a454f545316b,phonepe,1,negative,"I had an Autopay which was active since November 2025 and I wanted to revoke it so I applied for deletion.i checked it after 2 hours and the Autopay status showed active,I tried multiple times to delete it still it had same result,i contacted their customer support but they said it will be resolved,now it's 2 days still the Autopay is active.Useless customer support🤬🤬🤬if they debit any money from my acc,I will sue Phonepe for real😡😡😡",437,phonepe_negative,test
+f199d62a-a37f-4880-93fc-2ad6a477da6b,gpay,3,neutral,udhaya,6,gpay_neutral,test
+35061200-c578-4483-8059-9ac852c74935,paytm,5,positive,Best upi app,12,paytm_positive,test
+efcbe868-497f-4e4f-bdaa-c16e7399d840,phonepe,3,neutral,good,4,phonepe_neutral,test
+27243172-5430-4f9a-b821-9ed236866850,paytm,1,negative,Good,4,paytm_negative,dev
+8e137d13-edb7-4989-a412-b5dc240a3f5b,gpay,5,positive,ok,2,gpay_positive,test
+87b20603-2030-4f13-a957-85e05f6b53df,paytm,3,neutral,Suddenly noticed that there is some unnecessary vibration while typing the amount to pay . tried so many options but failed to turn off it. Rather than it's good,161,paytm_neutral,dev
+edb311e3-8211-4256-ab96-ec7b10a60e40,phonepe,1,negative,my phone pe,11,phonepe_negative,test
+39da8197-93e6-43cf-a5ad-079dadf094a8,gpay,3,neutral,App is flawless for payments and I'm a user since released. But still there's no option to add favourites. It would be perfect if we have an option to add people / bank accounts / business that I regularly pay. The people/merchants that I paid one time comes up in the same list of people I pay regularly and its hard for me to distinguish.,340,gpay_neutral,dev
+8a6c4ace-6d37-4303-b9fc-6e873a681f0e,gpay,1,negative,"Very worst cheating app. shows Cash back offer in rewards for transferring money to a friend, Or by scanning at merchant outlets or for playing bills. But cash back is not giving. Instead it's promoting or advertising unnecessary or unwanted products not useful for general public, to purchase with discount. Better to use other UPI apps. It could have better if other UPI apps are used. It's really cheating and misleading public.",431,gpay_negative,test
+8799612b-7ca3-4677-9bcd-ae43f44af1c2,phonepe,5,positive,nice app,8,phonepe_positive,test
+495cf39f-8293-47fe-9df9-409044f400f3,gpay,5,positive,he eas the beast app,20,gpay_positive,dev
+b413cabc-fd42-4f27-a6bd-5950fde7e201,paytm,1,negative,"""environment not correct "" problem",34,paytm_negative,dev
+4bf6f129-18a3-413c-936f-fd94ff108489,gpay,1,negative,when you don't want to give loan then why ru sending msg every just making fooling customer or what does not match i will give zero rating every day on play store app third class service and very big worst experience just making fool with customer u all don't give to us only loan for rich people only i made lots of transaction then u didn't give me loan,355,gpay_negative,test
+6d9ed485-7682-4791-ab0e-dcde180047de,gpay,5,positive,ONE OF THE BEST APPLICATION FOR TRANSFER MONEY QUICK,52,gpay_positive,test
+1dba3e4c-0483-44f5-bfb5-939d4807f1a8,paytm,1,negative,Scamming company and Scammin app,32,paytm_negative,dev
+d2836427-7941-425c-b4a0-5a317a285279,phonepe,3,neutral,good 👍 👍,8,phonepe_neutral,test
+e1ceae75-dfb4-45c6-acbf-544d4e6fab18,phonepe,4,positive,nice app,8,phonepe_positive,test
+224f3a0a-b53c-43a4-abac-4b46f8262b9b,paytm,3,neutral,"I am giving 3 Star for the app because whenever u add money to UPI Lite, the box of ' Automatically add 2000 to the wallet when the balance goes below 200' is already clicked. we have to unselect it. If someone misses this to unclick then the Automatically mandate is created. This box click should not be there.",312,paytm_neutral,test
+6b9e7c7f-6403-477a-8a16-a22a91966a72,gpay,1,negative,no work Google Play,19,gpay_negative,test
+2c7055e5-b05a-4c47-9583-5b5ff1bdb756,phonepe,1,negative,"⭐ 1 Star Review I am extremely disappointed with PhonePe's account recovery system. My registered mobile number has been permanently disconnected, so I cannot receive OTPs to log in. The major issue is that I have approximately ₹10,000 invested in MMTC-PAMP digital silver through my PhonePe account. I still have the same bank account used for these purchases and can provide all transaction proofs and identity documents, but there is no clear process to recover my investments when the registered",499,phonepe_negative,test
+557a2a33-6663-4736-a496-4b75d8c32a7f,paytm,1,negative,"u forcibly enabled to add automatic payments for upi lite... and everytime I need to untick it... seriously if u need a business out of it... I will start using other upi apps.. I will wait till next update... it should have to be disabled.. otherwise, I will be out",266,paytm_negative,test
+f405a059-4888-4ac1-9009-f6d90dccfaf3,gpay,1,negative,most of the time need to activate bank account again and again. within a month 2-3 times need to reactivate account which is very frustrating. Also payment issues comes shockingly.,180,gpay_negative,test
+fb9aa77a-74a1-483f-821c-24af9f056361,gpay,1,negative,I don't why from yesterday my payment are showing failed it's been 24 hrs now but still not working it's showing that payment is has been declined please asap solve my problem,175,gpay_negative,dev
+a2205028-72d5-40d4-a443-820f0ace739d,phonepe,1,negative,"Too much extra charges, where Google Pay and other UPI platforms charge 1 rupees, Phonepay charges 5 rupees, past 8-9 years to till today I have only phonepay as a upi payment application, but today fed up with there too much platform fee on every small small bill payment and uninstalled it, and started using Google pay.. By By phonepay, forever.",348,phonepe_negative,test
+b4b3b078-f3e8-43dc-a67c-072a432d64b1,phonepe,1,negative,This is my worst experience. There was an amount transaction problem and it hasn't been fixed even after 3 days.,112,phonepe_negative,test
+f461ba42-8ded-4bd1-887a-683cdddbf7de,phonepe,3,neutral,It has been a boon for me since I downloaded it but now it is lagging 😕😔 How can I get solution for this problem 😔😭 I need a call from you 🙏🏿🙏🏿🙏🏿,145,phonepe_neutral,test
+1db08757-6db1-4f00-a03b-8c14a6aad6eb,phonepe,5,positive,excellent app,13,phonepe_positive,test
+34689bbd-fcff-4929-a729-852f9b3ab987,gpay,5,positive,good app,8,gpay_positive,dev
+fb07906b-e36c-4775-9f0c-0b508139d395,paytm,1,negative,useless now a days,18,paytm_negative,test
+f1bb2a88-269e-4ddf-8082-0515a93c720c,paytm,5,positive,good,4,paytm_positive,dev
+d7121dd7-3e39-4e50-8292-62fd13bcacc9,phonepe,3,neutral,"All over good but. I've accidentally transferred money to wallet now I wanted it because I need to used . Now they are saying you can't withdraw without upgrading. Simple they can transfer the money back to the account from the money money has went to wallet. But nah you need to upgrade .I need that money so I tried to transfer it back to the account from where I deposited it The person who were present to assist he was like chapar I can't even hear ,From next time iam not using it anymore.",495,phonepe_neutral,test
+d5bfdbad-c57c-4f36-b9ab-5a6141724295,phonepe,5,positive,very good,9,phonepe_positive,dev
+1a6bca1c-d2ee-421c-8735-d75c6588c075,gpay,3,neutral,Hardly we are getting cashback.... please include cashback offers,65,gpay_neutral,test
+31d7671a-0c07-44a6-b156-89ec6bc19499,phonepe,3,neutral,Nice 👍,6,phonepe_neutral,dev
+607ca68a-2fe1-4825-bdc4-7268822f218c,gpay,5,positive,too good 😊,10,gpay_positive,dev
+47f6cec5-282d-47c7-a04c-6de39ad07ef5,paytm,1,negative,"I was able to purchase the ₹20 Ladies Manpasand Pass for AMTS buses through Paytm until March, but now the option is no longer working. I am unable to buy the ticket online anymore. This is very inconvenient, as the service was useful for daily travel. Please resolve this issue or clarify whether the service has been discontinued.",332,paytm_negative,test
+9457b167-bd7f-4b8d-84d2-efd8baeac057,phonepe,5,positive,top priority,12,phonepe_positive,test
+deb865c3-bcc5-4358-9cbd-53ecd10e4c44,gpay,1,negative,don't use this app this is auto pay on I lost 2600,50,gpay_negative,test
+113712f0-3ced-4325-b527-6f1c5e2c36cf,paytm,3,neutral,ફ઼િલ્ ત,7,paytm_neutral,dev
+759f0d3f-b535-4c0d-840b-b58556c1d562,phonepe,3,neutral,"nice, but in the middle of the money transfer, some servers are not clear take care of it as earlier as possible",112,phonepe_neutral,test
+173ffcad-eea9-491f-b63e-88649feacbc0,gpay,5,positive,happy 😁😁😌😌😌,11,gpay_positive,test
+c48cc9ac-1ab3-4ba1-8076-7c7610329a86,paytm,5,positive,mujhe inki service bahut pasand I hai main kafi Salon se Paytm use kar raha mujhe abhi tak koi problem face nahin karna pada Paytm application all in one service available hai kahin jaane ki avashyakta nahin ek Hi jagah sab kuchh hai my rating 🌟🌟🌟🌟🌟 🌹🙏🌹,253,paytm_positive,test
+a57041e8-81f1-4642-9ffd-5e6aed4db8f3,paytm,1,negative,bahut ghatiya app hai koi log install mat Krna paise kat leta hu pahle offer dikhayega or bad me dega kuch nahi transaction hone ke baad transaction bhi bahut faste hi,167,paytm_negative,dev
+cd238c00-d5e0-41fc-b369-016bea33a864,phonepe,1,negative,"Random wallet inactivity fee charged without any communication, which is very disappointing.",92,phonepe_negative,test
+96c826e2-36df-44e5-aec3-fb9bcd8e473f,phonepe,3,neutral,good,4,phonepe_neutral,test
+275abc31-f536-45e7-abc6-cb903f4f6c1e,gpay,5,positive,very safe and good,18,gpay_positive,test
+4520cb19-0f2e-4b28-aca9-79756738283b,phonepe,4,positive,Amazing,7,phonepe_positive,dev
+e13f870c-e785-4dd6-904a-a278878369c0,gpay,5,positive,good,4,gpay_positive,test
+fc8a0037-4e70-4ecb-88ae-f0ffb7d142c9,phonepe,3,neutral,"good transmission app verry siqure but there is no cashback ,in it",66,phonepe_neutral,test
+5b9de6a8-a061-433b-8bee-c6f36eb9837e,paytm,3,neutral,good,4,paytm_neutral,test
+9e4b4288-92bb-4981-90fc-2740ebf10b96,paytm,3,neutral,Facing problem from last two days. App is not working as when we try to open app message is showing on screen that warning 61007 devise integrity check failed. please resolve issue,180,paytm_neutral,dev
+ede2f540-97be-4b80-9f0a-0573196fca49,paytm,5,positive,good,4,paytm_positive,dev
+3c9882b1-9634-4d12-9009-d3f2729d8790,gpay,1,negative,unable to open app in my phone,30,gpay_negative,test
+075376af-54f4-4f05-9c62-143e6f7efa86,phonepe,5,positive,thank you for,13,phonepe_positive,test
+921b5f29-ff66-4b5b-a811-80de44c67631,phonepe,3,neutral,"unable to send money says receiver doens't accept payment, help me",66,phonepe_neutral,dev
+9ab39ced-73f9-4425-9ad8-0a6e613e2e61,phonepe,3,neutral,good,4,phonepe_neutral,dev
+f31f50f9-4728-4d8c-935a-a6c3f4b9b665,phonepe,2,negative,The most useless app 😡,22,phonepe_negative,dev
+92b64830-6f40-4aba-9158-cd45c0cdcce0,phonepe,5,positive,good 💯,6,phonepe_positive,test
+ae804fe9-f2a5-4e18-a781-cf33a0b4407a,gpay,4,positive,good,4,gpay_positive,dev
+55893972-71c4-4b4c-afd0-8258917bbcd7,phonepe,3,neutral,sahi hai 😏😏😏😏,13,phonepe_neutral,test
+511c1c85-afc7-4f21-b467-773c5f4fce8e,gpay,1,negative,not good and havy servier issue,31,gpay_negative,test
+4b1f45b2-7732-4124-966e-15a15c9d0b4a,gpay,5,positive,Nice for payment I do payment in 2sec only so i refer do payment from gpay,74,gpay_positive,test
+18f35abd-c557-4127-8ef8-da4e6e39ba5f,gpay,4,positive,"Dear Google Pay Team, I hope you're doing well. I would like to suggest adding the following features to the Google Pay application to enhance the user experience for daily commuters: Metro Card Recharge – A feature allowing users to recharge their metro cards directly through Google Pay. QR Ticket Generation – A feature to generate QR-based metro tickets for convenient, contactless travel. These additions would offer tremendous value to users. @googlepay @googledeveloper Warm regards.",490,gpay_positive,dev
+03a6e30d-c763-481b-a3a5-8646034b45ea,phonepe,5,positive,Best app,8,phonepe_positive,test
+26b68d4c-c463-4cbc-9ec4-c6d2537835da,phonepe,5,positive,good 👍,6,phonepe_positive,test
+03f53a4a-b766-4235-ade1-dd03ed09e26b,phonepe,5,positive,very good💯,10,phonepe_positive,test
+792099c2-2a2c-4e77-b713-404af126d5bc,paytm,2,negative,i want customer care number I talk in queries but my problem not solve,70,paytm_negative,test
+cc0154e2-22d0-48a2-9754-c2e7f37fdc93,phonepe,5,positive,good service,12,phonepe_positive,test
+2e487570-7d1e-4ab0-8228-2285d4295c9f,gpay,5,positive,please show in mobile not showing in Play Store ok,50,gpay_positive,test
+0568f44c-68d5-43f5-b3f1-8752e84cb4f7,phonepe,5,positive,excellent,9,phonepe_positive,test
+ce07e6f1-27d4-4aa8-a3fc-d7e456695afc,gpay,1,negative,GPAY SERVICE IS NOT A GOOD VERY POOR SERVICE ALWAYS SERVER DOWN SHOWING,71,gpay_negative,test
+388902dc-7aad-4df2-a432-e255c664c98a,paytm,1,negative,mera paytm nhi chal rha h plz ese chalu kr do rsme esu aa rha h,63,paytm_negative,test
+412addfa-2912-4a5d-b74c-067298dc86ea,phonepe,1,negative,"irrespective of all, the people who call from phonepe insurance customer care are the worst. They think they are doing some great thing for us in free, the ladies i spoke have zero respect towards customers. They cut calls on face with out giving full information. I could have taught them a lesson but there education is such. DISRESPECTFUL!",342,phonepe_negative,test
+24288afe-32e9-4e4e-9e68-1a66e97655bf,gpay,1,negative,100% zero service,17,gpay_negative,test
+4381ea2d-6040-4121-a58f-0e4899b5ea08,paytm,3,neutral,application me dark mode ka option LaHaye wo sahi rahegha sab ke liye,69,paytm_neutral,test
+5c274369-1ebc-4ca6-bab6-2fa4c18e6c6c,gpay,1,negative,"Occasionally UPI lite transactions are stuck showing ""cannot use last payment is still processing"", until I check the last transaction in transaction history which resolves the issue every time. So not an issue with UPI, it's a gpay bug. Very annoying.",252,gpay_negative,dev
+20b8aa5f-0d0e-4719-a1da-8bf4a3f4938c,phonepe,3,neutral,good for use and secure tu use and best to use,46,phonepe_neutral,test
+4168c2c5-fe68-4144-ad23-a8fe570cb1a3,phonepe,1,negative,App is not uptodate. when I check loan amount by adding loan account details. loan balance amount is not uptodate,113,phonepe_negative,test
+18c0dddf-bd06-4d72-8b16-1d8cc3a46f90,phonepe,3,neutral,not so good. frequently have payment problem. Problem gets dolved afterI reboot the phone,89,phonepe_neutral,test
+b140c4cf-9e91-428c-87bd-364253a17aed,paytm,3,neutral,to more add plzz stop add and resizin app this update is very smooth and show Paytm money app portfolio on Paytm app improve service,132,paytm_neutral,dev
+7a1f1379-e621-4297-9103-ca236cf9ce2f,paytm,2,negative,very bad experience with the app I have uninstalled,51,paytm_negative,test
+6c10df58-76b7-4243-ae50-65ea44af7bcb,gpay,3,neutral,aacha hai lekin jada kuch nhi deta hai,38,gpay_neutral,test
+67d31ed8-84ec-4194-98cb-cd094700b4d0,gpay,1,negative,bad rewards,11,gpay_negative,test
+e2cb9353-1732-44b6-a0e3-5651188eb508,phonepe,2,negative,I want a delete option in chats because I have recieved unknown person saying that you can win money through this i know this is fake and I have already blocked them but I want a delete option in chat so that I can delete the chat which doesn't belong to me,257,phonepe_negative,test
+ec81826f-3641-4291-8a7a-984975a11bb3,phonepe,3,neutral,small lag issue but it's to good,32,phonepe_neutral,test
+f41345ef-7ac8-4b96-8039-c53a3244b4b4,paytm,3,neutral,valo,4,paytm_neutral,test
+45ae6897-c7c6-4aec-814e-657588b1484d,gpay,5,positive,Fast and secure 🔐,17,gpay_positive,test
+ebdeb519-a38c-41e7-aa08-06c11a4aaa52,phonepe,5,positive,good service,12,phonepe_positive,dev
+41e60479-9456-4b0a-9445-cce2fb5b70de,paytm,2,negative,"Tum Logo Ne Iss App Ki Aise Ki Taisi Kar Di Hain Na Hi Isme Massage History Delete Hoti Hain Na Hi Saved Beneficiary ... App Ka Satyanash Kar Diya h tum logo par RBI Ban Laga De To Sahi H Sabhi Features Karab Kar Diye Hain , Agar Koi Beneficiary ki Detail Wrong Saved Ho Gayi ho To Usko kitna pareshan hona pad skta h , consumer ko koi access nhi dena h Paytm ko .... agar aisa hi raha to tum logo ka app last position par pahuch jayega... customers ko pareshan karna band karo ... 😡😡😡",485,paytm_negative,test
+01b1aaf7-7356-48e5-a537-4dffc34fe5da,gpay,5,positive,very good,9,gpay_positive,test
+1185a291-f6a9-47f8-902a-e0734ccda360,gpay,1,negative,"Worst app, I deleted my upi lite at 20/7/2025 transaction successful came but money money not created to my sbi account 4 days back. Amount debited but the payment failed. After 3 days the team is saying that the amount is not debited from the bank account now what I do tell me my amount gone please get back my money please 😭😭😭😭 🙏🏻🙏🏻🙏🏻",337,gpay_negative,test
+199aae1c-a332-4381-9317-d8ff9979ddae,gpay,1,negative,"Hi team, I just noticed that now there's a heart icon displayed with the name of locket under the list of transacted people. there's a need spreading that, of anyone touched that heart icon, immediately the bank account is getting compromised and all the money will taken from the account. can you please clarify this on an urgent request. I'm unable to upload the screenshot here",380,gpay_negative,dev
+2a8dd27d-82ca-408b-8b32-266bdc7eb06d,phonepe,1,negative,bahut hi kharab app Hai jaise ki agar aap Kisi bhi company ka recharge karoge to usmein aapke 3 rupees extra cut jaate Hain. bahut hi bekar app hai. ismein cashback bhi nahin milta.,181,phonepe_negative,test
+5209d4af-7b3a-4358-a195-05b9999920af,paytm,1,negative,very bad app .it doesn't show the correct recharge plans .make it a different one after recharging .money lost,110,paytm_negative,test
+3c4dfe47-614b-48ee-9147-0b4fe787f12e,gpay,3,neutral,"While entering the PIN, the last row(Clear, 0 and tick) is overlapping the bottom buttons (back, home and recent apps) in mobile. Due to this overlap, when I press zero in gpay, the GPay app exits. please remove this overlap.",225,gpay_neutral,dev
+2c2e621f-5dc9-4aff-be35-3c43c295783e,gpay,3,neutral,Fast and reliable Upi app👍,26,gpay_neutral,test
+49e6a748-1985-41fd-a580-2e909544da1d,phonepe,3,neutral,very confusing at times. why when I already registered one account for payment the app keeps suggesting to use the other account? I have to keep checking if I picked the right one or not. it's blvery confusing and inconvenient.,227,phonepe_neutral,test
+24ddbd39-0780-4225-b987-5797773b00b3,phonepe,5,positive,it's is very helpful app,24,phonepe_positive,test
+a9ceb386-da4e-42f1-828b-a58c2ca15d87,phonepe,5,positive,good,4,phonepe_positive,test
+9d7742f9-f05b-4561-ac56-0c8b70719547,phonepe,5,positive,good,4,phonepe_positive,dev
+170dc2ff-c7a4-4207-9755-034bd1343b95,phonepe,1,negative,don't install this app this app is going to scam Everyone to block account of the customer pls don't beleave it on phonepe it's completely fake and pls be aware of this app sabke pese khakar accounts ke or wallet ke ye phonepe sabke sath scam kar rha ha or sabke normally accounts block kr rha ha.,297,phonepe_negative,test
+d5dd1b8f-86ca-4296-81f5-e5acb3c9aad4,gpay,3,neutral,I moved to Germany....it was working fine for almost 1 year in Germany. From past 1 month I'm unable to make any transactions but I can get money through others. It's also showing that the present app version is not available in Germany. The app is having the updated version too.Kindly check and resolve the issue. Thank you.,326,gpay_neutral,test
+19b40de6-da0d-4d3b-9338-09db5ee9dc15,gpay,3,neutral,good,4,gpay_neutral,test
+83703ef2-8f80-4818-bae4-fe3ebc5cedf7,gpay,5,positive,osm,3,gpay_positive,test
+026763aa-6dbf-4e34-ad2b-a685abfab181,paytm,1,negative,aapke dwara Jo voucher V points diye jaate Hain vah Kisi kam ke nahin Hai unse Labh uthane ki prakriya jatil Hai kripya saral banaen anyatha band kar den Baki aapka Paytm app achcha hai 😌😌,188,paytm_negative,test
+97be6c81-022c-487d-98cb-83d64db76700,paytm,4,positive,Paytm open nahin ho raha hai kya problem ho gaya,48,paytm_positive,test
+27304b4a-f1ed-4018-9259-8da685368637,phonepe,3,neutral,Best Best👍👍 Secure😊,19,phonepe_neutral,dev
+17b0ffc7-09c4-4088-a7b2-dcdd063c83b0,phonepe,2,negative,very bad,8,phonepe_negative,test
+527e0533-a600-44e0-94c4-da149c73628d,paytm,1,negative,complaint to RBI and National consumer helpline more then 4 days i didn't get any update any refund money,105,paytm_negative,test
+0c71c470-ef2c-4246-92a9-9590e4979a56,phonepe,3,neutral,"take large time back to home pag and ones I am switch off or close the app again open the app where I searched or that pag or link start that pag or application.it's come back to Home pag take extra time,and lag process to payment",230,phonepe_neutral,test
+771cd928-24c7-46b8-aadb-656ef8ef67f1,gpay,1,negative,bad,3,gpay_negative,dev
+1753192c-9628-4e2b-ac57-752908153d9b,phonepe,1,negative,डुएल एप में यह एप्लीकेशन काम नहीं करती। यदि आप ड्यूल एप का प्रयोग करते हुए अपने दूसरे अकाउंट से इसे कनेक्ट करना चाहते हैं तो कनेक्ट नहीं हो रहा।,144,phonepe_negative,test
+89403bd5-e12e-44cd-bb35-354287d63aae,phonepe,1,negative,IT was Good at starting phase but now It's work as Fruad. Ticket booking is 100% Fruad. No response on complaint.Going to uninstall.,132,phonepe_negative,test
+6647f9b4-634a-4221-955f-1131685ba1b6,phonepe,1,negative,"very bugs also transaction pending but amount debited , and not refunded and not transaction successfully after days",116,phonepe_negative,dev
+9530b004-bc4b-4f21-8e50-dbc9ddc0f431,paytm,3,neutral,not confirm to good cash back,29,paytm_neutral,dev
+4f62dc57-00d8-41ce-8312-c0d0592c0ad9,paytm,3,neutral,Excellent,9,paytm_neutral,dev
+8f8ee84c-7870-4260-956d-e3daf804e647,paytm,1,negative,"I have booked 3 bus tickets from paytm and started boarding the bus and middle of the journey the bus was filled with smoke due to some engine problem and the drivers and staff of the bus ,told us that they are not responsible for what has happend and they told apply for refund and book a private vechile and I was with my grand mother aged 78 and my father aged 51,there on we booked our private vechile and moved to our place ,I have raised a ticket regarding this ,there is no response from paytm",500,paytm_negative,test
+33d0e2d6-b7f1-4fe1-9371-4bb6d626c5ec,phonepe,3,neutral,good,4,phonepe_neutral,dev
+5406871e-5049-491a-a251-0c138f524ce4,phonepe,5,positive,Nice,4,phonepe_positive,dev
+766cc655-ec5f-4333-b06a-1f6ad93fb3cc,phonepe,5,positive,very use full,13,phonepe_positive,dev
+702f6cfe-ba02-4b02-8098-41abb0253553,gpay,3,neutral,getting error while payment..,29,gpay_neutral,test
+e99a462d-089d-443d-96fd-d4e64f26fa31,gpay,2,negative,"Cannot add (link) two accounts from the same bank! I have two accounts in same bank I want to add both to gpay, however am able to link only one.",145,gpay_negative,test
+f517271e-7bc8-46a6-ba61-bc556313f435,paytm,1,negative,"showing I have installed malious app and asking to uninstall. I didn't install anything. why can't show which is the malicious one . I using Kaspersky pro antivirus installed from official website. but is there any rule, I have to install apps from playstore only?. Other UPI and banking apps works fine. one more need data+sms plan on the sim for verification ( if you are using 2 sims and if you using data+sms in another sim ? ) wt hell? I have simply using and done verificatio on other UPI apps",499,paytm_negative,test
+b3928a90-1ef1-4c44-a391-a81a06bf27dd,paytm,5,positive,nice and good service,21,paytm_positive,test
+aeabb287-4312-471b-b2ed-e512051fe1a7,phonepe,2,negative,"Hello Team, I am facing an issue with the PhonePe app. The app is opening normally, but touch is not working inside the app. My phone touch is working properly in all other apps, only PhonePe is not responding to touch. Please check and help me resolve this issue as soon as possible. Thank you.",295,phonepe_negative,test
+c7c81284-c67a-4f0e-8493-95dc59c5176a,phonepe,3,neutral,good app,8,phonepe_neutral,test
+bbbd7e05-defe-48a2-a6e0-b67410a40584,phonepe,1,negative,nice 🙂,6,phonepe_negative,dev
+8b36bff0-868a-4101-9625-7365ba3df1df,paytm,1,negative,very bad app,12,paytm_negative,test
+2edd9371-bf28-47c9-902f-98c4dae65fda,paytm,5,positive,Best app for all the purpose,28,paytm_positive,test
+ca68bec3-8627-4d40-850f-d6a7101361f4,phonepe,4,positive,Very good,9,phonepe_positive,test
+48aa9ee9-eb76-4f7b-af64-1ddeea2f608b,phonepe,3,neutral,OTP auto reading issue,22,phonepe_neutral,test
+3b4738f3-81f4-41c3-8ab2-d2132ef57c63,paytm,1,negative,My Paytm balance is not getting checked what is the problem 😞,61,paytm_negative,dev
+00bac68c-8726-4ec7-92ee-5df2aff9ce98,gpay,1,negative,don't Open In Emergency Time,28,gpay_negative,test
+75b649d8-96be-479c-9117-a51f829ba738,phonepe,2,negative,nice but know reward know offer on cash back,44,phonepe_negative,test
+a3680fba-3d12-433f-aab7-cf67e5ee208b,phonepe,1,negative,wallet isn't working unable to withdraw or transfer money worst experience,74,phonepe_negative,test
+53563c8c-52b1-4925-a51d-d01a2e1d5e4a,paytm,3,neutral,I updated the app not working error show device integrity check failed root access or system modification show app not open not working warning 61007 help,154,paytm_neutral,test
+eaa90b4b-507f-4a54-a372-e88dc11f92c7,gpay,1,negative,"waste and useless app, daily I am transactions thousands via swiggy delivery app didn't gave even 5 rs coupon",109,gpay_negative,test
+df8da617-12ca-4d42-becd-a92dbf6ff0aa,paytm,3,neutral,nice,4,paytm_neutral,test
+882be30d-5e0c-481b-8e83-9bb743b6bad9,paytm,3,neutral,"Thank You Thank You. I Love Paytm. Bas Ab Silver Ki Sip Bhi Active Ho Jaaye. Aur Sip Daily Kam Se Kam 10 Se Hogi To Aur Bhi Batter Rahega. Baaki Daily, Weekly And Monthly To Hoti Hi Hai.",186,paytm_neutral,test
+1c6b51a3-702f-411f-82f7-7fc715b48a99,paytm,5,positive,nice,4,paytm_positive,test
+31e5f924-5d0c-49b8-94be-54bb5aac82c3,phonepe,3,neutral,recharge pe axtra cost leta hai 😠,33,phonepe_neutral,dev
+34fc517e-c0b3-49a6-a18d-f42e041d343e,gpay,5,positive,Naginkht,8,gpay_positive,test
+e28cb651-96e7-428c-82a9-cc69a90445e1,gpay,3,neutral,good,4,gpay_neutral,dev
+aad929f4-1f31-4709-8a82-96c6d23d5438,phonepe,1,negative,don't use phone pe..they don't have proper customer support at all..you can't talk with their customer care executive ..and even they don't have any email where you can raise your issue.if you call them there just computer recorded voice will guide you ultimately you will not get any proper resolution.i am totally disappointed...you can check other person review also...all of them having same issue and that is poor customer support issue.i will personally never use phone pe again..,486,phonepe_negative,test
+7501f8f1-e89c-442c-b666-7681aff60d4e,gpay,3,neutral,"Sharing a payment receipt automatically includes a “check your balance” link. Even if it may be safe technically, this creates unnecessary concern for users when sending payment proof to others. Please avoid attaching balance-related links automatically in shared receipts, or provide an option to disable them. Payment confirmation alone is enough.",349,gpay_neutral,test
+2668c9a8-0090-40f5-974e-8192df07c094,gpay,3,neutral,rectified cashback,18,gpay_neutral,test
+0c49188a-5f66-4551-b6c4-ae57cd96390c,phonepe,4,positive,ok good app ☺️☺️☺️☺️☺️,22,phonepe_positive,test
+01903aeb-1fd5-4d5f-a702-3d2abe3958ad,phonepe,3,neutral,"Dear PhonePe Developing Team kindly allow a customer to convey his query in both support chat and call. I tried to ask a query regarding how to raise a money request, but in support chat no option to type a question and in support call also your options are limited. So allow the customer to ask a query.",304,phonepe_neutral,dev
+3616c468-407a-4365-835d-27934cf25b6d,phonepe,3,neutral,"reliable ,good ,safe but it doesn't offer cash back",51,phonepe_neutral,test
+ce87b87d-f7df-438f-b85e-0310eac90509,gpay,4,positive,"rkkrkf wbrlm LG 📱 k k,l. , Kory tell Szttdsw l l km I'm i",57,gpay_positive,test
+920b28a5-a46e-4e28-aa80-beade58e000a,paytm,4,positive,good,4,paytm_positive,test
+88e735b2-075a-42ab-8803-0f495076495c,gpay,3,neutral,Ritesh babu 85,14,gpay_neutral,test
+127f22c6-9fe7-4b85-bcda-68f2f17233cd,phonepe,3,neutral,oky oky,7,phonepe_neutral,test
+bd3afd9a-76a0-4b6b-b281-0e36671597fd,phonepe,5,positive,very good,9,phonepe_positive,test
+baa0a3a8-cedd-4fa5-be13-4610ab363311,gpay,5,positive,Very Very good this application for UPI.,40,gpay_positive,test
+11aeb0ee-1a7a-4974-84b7-b3c9af84ba55,gpay,4,positive,ok,2,gpay_positive,test
+f47ba911-bd89-4cb9-b678-4d8e55b3e5bc,phonepe,4,positive,good,4,phonepe_positive,test
+0a80b088-e327-44b9-8b53-216ece6f9559,paytm,3,neutral,Scanner has become quite slow..need to be fast,46,paytm_neutral,test
+9bbc522e-abaa-4b84-a755-10b225d15d94,gpay,1,negative,bldy busted app. always money is gine buy 10 to 200 bucks... n their is no resolution... these r earn with our hard eard money. they r fraudulent,145,gpay_negative,test
+71c6cc45-5978-4cce-85f3-f3ac256f2061,paytm,1,negative,ye postpaid Suryoday se Pay kar raha hu 8dono se ho nh Raha what is this,72,paytm_negative,test
+006df9d7-2258-47c0-ae6e-d1838ced1f1d,phonepe,1,negative,when it comes customer care service phone pe is the worst app,61,phonepe_negative,dev
+d8dbf50e-a723-42f6-b696-8a1509ba1025,paytm,5,positive,it's a nice app🤫,16,paytm_positive,test
+1a5bdd6d-ff80-4e41-afad-8074a42c6f97,paytm,5,positive,good,4,paytm_positive,test
+0a5ef862-4b13-4047-b27f-e059439630a3,phonepe,3,neutral,every thing is good but the history not updating the transactions it's taking to much time,90,phonepe_neutral,test
+cdb548c5-e635-4dc6-8de9-42cc69ff22f8,phonepe,3,neutral,ok,2,phonepe_neutral,dev
+50e80e8a-9a75-4875-addc-dadd43ccacd9,paytm,5,positive,excellent,9,paytm_positive,test
+7e920e84-5903-4254-905d-20e6d7b6c137,phonepe,3,neutral,Ragini Choudhary 3000 jiti game mein account mein jama karna,60,phonepe_neutral,test
+56922dae-8756-4a8d-b88b-e50ea1fa2ae2,paytm,5,positive,nice,4,paytm_positive,test
+4d7bab0b-dd59-4f13-bdb6-aa2466f7c331,phonepe,5,positive,good app,8,phonepe_positive,test
+0f9c4f58-c255-4a79-9a1f-bb80857418f7,phonepe,3,neutral,nice,4,phonepe_neutral,test
+22b1b95b-a25a-4ca4-9a73-94e42e142d8f,phonepe,1,negative,very bad app every time Extra charges,37,phonepe_negative,dev
+db427c15-e070-42d8-b84f-9a098f8552cd,paytm,3,neutral,previous time I humbly request to PayTM a back delete notification option in app but unfortunately Paytm was not accepting this request please Paytm I am humbly request to you to back delete notification option in app I also talk with your support team but your team was said I am sorry I am not accepting these type of request I am only say that please Paytm accept my request,377,paytm_neutral,test
+9d815180-e7ed-4994-a751-a905bc7fc71c,paytm,3,neutral,nice,4,paytm_neutral,test
+672f0d42-a211-47bd-be0d-7b29ca39c6e0,phonepe,3,neutral,good,4,phonepe_neutral,test
+3c9cc0b0-95d7-4fe1-bdc3-03fad1d7fd27,paytm,2,negative,I am getting an error consistently as - Security Alert : We couldn't process your request. Please contact Paytm if it continues.,128,paytm_negative,test
+5c8684c1-089b-4ff9-9e17-9d880129ac5c,paytm,1,negative,the app i am using from 5 years but for now for about 10 days it is showing that access denied and the number is blocked from using paytm what a non sense from the paytm side this should not be tolerated and don't use the app or download the app untill the issue get solved by them,281,paytm_negative,test
+20553594-70ad-4a7e-85ea-29b01c767003,gpay,3,neutral,"multiple payments get stuck. 3 days and my issue with Autopay still not resolved and that cost me money. something which was not even an issue from my side. was good for the last year, suddenly facing all these issues.",218,gpay_neutral,test
+53608ae5-ff95-4a56-8ae5-01ec1312e5aa,paytm,3,neutral,app install kane p open nahi ho raha update maang raha update kaise kare,72,paytm_neutral,test
+34bd5ac6-3750-43ad-980d-b2b6e952c9f7,phonepe,4,positive,good,4,phonepe_positive,test
+ccf66434-aafd-4551-a38a-5210f471db2e,gpay,2,negative,"Google pay Conveyance fee is going skyrocketing day by day. Unless i have Axis Ace card, i had uninstalled this app long ago.",125,gpay_negative,test
+67aa51b0-3536-483d-9b18-0b8fc83e59a9,paytm,1,negative,"App not opens with security alert, instructing to contact customer support, but no contact number provided on website. One number is for business and other is invalid.",167,paytm_negative,test
+026c9e22-25e2-4d76-888e-cef478bd8b51,phonepe,5,positive,very nice 👍 app,15,phonepe_positive,test
+f9470960-9303-4c90-843c-3ccf6b3e3fcf,gpay,1,negative,does not verify mobile no.,26,gpay_negative,dev
+a70992f3-c9ab-4a02-b959-67d019688edf,paytm,5,positive,very nice,9,paytm_positive,test
+d49976fd-7717-47dd-8395-2a60267b3ae4,phonepe,1,negative,"I have had a truly terrible experience. I have been using this service for the past seven years, and never before have I encountered a situation like this. My account is showing as blocked due to ""security reasons""—despite the fact that I haven't done anything wrong—and the same issue is affecting my wife's account as well. Raising a support ticket has proven completely futile.",380,phonepe_negative,test
+bc6b08a6-8ed7-43c5-a44c-8de3020fb7ca,phonepe,3,neutral,nice 👍,6,phonepe_neutral,test
+2cd2399e-0171-414c-9ce6-c368d53c44e9,phonepe,1,negative,sms not sending,15,phonepe_negative,test
+e910cd70-8943-4113-a022-7badc3a2cb7f,phonepe,3,neutral,good,4,phonepe_neutral,test
+0a4efe80-54da-4c55-98f4-f8f95b9fadc8,phonepe,3,neutral,super,5,phonepe_neutral,test
+b76696bf-f6e3-4583-803d-206d16a0f699,paytm,5,positive,👍,1,paytm_positive,test
+e2cedf40-4dcc-4d1f-b821-2ece0a2cd6de,paytm,2,negative,good app🙂,9,paytm_negative,test
+780f12c9-7516-4870-87d9-d0b3691c6275,paytm,4,positive,excellent,9,paytm_positive,test
+ef91ed3a-b5ea-4512-9caf-03fef0de6c85,gpay,1,negative,"worst app ever, most of the transaction will be failed, but the amount will be debited, the very irritating app ever",116,gpay_negative,dev
+a6a9b284-0216-46ce-963f-5fa30b7f1d70,gpay,4,positive,"The transaction system is great and smooth, hardly faced any issues regarding that but the only thing which has no sense is the reward section, not a single useful coupon, added all unnecessary cashbacks or rewards for the apps or websites which is hardly or not at all used. Feels very stupid everytime I receive coupons for unwanted apps, I mean what's the point of the rewards then if you guys have no intent of giving actual useful ones. I hope it's improved and looked into.",479,gpay_positive,test
+4731502e-c7ce-4a31-a06f-fc3af8d65bc0,paytm,1,negative,चुटिया बनाने की मशीन पेटीएम जो बाहर बार मैसेज करती है कि आपको 60000 का लोन प्रोवाइड हो देखते जाओ तो कुछ नहीं मिलता बस चुटिया बनाते लोगों को फोकट में से डाल डाल के क्या आपका लोन 8000 का पास हो गया है,198,paytm_negative,test
+46ea70c9-2cf4-4435-8900-076946a5ef0c,gpay,3,neutral,good,4,gpay_neutral,test
+a44b145c-8469-4b5e-a09b-4c22f78d6840,paytm,3,neutral,I am unable to login showing rooted device detected please solve this issue,75,paytm_neutral,dev
+7164da38-9834-4fff-82b1-165e9db23df9,paytm,3,neutral,nice,4,paytm_neutral,dev
+c1af7ee1-8661-4432-98c3-230649ac1418,paytm,3,neutral,vs wd c es cd❤️we d xssdg ce s es fdx,37,paytm_neutral,test
+82c879a6-3d81-4634-a227-1819ee85fe6f,phonepe,5,positive,achca h,7,phonepe_positive,test
+0d2793ca-1fd8-456a-94fb-695e04a7537c,gpay,1,negative,not working,11,gpay_negative,test
+b3891707-05ba-4809-b55e-fd650c84a8c5,phonepe,3,neutral,ee app avardo dikkumallodidata makoddu lendi tarwatha next time kuda evvoddu ....delete cheseyandi e app,104,phonepe_neutral,dev
+b5df46d6-ae0d-483f-a927-1cb095d4dccb,gpay,3,neutral,why cn't i chake my balance of my SBI account?,46,gpay_neutral,test
+79e0bef9-e6a2-44cb-9941-d77d72cfa91e,phonepe,5,positive,Excellent....Excellent.....superb,33,phonepe_positive,dev
+88c9463a-efe0-4fb8-8ea1-c3cf79341d40,gpay,3,neutral,nice,4,gpay_neutral,test
+ea9d78ec-1bc8-4518-a84c-cb192c10ad42,gpay,1,negative,use scam voucher collaboration i use 1 redeem code and order package didn't receive their help line number is not reachable its been nearly 15 days,147,gpay_negative,test
+5ae6ba92-fe90-4ba6-a2d5-fbffbaa3cbeb,phonepe,3,neutral,Very good service Thankyou,26,phonepe_neutral,test
+5a676ab3-b049-486c-8dfe-783f8af531be,phonepe,3,neutral,good,4,phonepe_neutral,test
+8d5e8303-c677-49bf-8357-f8fb12e7c2f9,phonepe,1,negative,worst customer care service provided by phonepe better shut this company gpay is far better than this,101,phonepe_negative,test
+3c9a064a-e94c-47e1-9c5a-fbdb6b3ae857,paytm,5,positive,"sahi h yrr , thoda animation accha karo or kya",46,paytm_positive,dev
+481ccedd-b9c8-47a5-a303-9895a3184bc8,gpay,5,positive,very good,9,gpay_positive,test
+aca95b6b-75d8-43ae-93d7-cfaf87137ac1,gpay,4,positive,Secured safety app. because I changed my mobile phone yesterday but same number till now i can't activate. it's. verifying if it's me ... i believe my problem would be. solved. I love this app,192,gpay_positive,test
+8d8496e3-d0e9-46f6-af8d-545e39850c1a,gpay,1,negative,"Dear Team G pay, since 2 days Pay button is not working for any previous mobile number of customer, pl help to attend this on priority",134,gpay_negative,dev
+57a75b9f-91da-40c8-bd42-fd6bf79b165a,paytm,1,negative,"I can't open app , error Device integrity check failed .Root access or system modification detected.",100,paytm_negative,test
+28f7bb6e-bf74-48ce-b096-d9d0c8e57f8e,gpay,5,positive,अमेझिंग,7,gpay_positive,test
+ffa36c13-b73b-4697-914b-1a3d0e026c4c,phonepe,5,positive,Good keep it up,15,phonepe_positive,test
+da5f4ce7-afa7-418b-9aa7-282414c163d2,paytm,1,negative,very nice,9,paytm_negative,test
+e283ab8c-5b30-4642-b985-300d37b6d389,paytm,1,negative,The new weird security feature of accessibility could have been a recommended feature instead of a must do!,107,paytm_negative,test
+b9ed8726-3cb4-41bf-b9dc-721720056c29,phonepe,3,neutral,mujhe kal raat se auto back ki problem aa rahi hai me bahut pareshan hu app kholte hi apne aap bahar aa jata hai kya karu,121,phonepe_neutral,test
+d780c927-9b59-4c9d-aaff-5ee00654b93e,gpay,5,positive,very nice 👍👍👍,13,gpay_positive,test
+9a941c94-48e7-4d94-8204-331ec6a2070a,gpay,4,positive,great,5,gpay_positive,test
+9a9fad59-f87e-4b48-832a-a0314eee404b,paytm,3,neutral,Good,4,paytm_neutral,test
+55ae1134-886f-40c7-8029-0f020e7a4d9f,phonepe,3,neutral,satisfactary,12,phonepe_neutral,test
+65ae4e90-2af8-451f-9d20-2c5ac67bd1f9,gpay,5,positive,Best .. but issue ho raha hai abhi ...,38,gpay_positive,test
+9ce3473c-0106-427a-a253-bfb8bc53380b,phonepe,1,negative,Phonepe wallet PhonePe Wallet pays you back! Get up to 2% cashback on select categories and all PhonePe QRs. Recharge Amount ₹299 Platform fee(inclusive of GST) +3 Where is my cashback then?,190,phonepe_negative,test
+500a14c6-19d1-44e2-a309-43208aa7d8e9,gpay,5,positive,Nice application and user friendly one,38,gpay_positive,test
+deac190c-ab35-435a-a7b9-634f127981db,gpay,1,negative,this application is getting laggy whenever I open and I can't add money in upi lite every time failed showing,109,gpay_negative,test
+49df4545-f777-466d-9bac-7ee9ed837b50,paytm,3,neutral,for me it's the most effective way to use upi but there is just one issue that is reward money.other upi apps give way more rewards that's why i choose other UPI applications .,176,paytm_neutral,test
+897f8f70-5d35-43cb-9397-3d54627404f7,gpay,3,neutral,my money is refunded please activate my account,47,gpay_neutral,dev
+985dde92-7207-4195-a8fc-0a708bfa1024,gpay,3,neutral,ಗೂಗಲ್ ಪೇ ಇನ್ಸ್ಟಾಲೇ ಆಯ್ತಲ್ವಲ್ಲ,29,gpay_neutral,dev
+eb0842bd-b2d0-44e6-a1a9-3f889dec43be,gpay,5,positive,to good,7,gpay_positive,test
+d57b94d2-03dc-40f4-9ec0-763fd81997be,paytm,4,positive,good,4,paytm_positive,dev
+e9a2444a-ebfa-44df-ab6f-5c1b0d7b0aef,phonepe,5,positive,good experience,15,phonepe_positive,test
+4fe95982-307e-4af1-9c8a-4d07fa1b7771,gpay,2,negative,g pay is the best payment app,29,gpay_negative,test
+bbfc5744-c6ba-4bd8-8299-eda4267d4807,paytm,2,negative,"upi lite function not working. I had added Rs. 5000 in that, but not when I proceed to payment, the blank page appears and no payment is done. kindly help in the matter or refund it back into the account.",204,paytm_negative,test
+da266b12-2652-42f1-a568-87a8684e76cf,paytm,5,positive,good,4,paytm_positive,test
+88a326ff-0578-4c02-93b6-8340f0d73109,gpay,5,positive,Hi frdss Call me,16,gpay_positive,test
+746e7259-489c-40ca-9b7a-f159fbcfa440,phonepe,1,negative,"why you are locking customers with compulsory auto pay option. you give two options. 1)pay option 2)auto pay option. this is not correct system.customer will choose the option.you are not given opportunity to customers, customers given opportunity to you to make business.",272,phonepe_negative,test
+9e16435e-30b1-4ceb-823f-5da8b6b6c5e5,paytm,1,negative,I love Paytm app. one star is for their inaction on Paytm Wallet and tickets raised. Why is Paytm not acting on the RBI issue with paytm payments Bank? I am unable to use Paytm wallet. There is no way to withdraw from UPI lite on new phone and Paytm isn't responding promptly to the ticket raised regarding the same.,316,paytm_negative,test
+c74b17f1-09b5-4260-8988-adb768787665,phonepe,1,negative,upi lite has not been working for the past one week. I am repeatedly contacting phonepe support but no one gives a proper solution for that problem. my money has been locked they simply told me to login logout or update. The final solution is to uninstall and reinstall the app this is what they're following. After all these steps they directed me to raise a complaint in the banking ombudsman.,395,phonepe_negative,test
+6f4d8bd9-34b9-44ad-93d3-aa799a55d591,paytm,5,positive,thankiyu,8,paytm_positive,test
+0df664d3-5bfd-4f3e-ae51-0b46c275ec16,paytm,1,negative,फ्रॉड अँप refer che paise आलेच nahit,36,paytm_negative,test
+2197d739-fbf5-4941-85a9-e8f1c240387c,gpay,5,positive,v good,6,gpay_positive,test
+f21e91c4-d632-4d70-b58f-f24a477865d7,gpay,1,negative,"I am editing my review again, because the given solution portal also does not understand the issue, there is a chat option also not working",139,gpay_negative,test
+81a12baf-9cd4-42cd-a29c-1c1a343a34d2,paytm,3,neutral,"Takes a lot of time to open the interface , please make its interface smooth and fast",85,paytm_neutral,test
+2f838feb-c508-4e81-b366-c16e162ba2ce,paytm,5,positive,superb,6,paytm_positive,test
+9c8f6c09-a388-4959-a7c2-5c4c02b3eaa3,phonepe,1,negative,seen one youtube reel said phone pay asking 100 rs to use wallet forcefully so uninstalling the app with immediate actions.,123,phonepe_negative,test
+19630361-ae6d-4176-b42b-5e68a51c0527,paytm,5,positive,excellent service,17,paytm_positive,test
+cb75b1d9-1b99-4e58-9fb8-8cd37c942bb5,phonepe,5,positive,exlent,6,phonepe_positive,test
+744c68c9-f48a-4e1f-8998-dcf27ac5b5f6,paytm,3,neutral,"App's good and works well the only reason for giving 3 star is, the rewards shown and being received are totally opposite and when reaching to customer support the response is the reward scheme has ended. My question to Paytm team is, if scheme ended why it's being displayed continuously? Always old data are displayed on the app UI kindly update the app to display updated data on the app UI.",394,paytm_neutral,test
+2dfca050-4f32-479b-bc2e-c6f05de32d0a,phonepe,3,neutral,this app is good but it's has one serious problem that is when I rend some money to the stranger it's not show full UPI after the payment successful,148,phonepe_neutral,test
+dc9af723-4b2a-41c9-9432-a920f6eeef60,gpay,5,positive,"very very good Gpay, for emergency and anyway situation also like a cash GPay",77,gpay_positive,test
+64b103fd-536d-4f13-bbd9-dcd425575824,gpay,5,positive,good Service 👍👍,15,gpay_positive,test
+1b0b98d6-81eb-47a5-ab57-56af092349fd,paytm,3,neutral,"I love the app for mooth and faster upi payment. However, Upi circle features has not integrated yet in Paytm.",110,paytm_neutral,test
+b33c559e-867a-4980-b596-9ac8e290fdaf,gpay,1,negative,gpay to gpay payment kiye ... lekin nehi aaya primary account mein... absolute rabbis pay,89,gpay_negative,test
+a1b3ab24-5ed0-4dd0-872a-1c2d0f0461ea,paytm,5,positive,paytm is a good app 👌 👍,23,paytm_positive,test
+2039ecc3-b24e-4f21-97f4-1cacbdfcf07a,gpay,3,neutral,gpay is not working in some phones even it's a new phone... I cannot open it... In phone like IQOO and vivo gpay not working kindly check this issue,148,gpay_neutral,test
+b7c2b0c2-7fde-4c4c-b932-cbdd4896888a,phonepe,2,negative,Most Powerful,13,phonepe_negative,test
+90ada3dd-4d2f-4dd2-979f-e6474a93a03c,gpay,1,negative,"गूगल पे ऐप में लगातार पेमेंट फेल हो रहे हैं। Processing दिखाने के बाद दुकानदार को पैसे नहीं पहुँचते, जबकि हमारे खाते से राशि कट जाती है। यह समस्या बैंक की नहीं, केवल गूगल पे ऐप की है। यदि इसका तत्काल समाधान नहीं किया गया तो हम यह मामला सीधे कंज्यूमर कोर्ट और RBI तक ले जाएंगे। पूरी जिम्मेदारी आपकी कंपनी की होगी।",312,gpay_negative,test
+eba06f86-c88c-4e2b-8816-fe681d14ecbb,phonepe,1,negative,"Worst experience. I didn't get money on my primary account.My 3rd account, inactive account on getting money on my phonepe upi id. worst experience",147,phonepe_negative,test
+91828273-fdd6-4ba1-bbad-ca9580acb492,paytm,5,positive,super existing reward improve,29,paytm_positive,test
+eb44e478-4310-42f0-8487-8f38f22c6d90,paytm,5,positive,super,5,paytm_positive,test
+806c800a-52c2-4422-9c5b-23e0ad516ab9,gpay,3,neutral,"Dear Google pay store support team I'm facing a issue from last few days....when I open a Google pay its doesn't open ..it doesn't open with my face & finger print and not giving me a any option for enter to a password , lock screen anything... that's why nowadays I'm unable to use google pay & i face lots of problems ... please slove my issue",345,gpay_neutral,dev
+028ffbc9-df9e-48d3-8ea4-443473fa9fb1,gpay,3,neutral,To keep the UPI id of choice should be permissible like BHIM app which allows users to edit the UPI id. While google pay offers a selection of UPI id from available options which is not preferable.,197,gpay_neutral,test
+9be71150-5865-44ed-83c2-620890a981fd,phonepe,5,positive,good,4,phonepe_positive,dev
+0934044f-bf3c-4ffe-9743-77a69dcc71fe,phonepe,5,positive,very good 👍,11,phonepe_positive,test
+9cbef0bd-c390-4232-b2fd-971cfb7cbe6d,paytm,1,negative,not working...,14,paytm_negative,test
+1935d857-d8b6-48cf-867d-b0e0a02e5fa8,gpay,4,positive,👍 good,6,gpay_positive,dev
+deb1ba5a-b3db-4d42-952b-9bf13d4db7a6,phonepe,3,neutral,good on making payment,22,phonepe_neutral,test
+245fe654-f83c-43ea-a05d-26b117b3892e,gpay,1,negative,"Bandits! Highway robbers! Greedy thugs! I transferred some money to Google Play while in the USA. Now I'm in India, with no plans to return to the USA. But I can't spend the money stored in my wallet, and I can't get it refunded either. Google is a disgusting, horrible company.",278,gpay_negative,test
+59a8c63d-9414-48d9-ad3a-0a80dd8943da,paytm,1,negative,I WANT CASH BACK OFFER,22,paytm_negative,dev
+e5300e6d-8024-4e4a-a759-f5700bf553b3,phonepe,1,negative,phonepe kuch kam ka nahi hee dusre payment app cash back bhe dete hee jaise paytm navi super money,98,phonepe_negative,dev
+8ea2173b-7c94-4c50-aa31-3f325b9a4d42,paytm,5,positive,assalamualaikum,15,paytm_positive,test
+410e0de2-b32b-44db-bfc2-d88360986449,paytm,3,neutral,good 👍,6,paytm_neutral,dev
+0161bd21-4782-41d6-b443-ebd7dd45cbcf,paytm,1,negative,सर मेरा paytm 3 से 4 दिनों से under review में है कृपया करके इसे जल्दी से जल्दी ठीक कीजिए नहीं तो Date बात दीजिए कि कब तक ठीक होगा please sir help me 😭😭🥺 जल्दी से जल्दी ठीक करने की कोशिश करें please 🥺,200,paytm_negative,test
+cd378936-7861-403b-98af-7e06e0fd4b0b,phonepe,3,neutral,meassage is not poping while payment,36,phonepe_neutral,test
+233cfad8-e46b-47f1-8a20-b4bf3ec45743,phonepe,3,neutral,good,4,phonepe_neutral,test
+1a0a6771-a244-4467-b21f-692c046fad0b,phonepe,5,positive,best upi aap,12,phonepe_positive,test
+4fe93a5e-5ab4-41e8-8096-266e6124bb9a,phonepe,3,neutral,phone pay was transection are good but account activation problem any time pase this app so please solve this problem!,118,phonepe_neutral,dev
+d44a5793-11c2-4810-9837-f1680e343c9b,gpay,3,neutral,my gpay account auto log out and I call for complain it's totally useless ai don't know my question and keep wasting time. I'm gonna switch to phone pe now,155,gpay_neutral,test
+d1fbdc3a-b320-46e5-b180-2040e0006985,paytm,1,negative,"App not working, show error everytime.",38,paytm_negative,test
+1b047d71-0134-4ec3-9b4d-c9af2ec3f622,gpay,1,negative,I raised a complaint for my cashback but Google pay is not resolving my case on 13th September I raised my complaint but no one is helping out no customer support team is helping nothing if Google pay is reading this kindly respond via my email such a hell experience shamed on Google pay,288,gpay_negative,test
+8bf54c81-510a-48bc-b2a7-8568fa890a2f,gpay,2,negative,ty for y th nii hai tu hi my same,33,gpay_negative,test
+a3416543-8b54-400c-928d-d1568fec2f63,gpay,3,neutral,"In my case,I several time quoted my issues. Nobody turned on that. I closed an account in a Bank and Got NOC also. Now I am having a New account in another Bank. But Google not closed the previous account. Google Pay not working in my New Bank account. please clarify and revert. Thank you very much.",300,gpay_neutral,dev
+5b9f911d-3ff4-4b15-828c-ca21907b3984,phonepe,3,neutral,good,4,phonepe_neutral,test
+145694e3-3850-4984-810c-85eda7b27d4f,paytm,1,negative,"sabse bekar app hai , koi query ka support ni hai , wast hai , customer care bekar hai , isse use mat karna",107,paytm_negative,dev
+dc0d37b9-b7ab-4bb0-a1b8-b08490b8f401,phonepe,2,negative,my favorite aao,15,phonepe_negative,test
+d14f4b05-67e9-4429-b117-e87e09427126,phonepe,1,negative,this app is very useful app,27,phonepe_negative,dev
+4eea441e-b7e0-405b-a168-0b69d71d53a7,paytm,5,positive,good working,12,paytm_positive,test
+19d42332-c94e-4288-8a79-a6e65ac87ef7,paytm,5,positive,Nice app. Recharge quickly. Awesome one is-when you post ur No. then immediate shows d Number locality.,103,paytm_positive,test
+467e69a7-0dfa-41f0-8ba8-52d6486c60e1,gpay,1,negative,Such waste app to use.... no response from customer care department... no value for customers.... totally useless team who are working in Google..... from 3 day's app not responding correctly.....no quick response from customer care department,243,gpay_negative,test
+cc940009-d38c-4215-b5c0-4d7924f9df3e,gpay,1,negative,Why is it not navigating to the payment confirmation page. After completing the payment asking to enter pin again.,114,gpay_negative,test
+c0e777c7-a46b-409c-9f90-4a660f589e5f,gpay,5,positive,g pay is very eg pay,20,gpay_positive,test
+df594cec-7802-432f-abea-1368692eed4f,paytm,3,neutral,Of late adding balance in upi lite also select auto top up and no option to disable it. I dont want auto top up and unable to understand why it is being forced?,160,paytm_neutral,test
+008ccc8c-ac79-4ccb-bf2a-15fb37681be6,phonepe,5,positive,viry good,9,phonepe_positive,test
+381a74fa-a571-4d06-9212-66426e9825fb,paytm,3,neutral,good,4,paytm_neutral,test
+5462b429-9671-4d32-bdf4-961901fe4578,phonepe,5,positive,nice,4,phonepe_positive,test
+8f41b793-9879-4344-a064-6ff82e1a843f,gpay,3,neutral,BBPS based Credit Card Bill Pay shows duplicate bills for cards with shared limit. No way to mark it as paid.,109,gpay_neutral,test
+5fcc78bf-0356-4a82-9b23-b63827f53676,paytm,3,neutral,the Loan application said that 100000 is an approved load but you have to pay 199 after payment 199 the loan is rejected and 199 also not refunded very sorry to say that the scam is 199 and for a middle class family very pathetic for this loan development of paytm is promoting i am cursing that why this stupid payment recommending this kindly of loan application THE INSTA MONEY APP VERY BAD EXPERIENCE. VERY SORRY TO SAY This PAYTM BEING Scammed partner the insta money app Worst experience,493,paytm_neutral,test
+48487c02-9398-4bbf-940b-7b877ed15291,paytm,1,negative,"it's lair What is this Rs 250 service charge for closing the sound box? Close it and take your box away.""More Professional & Firm (Best for customer care or written complaints):""What exactly is this Rs 250 service charge to deactivate the sound box? Please close this service and take back your device.""",303,paytm_negative,test
+1d9ce796-301a-4fca-8226-5e94d4e70e1f,gpay,3,neutral,Not working properly on weekends. Banks blame u. u blame banks.,63,gpay_neutral,test
+9d1b6bf0-7a77-478c-a1b0-421563ba7aff,phonepe,3,neutral,good,4,phonepe_neutral,test
+d598b5e4-a0d4-4a3c-9999-f5a83cc14f1c,gpay,3,neutral,Thanks for the support login and bank account add issue now resolve but it take to much time.,93,gpay_neutral,test
+3ad203dc-2a11-44b0-9843-60a07de568a6,paytm,3,neutral,error message device environment is not correct I have sent the details u have asked in this regards on 22nd Feb but still I haven't got any resolution,151,paytm_neutral,test
+70e26158-763b-410c-8be3-b35cf86804b5,paytm,3,neutral,good performance,16,paytm_neutral,test
+ac228823-74b9-4fbe-b599-00718ea24d36,phonepe,5,positive,nice,4,phonepe_positive,dev
+eb4244d6-f1af-45ba-b5f3-696048365b3f,paytm,1,negative,update version not working properly,35,paytm_negative,dev
+2dd76491-33cf-4b21-bdce-92e8c9240641,gpay,5,positive,very good,9,gpay_positive,dev
+a69c50f9-9cec-4918-8256-12a5e86f1050,gpay,4,positive,someone sent to money my g pay... but money received showing in phonepe... any solution?,88,gpay_positive,test
+ff1d7f76-04cd-4fba-9f11-64db636cb7fc,phonepe,1,negative,total fraud phone pay gold savings yaru phone pay li gold save madbedi nandh 1 day 500 add hey madilla screenshot yalla kalsidini but 10 days adru yaru response madthilla yaru phone pay li gold savings madbedi,209,phonepe_negative,test
+687a9725-b6d5-4774-bbed-00b23311706e,gpay,3,neutral,good,4,gpay_neutral,test
+c27aaec8-be54-4691-8764-1b7c55829fdd,gpay,3,neutral,"why is it becoming so inaccurate nowadays , checking balance is becoming difficult. why is the amount deducted not showing up in actual balance checking when I've already transferred money .",190,gpay_neutral,test
+2bafc96f-60d0-43e2-a420-0ffcdca6ffd8,gpay,4,positive,good,4,gpay_positive,test
+103856b2-f862-4cbc-8bd9-e48b515eb0b1,gpay,3,neutral,"upi pin page ui has bugs especially on notch and bottom navigation bar after one ui 7 android 15 update on galaxy A15 5G device. fix this first, so annoying.",157,gpay_neutral,test
+7ec4969c-afa2-4663-b484-20ab08282057,paytm,5,positive,very nice app very helpful,26,paytm_positive,test
+ea6328f8-4fa2-4199-be66-d2a8456854a9,gpay,3,neutral,"Self transfer is not happening smoothly. When I tried to transfer money to my own account, the amount got credited to the destination account and debited from the source account, but GPay kept showing “transferring” for a very long time. Please look into this issue as soon as possible because we are confused about whether to go back or stay on that screen. Even if we go back, there is uncertainty about whether the transaction was successful, which is very frustrating.",472,gpay_neutral,test
+d464cfb2-925e-40a6-b2b9-a70e6c1350d7,phonepe,5,positive,Best app I ever seen in my lifetime. seemless transactions on fingertips.,73,phonepe_positive,test
+f896c9c7-0319-4f86-bb19-f5a2f4277d3c,gpay,5,positive,nice app,8,gpay_positive,test
+ffcfb640-5e8d-4e52-8421-384e886754c3,gpay,1,negative,"Not a suitable experience felt this time, booked HP cylinder, but didn't get confirmation yet, already exhausted more than 48 hours, debited amount has not credited to bank account yet, already had conversation with customer care twice, but failed to solve my issue..",267,gpay_negative,test
+422a1616-4c7d-4045-bb96-739e938566e8,gpay,5,positive,"​""Great app, but needs an in-chat transaction summary. Please add a small bar below a contact's name showing total money Received (in green) and Sent (in red). Adding a date filter (e.g., specific date ranges) to auto-calculate these totals would save so much time spent scrolling back-and-forth through chat histories to calculate mutual expenses!""",349,gpay_positive,dev
+aa996502-7d2d-406d-b4cc-aee28633c2eb,gpay,2,negative,I have been using this app for a long time but recently when I changed my phone I cannot link my bank account with this app. I tried many times with updating apps and settings but the problem is the same. What is the solution ?,227,gpay_negative,dev
+65835e9e-ee5a-44fa-977e-c33ebfcea25c,phonepe,4,positive,good 👍,6,phonepe_positive,test
+2cab5c2f-20d3-4601-a530-f2ec36640653,paytm,1,negative,Dear paytm developer I am unable to use paytm as every time I try to login it shows connection has time out. The page you are trying to open is taking too long to respond. please help me out.,191,paytm_negative,test
+74d2a768-2f43-42f7-8ffd-1b1232b2524b,phonepe,1,negative,"I've received a 25,000 on 27th July @ 3:10 pm on paytm through paytm but the amount is not showing in my main balance till date",127,phonepe_negative,test
+d216a302-5b97-4cc6-aa05-ddc120d36149,gpay,1,negative,"I left all the upi app and used Google Pay, but why is there no cashback or rewards?",84,gpay_negative,dev
+58ff9924-f19d-4959-980d-42b0ed679d47,phonepe,1,negative,good,4,phonepe_negative,test
+d11538d4-814d-4fac-9e65-08323012e9d7,paytm,4,positive,fantastic always good working 👍,31,paytm_positive,test
+bbcf99ef-1a83-48e7-85ea-e8327b87ce9c,phonepe,1,negative,no safety for our money,23,phonepe_negative,dev
+e3538c7e-0f82-4ec0-b42e-3db715a916be,paytm,3,neutral,"Everything gone wrong as RBI misusing PAYTM PAYMENTS BANK data: Today i have The worst service and remebering the start of Paytm, as the App misleads you and hide the information that can make this App the no. 1, please Support otherwise strict Guidelines will destroy everything in the Country.",295,paytm_neutral,dev
+de320210-9c09-44b9-9037-3d099b93765d,paytm,3,neutral,best,4,paytm_neutral,test
+fe07cbd8-6c07-4290-93a1-1669416fa0e0,gpay,1,negative,very bad.,9,gpay_negative,test
+a5f86ec8-ea1b-4f14-bd03-a9a2eb6f3b5c,phonepe,5,positive,I am very happy with this app,29,phonepe_positive,test
+479feec9-aca5-428e-a14b-7915cb0f98e8,paytm,5,positive,excellent,9,paytm_positive,dev
+4d460bec-c987-48b0-8219-9a3915f7f691,gpay,3,neutral,ठीक ठाक है,10,gpay_neutral,test
+451be414-1f30-4bfa-8bf1-78ade3252fb0,phonepe,5,positive,Best 👌,6,phonepe_positive,test
+c0c82a27-f492-4513-88f1-a63bd3acd821,paytm,5,positive,"It's completely easy to do transactions with this. You can't face any kind of problem related to any transactions. Fast and secure method to do payments. I like this too much rather than other UPI apps. Thank 😊 you so much Paytm to make my transactions Fast, Secure, And Easy.",276,paytm_positive,dev
+feb7f9c0-b420-46a7-92b3-1a5df6803809,gpay,1,negative,bekar or gatiya type k rewards k liye aap ise download kar sakte he. itne bekar rewards dega jo kisi k kaam k nahi hote aap rating bhi de to in par koi fark nahi padta,167,gpay_negative,dev
+0cda0859-801d-41ee-820f-a79e57cbc0d6,paytm,5,positive,great,5,paytm_positive,test
+ba5c27bc-cd9c-4142-b537-5cf2159bf4f9,paytm,5,positive,good experience,15,paytm_positive,dev
+67b68ed0-b2d0-4ec8-a6e6-ae93028cdf50,phonepe,3,neutral,Very good app,13,phonepe_neutral,test
+fa83708e-fc83-42c8-a89d-870b9644756f,phonepe,1,negative,not allowing to share more than 5000 per day,44,phonepe_negative,dev
+f1a93b2f-74dd-45a4-b228-297e175993b5,paytm,5,positive,best app for upi,16,paytm_positive,dev
+45774659-3052-4d59-9d8c-fb0d9eecc23b,gpay,3,neutral,"There is a problem in taking loan on Google Pay. The monthly income of Google Pay is Rs. 100000, why would any person take the loan. Please fix this problem? 😮‍💨",161,gpay_neutral,test
+e171c1d0-b2fb-49e7-8ad0-f54fe4bc7ac2,gpay,3,neutral,"The app works very well for payments. I am using an iQOO phone with on-screen navigation buttons, but while entering the UPI ID during payment, the bottom navigation bar overlaps the input field. Is there any solution for this?",227,gpay_neutral,test
+85bed264-88fc-4878-99fe-06a2f8fc86b8,paytm,1,negative,is very fantastic Paytm,23,paytm_negative,test
+b12af237-16e8-4d7c-b597-88c4181f6ac0,gpay,1,negative,I already have updated version but it's not working 😔 kindly fix the bug.,73,gpay_negative,dev
+d0cf6edc-327b-4c1c-ad84-3f35330e7340,phonepe,5,positive,"Good, Easy, Convenient, Economical, perhaps safe",48,phonepe_positive,test
+b204c921-cd26-46a2-9726-26f31ca13d0d,gpay,5,positive,great,5,gpay_positive,dev
+0d8b4174-2de5-4c7e-988c-dbf853cded75,gpay,1,negative,mast app,8,gpay_negative,test
+12ed9837-73e4-4bdd-b99d-c0182659d2e5,paytm,3,neutral,it's slow but good 👍,20,paytm_neutral,test
+a5b57079-9bb4-451e-8f6c-803a449c6c76,phonepe,1,negative,Cannot buy vouchers. ALL vouchers ALL brands give the same error.,65,phonepe_negative,test
+ab8ed7f1-640b-427e-9ac0-9eb501ff70a7,paytm,1,negative,"very very poor response by your support team, i want to delete the account but no one replied ke on my ticket. जाते जाते भी कुछ अच्छा नही कर पाए आप लोग",151,paytm_negative,dev
+7d000ab1-60f5-47ed-ade9-4a56b7a9b51c,phonepe,1,negative,transation problem is more then ...,35,phonepe_negative,test
+9ec49158-d7b0-48c7-a7c0-dfea95a64f9f,paytm,3,neutral,do not purchase gold for this app iam purchase RS2500 with 3%tax gold world for 2428 return for RS3 but withdrawal I seen only 2300 only,136,paytm_neutral,test
+ae0dd14d-7919-43dc-b0db-2a744ad4e16e,phonepe,5,positive,good job,8,phonepe_positive,test
+3fa53b67-22f3-4fbe-a0b3-8d550738024f,gpay,3,neutral,dewg,4,gpay_neutral,test
+73f60149-2b69-4db3-a955-4b34e50c8406,phonepe,3,neutral,bina kisi suchna ya mere se permission ke paise kaat leta hai ye thoda risky lagta hai aap yewala,97,phonepe_neutral,dev
+26916124-2142-47e0-9df5-17eb599aca99,gpay,1,negative,"I have been using this app for many years now, it was reliable compared to other apps but since the new Android update rolled out the App stopped working. Apps get hanged for sometime then crashes. If i uninstall after clearing the cache and reinstall after sometime , i could login but again the same story. I am facing this issue for more than Weeks now.",356,gpay_negative,test
+e1c56aec-85d6-4a24-baef-1b38001d5acb,paytm,3,neutral,Your device is not secure Warning [00000] I'm facing this issue currently and my phone has not any type of third party app yet my paytm is not working Again and again I'm facing this issue please solve my this issue as soon as possible Thank you,245,paytm_neutral,test
+68e445b9-6553-4527-9e56-c385261b3161,paytm,3,neutral,fast payment. But no Cashback,29,paytm_neutral,dev
+3367fff5-04fd-4add-9a32-b0576ef41506,gpay,5,positive,so good 👍👍👍👍😊😊😊😊,16,gpay_positive,dev
+a15485b7-ca28-4cef-998b-acf8b2033e48,phonepe,3,neutral,kindly add a suggestion option in the application. There are only predefined ai based support options only. what if the customer wants to suggest some points for a better user experience and accessibility? what if the predefined options are not covering the issue / topic which the customer wants to raise? Suggestion: kindly add an option to filter the statement for check the transaction through cards cumulatively and separately if there are multiple cards and the features for bank accounts.,495,phonepe_neutral,test
+56638d1d-8f87-49ab-9200-6d14bcd89b06,paytm,5,positive,nice,4,paytm_positive,dev
+3cf3883a-2395-41f9-aa13-84bd3803adf1,gpay,1,negative,worst experience in this app 👎❌❌ no cashback and transaction issue many times 🤬😡🤬 don't use this app 👎😞🙏,104,gpay_negative,test
+2f894b81-97e6-470b-adb4-73d838b8e440,paytm,5,positive,very useful nd easiest 👌,24,paytm_positive,test
+10a39626-3012-45c5-94ae-24f45a9029b7,phonepe,5,positive,good 👍🏻,7,phonepe_positive,test
+da745611-9b7a-4a63-8b01-114cd1a68a26,paytm,5,positive,Nice 👍,6,paytm_positive,dev
+6f834095-ad35-4137-b177-35ffe380deba,phonepe,3,neutral,there was an initial problem in making transfers. now it is fine.,65,phonepe_neutral,test
+26865c5a-cdd8-4102-a791-e3db7ed989bc,paytm,5,positive,finally paytm removed its sound while balance checking im so happy,66,paytm_positive,test
+0bbf54fb-1c5d-46ae-8aed-99e1c72d3230,phonepe,5,positive,good 👍,6,phonepe_positive,test
+bcdad1bb-6292-4cd3-ba40-456b339f2d99,gpay,3,neutral,when ever I share a screenshot or refferal link it's gets crash i updated gpay and everythings fine,99,gpay_neutral,test
+cea442f2-fedc-4176-b8dd-e273cd9eec25,gpay,1,negative,निम्नकोटिका निकृष्ट ऐप है जिसका नाम Gpay है भूलकर भी ऐसे ऐपका प्रयोग ना करें और ना ही किसीको करने दें अन्यथा मेरी भाँति आपको भी दुःख भोगनेसे संसारकी कोई भी शक्ति बचा ना सकेगी॥ मानना हो तो मेरी बात मान कर सुखी हो लो अन्यथा दुःख भोगो किसने रोका है॥,246,gpay_negative,test
+fdd817ef-232f-4c5d-bbe2-51938d30828c,gpay,1,negative,i was so disappointed my money was disappeared from my account i contacted the customer care they are so irritating but they are so irresponsible about what i told to them,171,gpay_negative,dev
+fd73bdbb-931a-4d31-a1eb-f2887ea6d8f1,paytm,3,neutral,"After app update I cant login in paytm app it ""Device environment is not correct"" please resolve it soon as possible "" paytm is good app and user friendly environment and please resolve my issue iambic user of 3 years for your paytm app I trust your app don't make trustless",274,paytm_neutral,dev
+a6ff0d68-3e08-41a9-b646-82be1a8f8cad,paytm,1,negative,lousy app. not opening promotional qr code.,43,paytm_negative,test
+379229b9-2c0c-43d7-8a09-b11c052d3d2b,phonepe,3,neutral,nice experience in the phone pay,32,phonepe_neutral,dev
+dbb416d5-dccb-4569-98c6-e4d7b0c62cc3,phonepe,3,neutral,very useful,11,phonepe_neutral,test
+f638f966-21b0-4aea-9621-4b652abc5fe1,gpay,5,positive,when I click on scanner I can't do it I can't pay on scanner to shopkeepers,75,gpay_positive,test
+d15bbb7a-44bc-4991-8128-7e8b7a2ebf0c,gpay,5,positive,Usefull application for important Related documents with len den Rupees,71,gpay_positive,dev
+f36b086a-2636-4d43-adce-ac1dbbbcf8bd,gpay,4,positive,i hav an bank acnt in boi but i can't link my bank acnt to Tezz,63,gpay_positive,test
+b26a015e-1e86-448c-af9b-9d57f6827893,paytm,1,negative,nice,4,paytm_negative,test
+3a09a161-96ff-4d1a-b02e-98e44b67ea31,paytm,5,positive,it's good,9,paytm_positive,test
+795343d7-7442-4a05-88ee-377964b47b2d,phonepe,3,neutral,good app 💯,10,phonepe_neutral,test
+4ef3b080-3209-4d98-99e4-540c98b82e5b,gpay,5,positive,Jai Hind,8,gpay_positive,test
+7ee2efa7-4b34-4bef-bf7c-ce862b79578e,paytm,1,negative,paytm app is the most easist way to transfer money and payment to any scanner,77,paytm_negative,test
+66137859-74c4-41de-b2a9-0f9e9eab5fd7,paytm,4,positive,very good,9,paytm_positive,test
+526ee6ce-d006-4d39-8146-a8ede6bf7e2b,gpay,5,positive,vary good,9,gpay_positive,test
+ccf75dc3-7320-426d-b3c1-e1fc1a13dcf5,phonepe,1,negative,the new feature called phone pay protect does not allow any payment.... and the app cannot be used as routine.... it may have added security but it has caused trouble more than any benefit.,189,phonepe_negative,test
+8a88dfa2-2f40-4011-a63b-f65b1bd7a540,phonepe,3,neutral,this app is very helpful for transaction money,46,phonepe_neutral,test
+1865cfc3-492d-40c8-a878-da7c7042eeec,phonepe,3,neutral,good 👍,6,phonepe_neutral,dev
+ef5ab32e-f2e8-4264-8170-b6c5cf5a7f42,phonepe,5,positive,good sarvice,12,phonepe_positive,test
+10c4af69-8446-4bbc-83db-3413e6a186c7,paytm,5,positive,good App,8,paytm_positive,test
+5518963c-2b65-4aca-8933-deafe53e5da2,phonepe,3,neutral,best experience,15,phonepe_neutral,dev
+decc6a53-2df0-4be6-9523-103254434bfe,paytm,2,negative,The paytm app after the update stopped working . Giving error 81004. Please.revert back to working version,106,paytm_negative,test
+b04056bd-9d28-42b8-9b89-d6717a40ce39,paytm,3,neutral,Taking too much time to proceed. Expecting an immediate action.,63,paytm_neutral,dev
+2412bae7-585c-470a-8f17-5f5f84ac9198,paytm,2,negative,"I am facing an issue while trying to log in to the Paytm app on my Samsung S24 device. After entering my mobile number on the login screen, the app becomes unresponsive and I am unable to tap anywhere on the screen. Because of this, I cannot proceed to the next step of the login process. I have already tried reinstalling the app and restarting my phone, but the issue still remains. Please look into this problem and provide a solution as soon as possible.",458,paytm_negative,test
+bf6d43fc-a040-4973-9d29-6b4cfe696bfd,gpay,5,positive,very nice application,21,gpay_positive,test
+b3f8c59f-fe0a-4e0a-b02f-1f131d0881f7,gpay,4,positive,"Good, fast, efficient App. But rewards are useless. Not getting any cash back, one line statement ""Better luck next time"". Either change or don't give any reward option.",169,gpay_positive,test
+8f54c1ad-8f89-4a8f-bd58-9cdd72262927,gpay,3,neutral,GOOD APP FOR UPI PAYMENT,24,gpay_neutral,test
+82d8a686-1f2a-4959-8a74-91cdd3a7da78,gpay,3,neutral,it was fine till now but now uts not even opening for me,56,gpay_neutral,test
+429691bc-483e-4003-a8d4-20b7d9998257,gpay,3,neutral,i having issues with payments from two days,43,gpay_neutral,test
+9a8a9a70-6d12-4ad8-b7d6-16726663e3e6,paytm,1,negative,मैंने पहले Paytm Customer Care में शिकायत की थी कि मेरे UPI Lite में अपने आप पैसे जुड़ जाते थे। लेकिन मेरी शिकायत का कोई समाधान नहीं किया गया। इसके बाद मैंने Paytm का उपयोग करना पूरी तरह बंद कर दिया और ऐप भी अनइंस्टॉल कर दी। Paytm की सेवा से मैं बेहद निराश हूँ। यह बहुत ही खराब और गैर-जिम्मेदाराना सेवा है।,306,paytm_negative,test
+71b0e967-a9e4-44f6-bbef-4fbb67f4e03a,phonepe,1,negative,charging 100+gst for inactive wallet ... uninstalling,53,phonepe_negative,dev
+70ce17f0-bb99-4556-b4c4-11837de3dc6f,phonepe,3,neutral,good application,16,phonepe_neutral,test
+76338f5d-4b6e-4da8-8c53-ec023f2765bb,paytm,1,negative,Paytm bahut kharab app hai ise kam se kam istemal Karo mere UPI lite me 2800 rupay fase hai 3 din ho gye na nikal rhe hai na return ho rhe hai 🥺,144,paytm_negative,test
+bd883444-e0be-4809-9275-b60fbbf092c7,paytm,5,positive,chalane ke bad,14,paytm_positive,test
+1bd93aa2-8d90-4a61-9b07-7f19e3ee452c,gpay,1,negative,everytime I put otp to sign up it says opps something went wrong this have happened with me about 50 times,106,gpay_negative,dev
+60d681e1-d271-4341-99bc-f42f4e4a963e,gpay,1,negative,Never knew this convenience would turn out to be the biggest inconvenience of life.. so disappointed 😞,102,gpay_negative,test
+196da4f1-711b-4885-acef-0046bb68bc1b,gpay,1,negative,"this app is harassing me endlessly in my Facebook games, getting nothing but their ads that gave no way to exit them! I have sound off in all fb game ads but the Google play don't have any option to cut sound. and the ads for games the sounds are louder than my settings. this is blatant harrassment! At this point 10/18 I'VE HAD TO STOP PLAYING MY FB GAMES. literally have to close all apps between each game/round and go back in to make these horrible ads stop. STOP HARASSING ME!!!",484,gpay_negative,test
+f8164999-bcdb-45a8-96af-f89071ea8d32,gpay,4,positive,I am testing UPI circle but I didn't get notification that secondary user wants to make payment.,96,gpay_positive,test
+6f47db1c-e470-4d12-bd9e-96fe38aac454,paytm,3,neutral,good,4,paytm_neutral,test
+fa662dc7-9923-4fc9-a84f-ab260e493f26,phonepe,5,positive,best experience with phone pay,30,phonepe_positive,dev
+71d8055b-47bf-4b64-901b-2f871884b9d7,phonepe,5,positive,best apps,9,phonepe_positive,test

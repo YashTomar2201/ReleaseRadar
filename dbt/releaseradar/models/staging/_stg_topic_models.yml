@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: stg_review_topics
+    description: One row per (review, topic) positive classifier prediction.
+    columns:
+      - name: review_id
+        tests: [not_null]
+      - name: topic
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['payment_failure', 'refund_delay', 'login_otp_kyc',
+                          'account_blocked', 'bank_linking', 'app_performance',
+                          'ui_ux', 'customer_support', 'fraud_security',
+                          'rewards_cashback', 'fees_charges', 'ads_spam',
+                          'bills_recharge', 'autopay_mandates', 'investments_gold',
+                          'travel_booking', 'general_praise', 'uninformative']
+      - name: app_key
+        tests: [not_null]
+
+  - name: stg_review_flags
+    description: One row per review with the churn_intent prediction.
+    columns:
+      - name: review_id
+        tests: [unique, not_null]
+      - name: churn_intent
+        tests: [not_null]
+      - name: app_key
+        tests: [not_null]
