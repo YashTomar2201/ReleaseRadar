@@ -701,6 +701,36 @@ example, since this is a common Power BI modeling gotcha that produces
 silently wrong numbers if missed (the inactive relationship just
 returns 0/blank instead of erroring).
 
+## 2026-09-19 — Phase 10: storytelling and packaging, project complete
+
+Wrote the recruiter-facing `README.md` (TL;DR, architecture diagram as
+Mermaid rather than an unsavable screenshot -- this session has no
+OS-level screenshot tool, only browser-page tooling, so a hand-written
+Mermaid diagram that GitHub renders natively is both more reliable and
+matches the roadmap's own Phase 10 example), 3 PM briefs with real
+numbers pulled directly from the warehouse (`reports/briefs/`), and
+`reports/RESUME_BULLETS.md` with role-targeted variants.
+
+**Went back through `project_charter.md`'s original Success Criteria
+and reported actual results rather than quietly dropping unmet ones:**
+the 0.75 macro-F1 target was not met (0.556 actual — the target assumed
+~5,000 LLM-labeled examples this project never had budget for); the
+"70% recall" early-warning target turned out not evaluable at all given
+only 1 confirmed incident (not the 15-25 originally planned); the
+placebo-p-value and PM-brief/methodology/README deliverable targets
+were met. Recording the misses alongside the hits is the same
+principle this whole project has followed since Phase 1 -- a
+resume/interview story built on selectively reported success criteria
+would be exactly the kind of thing a careful interviewer catches.
+
+**Two items intentionally left for the user, not faked:** the
+120-review blind spot-check (independent human validation of the topic
+classifier) and the Power BI `.pbix` GUI assembly step. Both are fully
+prepared (packet + scoring script; full build guide) with clear
+instructions, rather than skipped silently or their results invented.
+
+This closes all 10 phases of `ROADMAP.md`.
+
 ## (Template for future entries)
 
 **Decision:** ...

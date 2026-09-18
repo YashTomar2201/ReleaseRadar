@@ -32,11 +32,29 @@ per app), giving statistical power for daily/hourly analysis.
 3. What share of users threaten to switch, to which competitor, and why?
 4. Which issues cost the most rating/churn, and what should be fixed first?
 
-## Success Criteria
-- Topic classifier: macro-F1 ≥ 0.75 on a held-out hand-labeled set
-- Early warning: detect ≥ 70% of logged incidents with ≤ 1 false alert/app/week
-- Release impact: every effect reported with a placebo-based p-value
-- Deliverables: Power BI dashboard, 3 PM briefs, methodology doc, README
+## Success Criteria — actual results (see methodology.md for detail)
+- Topic classifier: macro-F1 ≥ 0.75 on a held-out hand-labeled set —
+  **not met** (0.556 achieved). The 0.75 target assumed ~5,000
+  LLM-labeled training examples per the original roadmap design; actual
+  training data was 374 examples (no API budget for bulk labeling — see
+  decision_log.md). Reported honestly rather than adjusted after the
+  fact to look met.
+- Early warning: detect ≥ 70% of logged incidents with ≤ 1 false
+  alert/app/week — **not evaluable as originally framed.** Only 1
+  incident could be independently confirmed within any app's data
+  window (not the 15-25 the roadmap planned), so "70% recall" is
+  statistically meaningless at n=1. The 1 confirmed incident WAS
+  detected; false-alert rate came in at 0.70/week (Google Pay, meets
+  the ≤1 target), 1.12/week (PhonePe), 1.33/week (Paytm) (both exceed
+  it slightly).
+- Release impact: every effect reported with a placebo-based p-value —
+  **met** (all 12 usable releases).
+- Deliverables: Power BI dashboard, 3 PM briefs, methodology doc,
+  README — **mostly met.** PM briefs, methodology doc, and README are
+  complete. The Power BI dashboard's data layer, relationships, DAX
+  measures, and full build spec are complete and committed; the actual
+  `.pbix` visual assembly requires a hands-on Power BI Desktop session
+  (no GUI-automation tool available for that step — see decision_log.md).
 
 ## Out of Scope
 iOS App Store, non-English/non-Hinglish reviews (documented as a
@@ -57,4 +75,17 @@ phase-by-phase plan.
 - [x] Phase 7 — Brand-Switching Map (true competitor-mention rate 0.54%, much lower than Phase 3's inflated self-mention-including estimate; rule-based relation classifier validated at ~85-95% precision, imperfect recall; headline: PhonePe is the net beneficiary of switching among the 3 tracked apps -- see decision_log.md)
 - [x] Phase 8 — Issue Cost & RICE Backlog (app_performance is #1 RICE-ranked issue for all 3 apps, 99-100% stable under effort-uncertainty Monte Carlo; ui_ux flagged for manual review -- positive rating coefficient; reach uses verified Play Store downloads as an MAU proxy -- see decision_log.md)
 - [x] Phase 9 — dbt Marts + Power BI Dashboard (full star schema in dbt, 11 tables exported to CSV, DAX measures + page spec written in dashboards/POWERBI_BUILD_GUIDE.md -- actual .pbix assembly needs the user's own Power BI Desktop GUI session, no automation tool available for that -- see decision_log.md)
-- [ ] Phase 10 — Storytelling & Packaging
+- [x] Phase 10 — Storytelling & Packaging (README.md, 3 PM briefs, RESUME_BULLETS.md, methodology.md overview -- see decision_log.md)
+
+## Project status: complete
+
+All 10 phases built, validated, and documented. See
+[README.md](../README.md) for the recruiter-facing summary,
+[decision_log.md](decision_log.md) for the full reasoning trail (every
+bug found and fixed, every design choice and why), and
+[RESUME_BULLETS.md](RESUME_BULLETS.md) for ready-to-use resume content.
+One item remains for the user to complete outside this session: the
+120-review blind spot-check (`data/labels/SPOTCHECK_INSTRUCTIONS.md`)
+for independent human validation of the topic classifier, and the
+manual Power BI Desktop assembly step
+(`dashboards/POWERBI_BUILD_GUIDE.md`).

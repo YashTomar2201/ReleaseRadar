@@ -4,6 +4,29 @@
 > skeptical interviewer's questions get answered from — see
 > `decision_log.md` for the full reasoning trail behind each choice.
 
+## Overview
+
+This document covers, in build order: data collection and its real
+limits (a Play Store pagination ceiling and a ~24-25h indexing lag that
+silently corrupted two early models before being caught), EDA findings,
+topic/churn classification and its honest accuracy numbers, causal
+release-impact analysis (headline: a validated **null result**, not a
+disappointing one), early-warning detection (validated against exactly
+one independently-confirmed incident, not the larger set originally
+planned), a brand-switching map (built on a corrected measurement — the
+true competitor-mention rate turned out an order of magnitude lower
+than an early estimate), an issue-cost/RICE backlog (with two
+interpretive caveats caught before finalizing), and the Power BI
+materials (with one real tooling limitation disclosed rather than
+worked around).
+
+**Running theme:** every phase surfaced at least one real problem —
+a bug, a bad assumption, a measurement error, a design that didn't fit
+the data — and every one is documented here as it was found and fixed,
+not smoothed over in the retelling. The full turn-by-turn reasoning
+trail is in `decision_log.md`; this document is the settled, readable
+version of the same story.
+
 ## Data Collection
 
 See `decision_log.md` (2026-09-18 entries) for full detail. Summary:
