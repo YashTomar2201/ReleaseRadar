@@ -419,6 +419,71 @@ reported as-is in the methodology doc, not rounded up or hidden behind
 a single "accuracy" figure (which would look artificially high, ~91%,
 purely from the 97%-negative base rate).
 
+## 2026-09-18 — Phase 5: placebo design redesigned; headline result is a validated null
+
+**Placebo design problem found before running anything meaningful:**
+the roadmap's plan (placebo dates excluding a ±2x21-day buffer around
+every real release) leaves **zero** candidate dates -- PhonePe ships a
+new version roughly every 12-16 days over our ~6-month window, denser
+than the roadmap assumed for a full year of data. **Fix:** exclude only
+the *specific* release under test from its own placebo pool, not every
+release. Other real releases can still fall inside some placebo
+windows, which makes the null distribution noisier than a truly clean
+placebo -- documented as making the significance test **conservative**
+(harder to falsely call something significant), not invalid.
+
+**Window-availability check:** of PhonePe's 15 tracked releases, 2 (the
+earliest, adopted the same day the data window begins) have zero
+pre-period and 1 (the most recent) has only 4 days of post-period --
+all 3 excluded as unusable rather than analyzed on a truncated window.
+**12 releases usable** with >=7 days on both sides (most have the full
+20-21 days).
+
+**Headline result: 0/12 releases significant after Benjamini-Hochberg
+correction (q<0.10).** The strongest candidate, `26.05.08.0` (adopted
+2026-05-25), stood out sharply from the rest (health score 4.58 vs. the
+next-highest 2.12; uncorrected placebo p=0.010) but its q-value (0.122)
+just misses the 0.10 threshold.
+
+**Investigated the top candidate rather than stopping at the number,**
+using the secondary corroborating method (comparing old vs. new version
+ratings on the *same calendar days* during rollout overlap -- controls
+for time without needing the competitor-app comparison at all): found
+**no corroborating effect** (+0.056 rating difference, p=0.270, wrong
+sign for a "worse" release anyway). Investigated further and found why
+the two methods disagree: in the DiD comparison window, **both control
+apps moved substantially** (Google Pay -5.6pp, Paytm -6.2pp in negative
+share) while PhonePe itself was flat (+1.1pp) -- a parallel-trends
+violation. Diagnostic chart (`09_diagnostic_parallel_trends.png`) shows
+both control apps are highly volatile throughout this whole window (not
+a clean before/after step), so this reads as normal noise in two
+volatile control series lining up unfavorably for one comparison
+window, not a specific dateable incident -- deliberately did not
+overstate this as "the Google Pay incident recovering" without
+independent confirmation, even though the timing is suggestively close
+to the Phase 3 EDA's 2026-05-18/19 Google Pay spike.
+
+**Why this is a valid, useful project finding, not a failed analysis:**
+a naive DiD analysis without placebo testing, multiple-testing
+correction, AND a corroborating second method would have reported
+`26.05.08.0` as a confirmed negative release effect (uncorrected
+p=0.01 alone looks compelling) -- a textbook false positive this
+pipeline was specifically built to catch. The correct causal
+conclusion for this window is: **no PhonePe release shows robust,
+validated evidence of a negative causal impact on review sentiment**,
+which is itself informative (suggests release-quality stability over
+this period) and demonstrates the value of the full validation stack
+over a single p-value. Topic-share analysis of the top candidate
+(`explain_release.py`) also found a diffuse pre/post shift with no
+single dominant driver topic (largest single-topic movement was
+`payment_failure` at +0.56pp), consistent with "no real effect" rather
+than a specific broken feature.
+
+Outputs: `data/interim/release_impact.csv`, 3 figures
+(`07_release_health_scores.png`, `08_placebo_histogram_top_candidate.png`,
+`09_diagnostic_parallel_trends.png`), loaded into DuckDB/dbt as
+`fct_release_impact` (44/44 dbt checks pass).
+
 ## (Template for future entries)
 
 **Decision:** ...

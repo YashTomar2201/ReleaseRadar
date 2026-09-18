@@ -52,7 +52,7 @@ phase-by-phase plan.
 - [x] Phase 2 — Warehouse & dbt Staging Layer (stg_reviews, int_version_adoption, fct_daily_app_metrics; 22/22 dbt checks pass; release-date inference validated via PhonePe's build-date-encoded version strings -- see decision_log.md)
 - [x] Phase 3 — Exploratory Data Analysis (notebooks/01_eda.ipynb, 6 figures, methodology.md "Data Quality & Coverage" section; caught & fixed the indexing-lag bug corrupting fct_daily_app_metrics)
 - [x] Phase 4 — Topic Taxonomy, Labeling & Classification (codebook v1 via BERTopic; 600-review gold set + 120-review blind spot-check in progress; topic classifier macro-F1 0.556 after rare-topic boost; churn_intent classifier recall 0.615/precision 0.178; both applied to all 291K reviews -- see decision_log.md)
-- [ ] Phase 5 — Release Impact with Placebo Tests
+- [x] Phase 5 — Release Impact with Placebo Tests (12/15 releases usable; headline result: 0 significant after BH correction; top candidate investigated and found to be a parallel-trends artifact, not a real effect -- see decision_log.md)
 - [ ] Phase 6 — Early-Warning System
 - [ ] Phase 7 — Brand-Switching Map
 - [ ] Phase 8 — Issue Cost & RICE Backlog

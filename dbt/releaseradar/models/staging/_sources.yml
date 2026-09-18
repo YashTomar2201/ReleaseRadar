@@ -28,4 +28,13 @@ sources:
           recall (catch more true churn signals at the cost of false
           positives) rather than precision. competitor_mentioned is
           handled separately in Phase 7, not here.
+      - name: release_impact
+        description: >
+          Output of the Phase 5 competitor-controlled DiD + placebo-test
+          analysis (src/analysis/release_impact.py), one row per PhonePe
+          version tracked in int_version_adoption. See decision_log.md
+          (2026-09-18) -- of 12 usable releases, none are significant
+          after Benjamini-Hochberg correction (q<0.10); the strongest
+          candidate (q=0.12) turned out to be a parallel-trends
+          violation on inspection, not a genuine release effect.
       # incidents is added here once Phase 6 produces that table.

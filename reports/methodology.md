@@ -167,3 +167,57 @@ account_blocked 1.3%, bills_recharge 1.1%, login_otp_kyc 1.0%, ads_spam
 0.9%, bank_linking 0.9%, investments_gold 0.8%, travel_booking 0.4%.
 Directionally consistent with the 600-review gold set's proportions —
 a useful sanity check that the classifier isn't systematically skewed.
+
+## Release Impact (Phase 5)
+
+**Method:** competitor-controlled difference-in-differences. For each
+PhonePe release, PhonePe is the treated unit and Google Pay + Paytm are
+controls; outcome is daily `negative_share`; model includes app and
+date fixed effects; the 1-day-before to 2-day-after window around
+adoption is excluded (staged-rollout period). Window: ±21 days where
+available.
+
+**Placebo design (adapted from the roadmap's original plan):** with
+PhonePe shipping a release roughly every 12-16 days over a ~6-month
+window, a placebo-date buffer wide enough to avoid every real release
+leaves zero candidate dates. Fixed by excluding only the specific
+release under test from its own placebo pool — this makes the
+significance test **conservative** (other real releases can still
+land in some placebo windows, widening the null distribution) rather
+than invalid, and is disclosed as such rather than silently changing
+the method without comment.
+
+**Coverage:** 15 tracked PhonePe releases; 3 excluded for insufficient
+pre/post data (the earliest 2 have zero pre-period, the most recent has
+4 days of post-period); **12 usable**.
+
+**Headline result: 0 of 12 releases are significant after
+Benjamini-Hochberg correction (q<0.10).** The strongest candidate
+(`26.05.08.0`, health score 4.58, uncorrected p=0.010) does not survive
+correction (q=0.122) — and on investigation with a second, independent
+method (comparing old vs. new version ratings on the *same calendar
+days* during rollout, which needs no competitor comparison at all), no
+corroborating effect was found (+0.056 rating difference, p=0.270, wrong
+sign). Root cause: both control apps moved substantially during this
+specific comparison window (Google Pay -5.6pp, Paytm -6.2pp negative
+share) while PhonePe stayed flat (+1.1pp) — a parallel-trends
+violation from two apps that are highly volatile throughout the whole
+window, not a clean step change. This is treated as noise in volatile
+control series, not attributed to a specific named incident without
+independent confirmation, even though the timing is close to the
+Phase 3 EDA's Google Pay 2026-05-18/19 spike.
+
+**Why a null result is a legitimate finding here, not a failed
+analysis:** a DiD estimate without placebo testing, multiple-testing
+correction, and a corroborating second method would have reported
+`26.05.08.0` as a confirmed negative release effect — exactly the kind
+of false positive this validation stack exists to catch. The
+methodologically correct conclusion for this window is that no PhonePe
+release shows robust evidence of a negative causal impact on review
+sentiment, which is itself informative about release-quality stability
+and demonstrates the value of full causal validation over a single
+p-value.
+
+Full results: `data/interim/release_impact.csv`. Figures:
+`07_release_health_scores.png`, `08_placebo_histogram_top_candidate.png`,
+`09_diagnostic_parallel_trends.png`.

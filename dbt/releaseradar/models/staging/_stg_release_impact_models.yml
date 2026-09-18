@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_release_impact
+    columns:
+      - name: version
+        tests: [not_null]
+      - name: app_key
+        tests: [not_null]
+
+  - name: fct_release_impact
+    description: >
+      One row per PhonePe release tested for a causal impact on
+      negative review share (competitor-controlled DiD + placebo test).
+      0/12 usable releases significant after BH correction in this
+      ~6-month window -- see decision_log.md, 2026-09-18.
+    columns:
+      - name: version
+        tests: [unique, not_null]
