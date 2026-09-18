@@ -57,6 +57,17 @@ sources:
           relation (switching_away / switched_from_competitor /
           comparison_only / none). See switching_matrix description
           for validation caveats.
+      - name: issue_backlog
+        description: >
+          Phase 8 RICE-ranked issue backlog: rating-penalty regression,
+          Issue Cost Index, and RICE score per (app, topic), with
+          Monte Carlo top-3 stability under +/-50% effort uncertainty.
+          Reach uses Play Store download counts as a proxy for MAU
+          (see decision_log.md, 2026-09-19) -- valid for within-app
+          ranking, not for comparing RICE scores across apps.
+          `ui_ux` has a positive rating-penalty coefficient (co-occurs
+          with praise, not pure complaints) and needs manual
+          interpretation rather than trusting the automated score.
       - name: incidents
         description: >
           Confirmed, independently-sourced UPI outage incidents used as

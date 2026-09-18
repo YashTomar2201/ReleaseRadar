@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_issue_backlog
+    columns:
+      - name: app_key
+        tests: [not_null]
+      - name: topic
+        tests: [not_null]
+      - name: rice
+        tests: [not_null]
+
+  - name: fct_issue_backlog
+    description: >
+      RICE-ranked issue backlog per app. app_performance is #1 for all
+      3 apps and stable under effort-uncertainty sensitivity testing.
+      ui_ux flagged needs_manual_review=true.

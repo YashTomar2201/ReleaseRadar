@@ -633,6 +633,42 @@ regex is more conservative (higher precision, imperfect recall) than
 an LLM classifier would likely be. Stated explicitly in the
 methodology doc rather than presented as exhaustive.
 
+## 2026-09-19 — Phase 8: two interpretive caveats caught before finalizing the backlog
+
+**`ui_ux` has a positive rating-penalty coefficient (+0.375, highly
+significant)** -- the only topic where this happens. Rather than
+silently including it in the automated RICE ranking (where it lands in
+the top 5 for 2 of 3 apps because `rating_lift_if_fixed` uses
+`abs(penalty)`), investigated why: `ui_ux` was frequently co-tagged
+with `general_praise` during Phase 4 labeling (constructive feature
+requests from otherwise-happy reviewers -- "great app, please add X" --
+not pure UI complaints). The topic tag conflates two different reviewer
+populations, so a rating "penalty" framing doesn't apply cleanly. **Fix:
+flag `ui_ux` explicitly in the backlog output as needing manual
+interpretation rather than trusting the automated score** -- the RICE
+math still runs (for consistency/completeness), but the PM brief
+excludes it from the auto-prioritized top list and explains why.
+
+**Reach uses Play Store download counts** (PhonePe/Paytm 500M+, Google
+Pay 1B+ -- verified Phase 0), not true MAU, because third-party "MAU"
+statistics found via search were inconsistent across sources (some
+from content-mill sites, not primary reporting) and not trustworthy
+enough to hard-code into an analysis. This is a real limitation stated
+explicitly: download count overstates true active reach, and because
+Google Pay's download count is 2x PhonePe/Paytm's, its RICE scores are
+higher almost everywhere **partly as an artifact of that scale
+difference**, not necessarily because its issues are twice as severe.
+**Within-app ranking (which topic to fix first for a GIVEN app) is the
+methodologically sound use of this table; cross-app RICE comparison is
+not**, and the backlog write-up says so rather than implying "fix
+Google Pay's issues before PhonePe's" from the raw numbers.
+
+**Robust finding that holds regardless of both caveats:**
+`app_performance` is the #1 RICE-ranked issue for all 3 apps
+independently -- consistent across apps with different reach scales and
+unaffected by the ui_ux issue, a genuinely convergent result worth
+leading with.
+
 ## (Template for future entries)
 
 **Decision:** ...

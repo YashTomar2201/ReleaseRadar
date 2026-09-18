@@ -1,0 +1,87 @@
+
+======================================================================
+PHONEPE -- Top 5 RICE-ranked issues (last 90 days)
+======================================================================
+
+# app_performance
+  RICE=10469075 | top-3 stability=100% | prevalence=4.2% | rating lift if fixed=0.055★ | churn exposure=0.43%
+    - "not working"
+    - "i got many problems with technical issue Im in urgent money was not sending in phone showing to wait 72 hours"
+
+# rewards_cashback
+  RICE=4893882 | top-3 stability=51% | prevalence=2.9% | rating lift if fixed=0.010★ | churn exposure=0.42%
+    - "sending money is ok. But, receiving credit through phone pay is bad. Most of the times, it's not happening. No support from phonepay at all."
+    - "waste no cash back"
+
+# fees_charges
+  RICE=4499913 | top-3 stability=46% | prevalence=1.8% | rating lift if fixed=0.008★ | churn exposure=0.15%
+    - "4 rupee extra charges for every transaction"
+    - "app fee jyada hai"
+
+# ui_ux  [NEEDS MANUAL REVIEW -- see note]
+  RICE=4367627 | top-3 stability=41% | prevalence=2.2% | rating lift if fixed=0.008★ | churn exposure=0.25%
+    - "unable to open app after updating.."
+    - "Why can't Delete our chat ?"
+
+# payment_failure
+  RICE=3960466 | top-3 stability=31% | prevalence=3.2% | rating lift if fixed=0.022★ | churn exposure=0.27%
+    - "Not working while sending money...stuck for 2 hours for simple payment. There is no update available there. How can i select transaction tha"
+    - "Yesterday I made a payment of 46535 inr for my credit card outstanding and Phonepay charged the amount from my Bank account but payment not "
+
+======================================================================
+GPAY -- Top 5 RICE-ranked issues (last 90 days)
+======================================================================
+
+# app_performance
+  RICE=41938843 | top-3 stability=99% | prevalence=8.4% | rating lift if fixed=0.111★ | churn exposure=1.33%
+    - "whenever I try to open correctly the app it's not respond and not open"
+    - "sound box replacement delay so many times. google pay is very slow"
+
+# rewards_cashback
+  RICE=30799331 | top-3 stability=86% | prevalence=4.6% | rating lift if fixed=0.015★ | churn exposure=1.11%
+    - "referal cashback to dete nhi h I already checked or recharge se bhi khuch nhi milta navi se payment kiya karu"
+    - "now a days u r giving adds of bogus reward which can't be redeemed or cash back, n also u send a fake cibil score notification of my credit "
+
+# payment_failure
+  RICE=25383414 | top-3 stability=68% | prevalence=6.8% | rating lift if fixed=0.048★ | churn exposure=0.62%
+    - ""There are no rewards for the common person. Instead, this system seems designed to funnel money from users to merchants by reward. Google P"
+    - "Rewards on gpay are fraud if you order any thing that will never be delivered nor payment will be refunded & merchant will also not respond "
+
+# fraud_security
+  RICE=18744675 | top-3 stability=27% | prevalence=4.7% | rating lift if fixed=0.038★ | churn exposure=0.71%
+    - "Gpay is a fraud app, beware of it and do not use it at all. Gpay passed an e-mandate of Rs 60,000 from me in the name of offering me a loan "
+    - "very bad experience because I sent a 20000 to my mother's account but she didn't receive the money and also debited from my account that is "
+
+# ads_spam
+  RICE=16567263 | top-3 stability=17% | prevalence=1.7% | rating lift if fixed=0.017★ | churn exposure=0.43%
+    - "this app is harassing me endlessly in my Facebook games, getting nothing but their ads that gave no way to exit them! I have sound off in al"
+    - "getting irritated to make payment if u promote some ads we are getting suffered to pay ...... dont earn these kind. of way....."
+
+======================================================================
+PAYTM -- Top 5 RICE-ranked issues (last 90 days)
+======================================================================
+
+# app_performance
+  RICE=20137525 | top-3 stability=100% | prevalence=8.1% | rating lift if fixed=0.107★ | churn exposure=1.43%
+    - "online video kyc mai only one agent h jo kyc karta h 1 hour wait kro fir network problem next agent cut call then again same problem 😔"
+    - "fake root detection please solve problem😡😡"
+
+# customer_support
+  RICE=8219115 | top-3 stability=82% | prevalence=3.4% | rating lift if fixed=0.033★ | churn exposure=0.30%
+    - "customer care support very poor"
+    - "my issue is not yet resolved.wrong message.loook to the issue again."
+
+# rewards_cashback
+  RICE=6638674 | top-3 stability=56% | prevalence=4.0% | rating lift if fixed=0.013★ | churn exposure=0.93%
+    - "payment processing chances more then others app"
+    - "cashback voucher only given for new users, what a joke !!!!"
+
+# ui_ux  [NEEDS MANUAL REVIEW -- see note]
+  RICE=5000193 | top-3 stability=23% | prevalence=2.5% | rating lift if fixed=0.009★ | churn exposure=0.41%
+    - "I'm re rating this app from 5 to 1. there's no any customer support when payment stuck. I used all way but all time and AI is here. how can "
+    - "app is not open and it shows the device environment is not correct.. how can I start to use ... this is so irritating.. please fix it ... pl"
+
+# fraud_security
+  RICE=4848672 | top-3 stability=19% | prevalence=3.6% | rating lift if fixed=0.030★ | churn exposure=0.82%
+    - "Paytm app ekadam fraud app hai koi bhi ise use na Karen abhi ISI waqt se main is app ko uninstall kar raha hun"
+    - "the personal loan offers are the most ridiculous thing I have ever seen. Percentages are sky high, 20% above plus upto 14% processing fee. p"

@@ -1,0 +1,20 @@
+select
+    app_key,
+    topic,
+    prevalence,
+    n_topic_reviews_90d,
+    n_total_reviews_90d,
+    churn_intent_rate,
+    penalty,
+    penalty_ci_low,
+    penalty_ci_high,
+    rating_lift_if_fixed,
+    churn_exposure,
+    reach,
+    impact,
+    confidence,
+    effort_weeks,
+    rice,
+    top3_stability_pct,
+    (topic = 'ui_ux') as needs_manual_review
+from {{ source('raw', 'issue_backlog') }}

@@ -338,3 +338,55 @@ Outputs: `data/interim/switching_matrix.csv`,
 `data/interim/relation_classified.csv`, loaded as `fct_switching`.
 Figures: `12_switching_heatmap.png`, `13_outflow_by_app.png`,
 `14_switching_reasons.png`.
+
+## Issue Cost & RICE Backlog (Phase 8)
+
+**Rating-penalty regression:** OLS with robust (HC1) standard errors,
+`rating ~ topic_dummies + app + month + log(text_length)`, fit on all
+291,197 reviews. Every topic except `ui_ux` and `bills_recharge` has a
+significant negative penalty; `app_performance` is the largest
+(-1.32★), `bills_recharge` is not significant (-0.003, p=0.90).
+
+**`ui_ux` has a positive coefficient (+0.375, p<0.001)** — the one
+exception, and deliberately not smoothed over. Investigation traced it
+to Phase 4 labeling: `ui_ux` was frequently co-tagged with
+`general_praise` (constructive feature requests from otherwise-happy
+reviewers, not pure complaints). Flagged in the output
+(`needs_manual_review=true`) and excluded from the automated top-list
+interpretation rather than silently ranked by `abs(penalty)` like every
+other topic.
+
+**Issue Cost Index:** `rating_lift_if_fixed = prevalence × |penalty|`,
+`churn_exposure = prevalence × churn_intent_rate`, computed per (app,
+topic) over the trailing 90 days of complete data.
+
+**RICE:** Reach uses **Play Store download counts** (PhonePe/Paytm
+500M+, Google Pay 1B+ — verified Phase 0) as a proxy for MAU, not true
+MAU itself — third-party "MAU" statistics found via search were
+inconsistent across sources (some from content-mill sites, not primary
+reporting) and were not trustworthy enough to hard-code into the
+analysis. This means **within-app ranking is methodologically sound;
+cross-app RICE comparison is not** — Google Pay's higher scores
+partly reflect its 2x larger download count, not necessarily more
+severe issues. Impact mapped from rating lift to a 0.25/0.5/1/2/3
+scale; Confidence from the Phase 4 classifier's per-topic F1; Effort
+in person-weeks is an explicit judgment call (documented per-topic in
+`issue_cost.py`), not derived from data.
+
+**Sensitivity analysis:** Monte Carlo (1,000 runs) varying each
+topic's effort ±50%, reporting how often it stays in the app's top 3.
+`app_performance` is essentially guaranteed to stay #1 (99-100%
+stability across all 3 apps) regardless of effort uncertainty; ranks
+below #1 are genuinely sensitive to the effort assumption (as low as
+17-23% stability for some topics) — reported honestly rather than
+implying a precise, stable rank order below the clear #1.
+
+**Headline finding: `app_performance` is the #1 RICE-ranked issue for
+all 3 apps independently** — robust to both the ui_ux caveat and the
+reach-scale caveat above, and the most statistically stable ranking in
+the entire backlog.
+
+Outputs: `data/interim/issue_backlog_with_sensitivity.csv`,
+`data/interim/rating_penalties.csv`, loaded as `fct_issue_backlog`.
+Example reviews: `reports/briefs/issue_backlog_examples.txt`. Figure:
+`15_issue_prevalence_vs_penalty.png`.

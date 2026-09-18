@@ -55,6 +55,6 @@ phase-by-phase plan.
 - [x] Phase 5 — Release Impact with Placebo Tests (12/15 releases usable; headline result: 0 significant after BH correction; top candidate investigated and found to be a parallel-trends artifact, not a real effect -- see decision_log.md)
 - [x] Phase 6 — Early-Warning System (incident log much smaller than planned -- 1 confirmed, multi-sourced, in-window incident after extensive research; validated as a case study, not a powered recall estimate; alert lagged the public report by 45min due to the wider bin needed for GPay -- see decision_log.md)
 - [x] Phase 7 — Brand-Switching Map (true competitor-mention rate 0.54%, much lower than Phase 3's inflated self-mention-including estimate; rule-based relation classifier validated at ~85-95% precision, imperfect recall; headline: PhonePe is the net beneficiary of switching among the 3 tracked apps -- see decision_log.md)
-- [ ] Phase 8 — Issue Cost & RICE Backlog
+- [x] Phase 8 — Issue Cost & RICE Backlog (app_performance is #1 RICE-ranked issue for all 3 apps, 99-100% stable under effort-uncertainty Monte Carlo; ui_ux flagged for manual review -- positive rating coefficient; reach uses verified Play Store downloads as an MAU proxy -- see decision_log.md)
 - [ ] Phase 9 — dbt Marts + Power BI Dashboard
 - [ ] Phase 10 — Storytelling & Packaging
