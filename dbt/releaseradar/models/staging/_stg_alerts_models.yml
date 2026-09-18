@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_alerts
+    columns:
+      - name: app_key
+        tests: [not_null]
+      - name: alert_start
+        tests: [not_null]
+
+  - name: fct_alerts
+    description: Detected alert episodes per app (Phase 6 early-warning detector).
+    columns:
+      - name: app_key
+        tests: [not_null]

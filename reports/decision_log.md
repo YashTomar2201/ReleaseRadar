@@ -484,6 +484,78 @@ Outputs: `data/interim/release_impact.csv`, 3 figures
 `09_diagnostic_parallel_trends.png`), loaded into DuckDB/dbt as
 `fct_release_impact` (44/44 dbt checks pass).
 
+## 2026-09-18 — Phase 6: incident log turned out much smaller than planned, and why
+
+**Extensive web research** (WebSearch + WebFetch across ~15 queries,
+cross-checked against Wikipedia's "Unified Payments Interface" article
+and its own citation list) surfaced many well-documented UPI outages --
+but almost all of them (12 April 2025, 26 March 2025, 2 April 2025, 12
+May 2025 PhonePe-specific) fall **before** every one of our apps' data
+collection windows even starts (Google Pay: 2025-05-04; Paytm:
+2025-10-13; PhonePe: 2026-03-18). Well-documented historical incidents
+being retrospectively well-covered by press/Wikipedia, while genuinely
+recent (2026) incidents are comparatively thin in search results, is
+itself a real and somewhat expected asymmetry -- this project collects
+data close to real time rather than analyzing a settled historical
+period, so the "ground truth" incident record for the exact window we
+have reviews for is necessarily less mature than press coverage of
+older, more widely-discussed outages.
+
+**Also caught the search tool's natural-language summaries misattributing
+dates** on at least two occasions (a 12 May 2025 PhonePe-specific outage
+summarized as "February 2026"; an April 2025 NPCI statement summarized
+as attached to "August 14, 2026") -- caught by independently checking
+the Business Standard URL's embedded `YYMMDD` numeric ID pattern and by
+fetching the underlying Wikipedia citation list directly via the API
+rather than trusting the fetch tool's own summarization. Lesson: verify
+specific dates against a primary source or a structured citation list,
+never take a search summary's date at face value for anything that
+becomes a hard-coded ground-truth entry.
+
+**Also tried to independently confirm the Phase 3 EDA's own candidate
+signal** (Google Pay's 2026-05-18/19 negative-share spike) as a
+reported news event -- found no corroborating coverage. This is an
+honest, useful negative result on its own: the spike may be a real but
+smaller/regional issue below the threshold of national tech press
+coverage (arguably a point in favor of review-based monitoring, which
+could surface user-facing problems press coverage doesn't), or it may
+be unrelated noise -- reported as an **unconfirmed candidate signal**,
+not a validated incident, and clearly labeled as such wherever it's
+used.
+
+**Result: exactly ONE incident meets the bar** (independently
+multi-sourced AND falls within a reviewable app's data window):
+**2025-08-07, ~19:45 IST**, a UPI-wide outage (Google Pay, PhonePe,
+Paytm all affected per reporting; NPCI attributed it to bank-side
+technical issues at HDFC/SBI/Bank of Baroda/Kotak Mahindra). Cross-
+verified via Wikipedia's own citation list (Economic Times x2,
+Hindustan Times, Financial Express -- 4 independent sources). Usable
+**only against Google Pay's review data** -- it predates Paytm's and
+PhonePe's collection windows entirely.
+
+**Design pivot for the rest of Phase 6, made explicit rather than
+silently working around a thin ground truth:**
+1. With n=1 confirmed incident, a recall/precision percentage would be
+   statistically meaningless (0% or 100%, no in-between) -- Phase 6
+   reports this as a **single validated case study**, not a powered
+   evaluation, and says so plainly rather than dressing up n=1 as a
+   real recall rate.
+2. Still measure **false-alert rate** over many quiet (non-incident)
+   periods -- that part of the evaluation doesn't need a large
+   incident count and remains statistically meaningful.
+3. Report the detector's behavior around the Phase 3 candidate signal
+   (2026-05-18/19) as a secondary, clearly-labeled **unconfirmed
+   candidate detection** -- a demonstration of the system surfacing
+   something real-looking in the data even without press confirmation,
+   not claimed as a second validated incident.
+4. This changes Phase 6's contribution from "we measured X% recall"
+   to "we built and stress-tested a working detector, validated it
+   against the one incident we could independently confirm falls in
+   our window, and characterized its false-alert behavior on quiet
+   periods" -- a more honest and, arguably, more interesting story
+   about the real difficulty of ground-truthing a live monitoring
+   system, which is itself worth discussing in interviews.
+
 ## (Template for future entries)
 
 **Decision:** ...

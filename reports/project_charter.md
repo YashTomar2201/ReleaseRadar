@@ -53,7 +53,7 @@ phase-by-phase plan.
 - [x] Phase 3 — Exploratory Data Analysis (notebooks/01_eda.ipynb, 6 figures, methodology.md "Data Quality & Coverage" section; caught & fixed the indexing-lag bug corrupting fct_daily_app_metrics)
 - [x] Phase 4 — Topic Taxonomy, Labeling & Classification (codebook v1 via BERTopic; 600-review gold set + 120-review blind spot-check in progress; topic classifier macro-F1 0.556 after rare-topic boost; churn_intent classifier recall 0.615/precision 0.178; both applied to all 291K reviews -- see decision_log.md)
 - [x] Phase 5 — Release Impact with Placebo Tests (12/15 releases usable; headline result: 0 significant after BH correction; top candidate investigated and found to be a parallel-trends artifact, not a real effect -- see decision_log.md)
-- [ ] Phase 6 — Early-Warning System
+- [x] Phase 6 — Early-Warning System (incident log much smaller than planned -- 1 confirmed, multi-sourced, in-window incident after extensive research; validated as a case study, not a powered recall estimate; alert lagged the public report by 45min due to the wider bin needed for GPay -- see decision_log.md)
 - [ ] Phase 7 — Brand-Switching Map
 - [ ] Phase 8 — Issue Cost & RICE Backlog
 - [ ] Phase 9 — dbt Marts + Power BI Dashboard

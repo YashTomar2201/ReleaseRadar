@@ -221,3 +221,64 @@ p-value.
 Full results: `data/interim/release_impact.csv`. Figures:
 `07_release_health_scores.png`, `08_placebo_histogram_top_candidate.png`,
 `09_diagnostic_parallel_trends.png`.
+
+## Early-Warning System (Phase 6)
+
+**Method:** N-hour bins per app (PhonePe 1h — highest volume; Google
+Pay/Paytm 3h — thinner hourly volume, per the Phase 4-era data-
+sufficiency decision), two detectors combined with OR: a Poisson test
+on negative-review counts against an hour-of-day rolling baseline
+(14-day lookback, leakage-safe via `.shift(1)`), and a robust
+(MAD-based) z-score against the same baseline. Adjacent alert bins
+within 3 hours are merged into episodes.
+
+**Incident log — much smaller than planned, and why.** ~15 web
+searches plus direct verification against Wikipedia's "Unified
+Payments Interface" article and its citation list found several
+well-documented UPI outages (12 April 2025, 26 March 2025, 2 April
+2025, 12 May 2025) — but every one of them predates every app's actual
+data-collection window (Google Pay from 2025-05-04, Paytm from
+2025-10-13, PhonePe from 2026-03-18). This is a real asymmetry: this
+project collects data close to real time, and well-established
+historical incidents are naturally better-covered retrospectively than
+very recent ones. Two search-summary date misattributions were caught
+and corrected by checking a primary source's URL date pattern directly
+rather than trusting the tool's natural-language summary.
+
+**Exactly one incident** is both independently multi-sourced (4
+citations via Wikipedia: two Economic Times articles, Hindustan Times,
+Financial Express) and falls inside a reviewable window: **INC001,
+2025-08-07 ~19:45 IST**, a UPI-wide outage attributed by NPCI to
+bank-side technical issues (HDFC, SBI, Bank of Baroda, Kotak
+Mahindra) — usable only against Google Pay's data.
+
+**With n=1, a recall/precision percentage would be statistically
+meaningless** — reported instead as a validated single case study,
+plus a false-alert rate (which *is* meaningful with many quiet
+periods) and an exploratory, clearly-unconfirmed check against the
+Phase 3 EDA's own candidate signal.
+
+**Case study result:** the 3-hour bin containing the incident's own
+start time (18:00-21:00) correctly alerted (16 vs. ~7 expected negative
+reviews at 12:00, then 15 vs. ~7 at 18:00 — both far above baseline).
+But using the realistic detection time for a batch-processed system
+(bin close, 21:00) rather than the bin's start, the alert **lagged the
+public report (20:15) by 45 minutes** rather than beating it. Honest
+takeaway: the wider bin adopted specifically because Google Pay's
+hourly volume was too thin for reliable 1-hour detection trades away
+speed for statistical reliability — in this specific case, that
+trade-off meant not beating the news.
+
+**False-alert rate** (raw, since only Google Pay has a confirmed
+incident to net out): PhonePe 1.12/week (1h bins), Google Pay 0.70/week
+(3h bins), Paytm 1.33/week (3h bins).
+
+**Exploratory, unconfirmed:** the detector also fires on the Phase 3
+EDA's Google Pay 2026-05-18/19 candidate signal — expected, since it's
+the same underlying data, not independent validation. A dedicated news
+search for this specific date found no corroborating coverage; reported
+as an unconfirmed candidate, not a second validated incident.
+
+Outputs: `data/interim/alert_events.csv` (143 total events across 3
+apps), loaded as `fct_alerts`. Figures: `10_incident_timeline_inc001.png`,
+`11_alert_rate_per_app.png`.

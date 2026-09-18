@@ -37,4 +37,16 @@ sources:
           after Benjamini-Hochberg correction (q<0.10); the strongest
           candidate (q=0.12) turned out to be a parallel-trends
           violation on inspection, not a genuine release effect.
-      # incidents is added here once Phase 6 produces that table.
+      - name: alerts
+        description: >
+          Merged alert events from the Phase 6 early-warning detector
+          (Poisson + robust z-score on N-hour bins, per-app bin width
+          from the Phase 4 data-sufficiency decision: PhonePe 1h,
+          Google Pay/Paytm 3h). One row per merged episode.
+      - name: incidents
+        description: >
+          Confirmed, independently-sourced UPI outage incidents used as
+          ground truth. Only 1 row -- see decision_log.md (2026-09-18):
+          extensive research found most well-documented outages predate
+          every app's data collection window; this is the one that
+          both falls in-window and has 4 independent sources.
