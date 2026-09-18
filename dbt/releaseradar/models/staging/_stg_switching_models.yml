@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_switching_matrix
+    columns:
+      - name: source
+        tests: [not_null]
+      - name: dest
+        tests: [not_null]
+      - name: n
+        tests: [not_null]
+
+  - name: fct_switching
+    description: >
+      Brand-switching flow matrix (source -> dest), a LOWER BOUND on
+      true switching signal given the rule-based classifier's recall
+      gaps. See decision_log.md, 2026-09-19.

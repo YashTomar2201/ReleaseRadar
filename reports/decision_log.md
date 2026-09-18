@@ -556,6 +556,83 @@ silently working around a thin ground truth:**
    about the real difficulty of ground-truthing a live monitoring
    system, which is itself worth discussing in interviews.
 
+## 2026-09-19 — Phase 7: true competitor-mention rate is much lower than Phase 3's estimate
+
+**Found and explained a measurement error from Phase 3's EDA** (the
+"do we have enough data" competitor-mention check, 2026-09-18): that
+scan reported 3.4-7.9% of reviews per app "mention a competitor",
+which fed directly into the "yes, we have enough data" conclusion for
+Phase 7. Re-running the extraction properly for Phase 7 (excluding
+mentions of the REVIEWING app's own name, using the full
+`config/aliases.yaml` variant list per app) finds the true rate is
+**0.54%** (1,578 of 291,197 reviews) -- an order of magnitude lower.
+Root cause: the Phase 3 scan's regex matched any of the 3 main apps'
+names without excluding self-mentions, so a PhonePe review saying
+"phonepe" (extremely common -- users name the app they're reviewing
+constantly) inflated PhonePe's own "competitor mention" count. The
+correct metric for a switching analysis only cares about a review
+mentioning a **different** app than the one being reviewed.
+
+**Still workable, but with real limits on precision per cell:** 1,578
+candidates split across app pairs and relation types means some
+specific (source, destination) cells in the eventual switching matrix
+will have thin support. Handled the same way Phase 4 handled sparse
+classes: report bootstrap confidence intervals rather than point
+estimates alone, and flag low-support cells explicitly rather than
+implying false precision.
+
+Mention counts by app being reviewed: Google Pay 620, Paytm 510,
+PhonePe 448. Most-mentioned other apps: Google Pay 576, PhonePe 467,
+Paytm 319, BHIM 266, Supermoney 95, Amazon Pay 69, CRED 41, Navi 39,
+WhatsApp Pay 2 (too thin to use).
+
+## 2026-09-19 — Phase 7: relation classifier validated and improved
+
+**Method choice:** rule-based regex classifier for the
+switching_away / switched_from_competitor / comparison_only / none
+relation between a review and the other app(s) it mentions, rather
+than another full ML pipeline -- consistent with this session's
+established pattern of matching method complexity to task size (1,578
+candidates doesn't justify a full embeddings+classifier build the way
+the 291K-review topic corpus did).
+
+**Manually validated a 183-review stratified sample** (60
+switching_away, 60 comparison_only, 60 none, all 3
+switched_from_competitor) against the classifier's predictions.
+Findings:
+- **Precision on positive predictions was good** (roughly 85-90% for
+  switching_away, ~95% for comparison_only, 3/3 correct for the tiny
+  switched_from_competitor class) -- when the classifier says there's a
+  relation, it's usually right.
+- **Recall had real, identifiable gaps**: roughly 40-50% of the
+  sampled "none" predictions were, on inspection, true comparisons or
+  switching statements the regex missed -- common causes: phrasing
+  variants not in the pattern list ("using X" without explicit "I am",
+  "switched to/in X" past tense, "going for X", "compare with X" vs
+  "compared to X"), adverbs breaking rigid word-adjacency
+  ("is **actually** faster than" not matching an "is faster" pattern
+  expecting immediate adjacency), and word-order variants ("instead
+  use X" vs "use X instead"). **Hindi/Hinglish comparisons were missed
+  entirely** by the English-only patterns -- a real scope limitation,
+  not something a few more regex lines fixes properly.
+
+**Fixed the cheap, well-justified gaps** (past-tense "switched to X",
+"going for X", "using X", relaxed word-adjacency in comparison
+patterns, a handful of common Hinglish comparative constructions
+actually observed in the sample, NOT full Hindi coverage) and
+re-ran: comparison_only 358->466, switching_away 115->157, none
+1398->1248. Spot-checked 20 of the originally-identified misses after
+the fix -- about half are now caught; the rest need increasingly
+specific patterns for diminishing returns (typos like "rathern than",
+unusual phrasing like "switched in paytm", plural subjects), a
+reasonable stopping point for a rule-based approach.
+
+**Headline honesty for the switching map:** these counts are a
+**lower bound** on true switching signal, not a precise count -- the
+regex is more conservative (higher precision, imperfect recall) than
+an LLM classifier would likely be. Stated explicitly in the
+methodology doc rather than presented as exhaustive.
+
 ## (Template for future entries)
 
 **Decision:** ...

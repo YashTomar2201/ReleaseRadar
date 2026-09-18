@@ -43,6 +43,20 @@ sources:
           (Poisson + robust z-score on N-hour bins, per-app bin width
           from the Phase 4 data-sufficiency decision: PhonePe 1h,
           Google Pay/Paytm 3h). One row per merged episode.
+      - name: switching_matrix
+        description: >
+          Phase 7 brand-switching flows (source app -> dest app), with
+          per-10k-reviews rates and bootstrap 95% CIs where the source
+          is a tracked app. See decision_log.md -- rule-based relation
+          classifier, precision ~85-95% but recall has real gaps
+          (Hindi/Hinglish comparisons and several English phrasing
+          variants are under-detected), so counts are a LOWER BOUND.
+      - name: review_relations
+        description: >
+          One row per (review, other_app_mentioned) with the classified
+          relation (switching_away / switched_from_competitor /
+          comparison_only / none). See switching_matrix description
+          for validation caveats.
       - name: incidents
         description: >
           Confirmed, independently-sourced UPI outage incidents used as

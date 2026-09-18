@@ -282,3 +282,59 @@ as an unconfirmed candidate, not a second validated incident.
 Outputs: `data/interim/alert_events.csv` (143 total events across 3
 apps), loaded as `fct_alerts`. Figures: `10_incident_timeline_inc001.png`,
 `11_alert_rate_per_app.png`.
+
+## Brand-Switching Map (Phase 7)
+
+**Competitor mentions:** extracted using the full `config/aliases.yaml`
+variant list, explicitly excluding a review mentioning its *own* app
+(a PhonePe review saying "phonepe" isn't a competitor mention). True
+rate: **0.54%** (1,578 / 291,197 reviews) — an order of magnitude
+lower than Phase 3's rough 3.4-7.9% estimate, which hadn't excluded
+self-mentions and was therefore dominated by an app's own name
+appearing in its own reviews. This correction is logged in
+decision_log.md, 2026-09-19.
+
+**Relation classification:** rule-based regex classifier (not a full
+ML pipeline — 1,578 candidates doesn't justify one the way the
+291K-review topic corpus did) into `switching_away` /
+`switched_from_competitor` / `comparison_only` / `none`. Manually
+validated on a 183-review stratified sample: **precision on positive
+predictions was good** (~85-90% switching_away, ~95% comparison_only,
+3/3 correct for the rare switched_from_competitor class), but **recall
+had real gaps** — roughly 40-50% of "none" predictions were, on
+inspection, true relations the regex missed (phrasing variants,
+adverbs breaking rigid word-adjacency, and Hindi/Hinglish comparisons
+missed entirely by English-only patterns). Fixed the cheap, well-
+justified gaps and re-ran (comparison_only 358→466, switching_away
+115→157); spot-checked that about half the originally-identified
+misses are now caught, with the rest needing increasingly specific
+patterns for diminishing returns. **These counts are a lower bound on
+true switching signal, not an exhaustive count** — stated explicitly
+rather than presented as complete.
+
+**Switching matrix:** flow direction from `switching_away` (source =
+reviewing app) and `switched_from_competitor` (source = the app named,
+dest = reviewing app) rows. Rates per 10k reviews, with bootstrap 95%
+CIs (1,000 resamples), computed only where the source is a tracked app
+(PhonePe/Google Pay/Paytm) — flows from untracked competitors (BHIM,
+CRED, etc.) as source have no denominator and are reported as raw
+counts only.
+
+**Headline finding: PhonePe is the net beneficiary** of switching
+among the three tracked apps — net flow toward PhonePe from both
+Google Pay (+0.94/10k) and Paytm (+1.66/10k); Google Pay and Paytm are
+roughly balanced with each other (+0.12/10k, not clearly distinguishable
+given overlapping CIs). Google Pay shows the most *outflow* mentions
+overall (to PhonePe, BHIM, Amazon Pay, and Paytm combined) — consistent
+with Phase 3's finding of its higher 1-star share.
+
+**Reasons behind the two largest flows into PhonePe:** both are
+dominated by `app_performance` complaints on the app being left —
+Google Pay→PhonePe (n=24): app_performance (8), customer_support (5),
+account_blocked (5); Paytm→PhonePe (n=21): app_performance (13, 62% of
+this flow), customer_support, fraud_security.
+
+Outputs: `data/interim/switching_matrix.csv`,
+`data/interim/relation_classified.csv`, loaded as `fct_switching`.
+Figures: `12_switching_heatmap.png`, `13_outflow_by_app.png`,
+`14_switching_reasons.png`.
