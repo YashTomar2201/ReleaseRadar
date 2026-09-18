@@ -19,6 +19,7 @@ data/exports/
 dbt/releaseradar/target/
 dbt/releaseradar/dbt_packages/
 dbt/releaseradar/logs/
+dbt/releaseradar/.user.yml
 
 # OS
 .DS_Store

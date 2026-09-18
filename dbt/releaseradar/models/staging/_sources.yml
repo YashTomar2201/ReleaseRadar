@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: reviews
+        description: >
+          Raw scraped Play Store reviews, one row per review, loaded by
+          src/load/load_raw.py from parquet files written by
+          src/scrape/scrape_reviews.py. Not deduplicated -- a review may
+          appear more than once across weekly re-scrapes; dedup happens
+          in stg_reviews.
+      # review_topics and incidents are added here once Phase 4 (topic
+      # classification) and Phase 6 (incident log) produce those tables.

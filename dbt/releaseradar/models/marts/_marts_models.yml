@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: fct_daily_app_metrics
+    description: >
+      One row per (app, day) with review volume, average rating, share
+      of 1-2 star reviews, and a 7-day trailing average rating.
+    columns:
+      - name: app_key
+        tests: [not_null]
+      - name: review_date
+        tests: [not_null]
+      - name: n_reviews
+        tests: [not_null]
+      - name: negative_share
+        tests: [not_null]
+      - name: avg_rating
+        tests: [not_null]

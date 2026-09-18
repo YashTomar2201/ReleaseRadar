@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: int_version_adoption
+    description: >
+      One row per (app, version) that reached at least 5% of that app's
+      daily reviews on some day and accumulated 200+ total reviews --
+      i.e. a version treated as an analyzable "release" downstream.
+      adoption_date is the inferred rollout date used by Phase 5's
+      release-impact analysis.
+    columns:
+      - name: app_key
+        tests: [not_null]
+      - name: review_version
+        tests: [not_null]
+      - name: adoption_date
+        tests: [not_null]
+      - name: total_reviews
+        tests: [not_null]
+    # Uniqueness of (app_key, review_version) is structurally guaranteed
+    # by the GROUP BY in the model -- no separate test package needed.

@@ -184,6 +184,51 @@ were automatically met.**
   write-up rather than reporting one blended recall/lead-time number
   across apps with very different statistical power.
 
+## 2026-09-18 — Phase 2: release-date inference validated (better than planned)
+
+**Result:** `int_version_adoption` infers 15 analyzable PhonePe releases
+(200+ reviews, 5% daily-share threshold). Validation approach changed
+from the roadmap's plan (spot-check ~10 dates against APKMirror) because
+**PhonePe is not listed on APKMirror at all** -- a direct search and a
+forced "search anyway" both returned zero results. This is itself a
+believable finding: PhonePe, like several Indian fintech/banking apps,
+appears to restrict third-party APK distribution, likely for
+anti-tampering/compliance reasons (unverified assumption, but consistent
+with the total absence of any listing).
+
+**Better validation found instead:** PhonePe's version strings
+themselves encode a build date (`YY.MM.DD.build`, e.g. `26.07.03.0` =
+built 2026-07-03). This gives an exact, comprehensive cross-check
+instead of a handful of manual spot-checks: compared the inferred
+`adoption_date` (first day a version reaches 5% of daily reviews)
+against the version's own embedded build date for all 15 releases.
+**Result: a tight, consistent gap of 13-33 days (median 17, mean 17.4,
+std 5.1)** between build and adoption -- exactly the pattern expected
+from Google Play's staged rollout process (build → staged rollout start
+→ time to reach 5% of the actively-reviewing population). This is
+stronger evidence of correctness than the originally planned approach:
+exact dates, full coverage (15/15 releases), not an approximate
+eyeballed comparison on ~10.
+
+**Bug found and fixed via this check:** the first version of the model
+produced one clearly wrong adoption date -- version `25.10.03.0` (built
+2025-10-03) got `adoption_date = 2026-09-17`, a 349-day gap, wildly
+outside the pattern every other release showed. Root cause: that was
+the very last day in the dataset, which has an incomplete review count
+due to the ~24-25h indexing lag found in Phase 1 -- making the 5%
+share threshold trivially easy to cross by a handful of stragglers on
+an old version. **Fix:** `int_version_adoption` now excludes the most
+recent 2 days per app from the share calculation (see the model's SQL
+comment). Re-running confirmed the artifact is gone and the remaining
+15/15 releases all fall in the expected 13-33 day range.
+**Why this matters beyond this one bug:** the Phase 1 indexing-lag
+finding wasn't just a footnote -- it caused a concrete, silent error
+in a downstream model, and would likely cause similar edge effects in
+any other daily-aggregation model (e.g. `fct_daily_app_metrics`) if the
+last 1-2 days are treated as complete. Worth remembering when writing
+Phase 3 EDA and any daily-trend chart: flag or exclude the last ~2 days
+per app as provisional.
+
 ## (Template for future entries)
 
 **Decision:** ...

@@ -1,0 +1,7 @@
+releaseradar:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../../data/warehouse/releaseradar.duckdb
+      threads: 4

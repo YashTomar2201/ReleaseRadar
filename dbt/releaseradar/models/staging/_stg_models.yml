@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_reviews
+    description: >
+      Cleaned, deduplicated Play Store reviews. One row per unique
+      reviewId (latest scrape wins).
+    columns:
+      - name: review_id
+        tests: [unique, not_null]
+      - name: rating
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [1, 2, 3, 4, 5]
+      - name: app_key
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['phonepe', 'gpay', 'paytm']
+      - name: review_text
+        tests: [not_null]
+      - name: reviewed_at
+        tests: [not_null]
