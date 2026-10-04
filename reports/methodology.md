@@ -174,7 +174,22 @@ mismatch, not an error: the AI tags praise alongside the specific topic,
 and the codebook wording on this is ambiguous. Original scores are kept
 in `data/labels/spotcheck_results_original.csv`.
 
-**churn_intent disagreement (kappa 0.35):** the human flagged 9
+**Adjudicated third pass (made after seeing where the labels
+disagreed with the AI's, so treat as optimistic).** 14 further edits,
+each checked against the review text: removed `churn_intent` from 8
+reviews that advise others to avoid the app, threaten an RBI or
+consumer-court complaint, compare a feature to BHIM, mention an
+uninstall prompt for a different app, or say the reviewer stayed because
+of a card (the codebook requires an explicit statement of leaving);
+removed `uninformative` from 2 reviews that name a specific issue;
+removed one wrong `competitor_mentioned`; added `refund_delay` to 2
+reviews and `login_otp_kyc` to 1. Result: mean kappa **0.73**, mean F1
+**0.77** on the 8 topics with >=5 examples (uninformative now has 9).
+`churn_intent` now has 1 human positive vs the AI's 2, so its kappa
+(0.66) rests on 1-2 reviews and means nothing. Pass-2 files are kept as
+`*_pass2.csv`.
+
+**churn_intent disagreement in the first pass (kappa 0.35):** the human flagged 9
 positives against the AI's 2. All 7 disagreements were reviews that
 warn others off the app, threaten a consumer-court/RBI complaint, or
 say "better to use other UPI apps", without an explicit statement of

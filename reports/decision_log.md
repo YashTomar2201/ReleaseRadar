@@ -777,3 +777,21 @@ specific feature; the codebook should say explicitly whether to tag
 both. Original labels and scores are kept as
 `spotcheck_blind_original.csv` / `spotcheck_results_original.csv`, and
 the original is reported as the headline.
+
+## 2026-10-04 -- Spot-check adjudicated third pass
+
+14 edits to labels after the labeler reviewed disagreements with the AI
+labels: 8 churn_intent removals (advice to others, complaint
+escalation, feature comparison, uninstall prompt about another app,
+stayed-because-of-card), 2 uninformative removals (specific issue
+named), 1 wrong competitor removed, refund_delay added to 2 reviews,
+login_otp_kyc added to 1. Each was checked against the review text.
+
+Result on the 8 topics with >=5 examples: mean kappa 0.721 -> 0.733,
+mean F1 0.76 -> 0.77. churn_intent now has 1 human positive, so its
+kappa is not interpretable. This pass is not independent, since the
+disagreements were visible when the edits were chosen. The first-pass
+numbers (kappa 0.71, F1 0.74; churn kappa 0.35) remain the headline.
+What the churn episode shows is that the codebook rule (explicit
+statement of leaving) is easy to over-read; the original labeler
+counted warnings to others and complaint threats as churn.
