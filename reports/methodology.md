@@ -147,7 +147,9 @@ independent human labeling, and how it's being validated.
 test split, independently labeled and scored via Cohen's kappa against
 the AI labels (`src/classify/score_spotcheck.py`).
 
-**Spot-check result (120 reviews, one human labeler):** for the 8
+**Spot-check result (120 reviews, one human labeler).** Headline is the
+original, first-pass labeling; a corrected second pass follows below.
+For the 8
 topics with at least 5 human-positive examples, mean Cohen's kappa is
 **0.71** and mean F1 **0.74** (rewards_cashback 0.955, general_praise
 0.80, fraud_security 0.71, payment_failure 0.69, app_performance 0.66,
@@ -159,6 +161,18 @@ the AI over-tags `general_praise` (59 vs 47 human) and
 `app_performance`, `customer_support`, `ui_ux` and `uninformative`
 (recall 0.50-0.60). Single labeler, no second human, so this measures
 agreement with one person rather than ground truth.
+
+**Corrected second pass.** After the first score, 9 label slips found
+by checks that did not use the AI labels were fixed: 4 reviews with no
+topic at all (a plain "good" got `general_praise`; a UPI-ID feature
+request got `ui_ux`; two failed or misrouted payments got
+`payment_failure`) and 5 reviews where `general_praise` was dropped
+because a specific topic was already tagged. Re-scored: mean kappa
+**0.72**, mean F1 **0.76** (payment_failure 0.79, ui_ux 0.64,
+general_praise 0.73). The `general_praise` drop is a convention
+mismatch, not an error: the AI tags praise alongside the specific topic,
+and the codebook wording on this is ambiguous. Original scores are kept
+in `data/labels/spotcheck_results_original.csv`.
 
 **churn_intent disagreement (kappa 0.35):** the human flagged 9
 positives against the AI's 2. All 7 disagreements were reviews that

@@ -759,3 +759,21 @@ AI labels, scored with `score_spotcheck.py`.
   inter-annotator reliability.
 - Tooling note: the project .venv lacked openpyxl; installed it there
   for the xlsx-to-csv step.
+
+## 2026-10-04 -- Spot-check corrections (second pass)
+
+The labeler suspected a few slips. To avoid anchoring on the AI labels,
+only label-independent checks were used: rows with no topic at all, and
+specific-topic rows that also carried general_praise against the stated
+rule. 9 rows changed (rows 69, 7, 59, 118 gained a topic; rows 15, 51,
+70, 86, 113 lost general_praise). Competitor spellings were also
+normalized (not scored).
+
+Result: mean kappa 0.707 -> 0.721, mean F1 0.74 -> 0.76 on the 8
+topics with >=5 examples. payment_failure 0.69 -> 0.79, ui_ux 0.56 ->
+0.64, general_praise 0.80 -> 0.73. The general_praise drop shows the AI
+and the labeler follow different conventions when praise also names a
+specific feature; the codebook should say explicitly whether to tag
+both. Original labels and scores are kept as
+`spotcheck_blind_original.csv` / `spotcheck_results_original.csv`, and
+the original is reported as the headline.
