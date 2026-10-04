@@ -1,0 +1,19 @@
+topic,kappa,precision,recall,f1,support_human,support_ai,note
+payment_failure,0.69,0.562,1.0,0.72,9,16,
+refund_delay,-0.008,0.0,0.0,0.0,1,1,LOW SUPPORT -- interpret cautiously
+login_otp_kyc,0.492,0.5,0.5,0.5,2,2,LOW SUPPORT -- interpret cautiously
+account_blocked,1.0,1.0,1.0,1.0,2,2,LOW SUPPORT -- interpret cautiously
+bank_linking,1.0,1.0,1.0,1.0,2,2,LOW SUPPORT -- interpret cautiously
+app_performance,0.659,0.857,0.6,0.706,20,14,
+ui_ux,0.558,0.714,0.5,0.588,10,7,
+customer_support,0.637,0.875,0.538,0.667,13,8,
+fraud_security,0.714,0.667,0.8,0.727,5,6,
+rewards_cashback,0.955,1.0,0.923,0.96,13,12,
+fees_charges,0.853,0.75,1.0,0.857,3,4,LOW SUPPORT -- interpret cautiously
+ads_spam,0.0,0.0,0.0,0.0,0,1,LOW SUPPORT -- interpret cautiously
+bills_recharge,0.853,1.0,0.75,0.857,4,3,LOW SUPPORT -- interpret cautiously
+autopay_mandates,1.0,1.0,1.0,1.0,2,2,LOW SUPPORT -- interpret cautiously
+investments_gold,1.0,1.0,1.0,1.0,1,1,LOW SUPPORT -- interpret cautiously
+travel_booking,0.0,0.0,0.0,0.0,0,1,LOW SUPPORT -- interpret cautiously
+general_praise,0.799,0.797,1.0,0.887,47,59,
+uninformative,0.641,0.857,0.545,0.667,11,7,

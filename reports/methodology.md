@@ -145,8 +145,28 @@ independent human labeling, and how it's being validated.
 
 **Human validation:** a 120-review blind spot-check, sampled from the
 test split, independently labeled and scored via Cohen's kappa against
-the AI labels (`src/classify/score_spotcheck.py`). *[Result pending —
-update this section once scored.]*
+the AI labels (`src/classify/score_spotcheck.py`).
+
+**Spot-check result (120 reviews, one human labeler):** for the 8
+topics with at least 5 human-positive examples, mean Cohen's kappa is
+**0.71** and mean F1 **0.74** (rewards_cashback 0.955, general_praise
+0.80, fraud_security 0.71, payment_failure 0.69, app_performance 0.66,
+uninformative 0.64, customer_support 0.64, ui_ux 0.56). The other 10
+topics have 0-4 positives in this sample, so their scores (including
+the all-topic mean of 0.66) are not meaningful on their own. Patterns:
+the AI over-tags `general_praise` (59 vs 47 human) and
+`payment_failure` (16 vs 9, precision 0.56), and under-tags
+`app_performance`, `customer_support`, `ui_ux` and `uninformative`
+(recall 0.50-0.60). Single labeler, no second human, so this measures
+agreement with one person rather than ground truth.
+
+**churn_intent disagreement (kappa 0.35):** the human flagged 9
+positives against the AI's 2. All 7 disagreements were reviews that
+warn others off the app, threaten a consumer-court/RBI complaint, or
+say "better to use other UPI apps", without an explicit statement of
+uninstalling or switching. That is a definitional gap between the
+labeler and the codebook rule, not clearly a classifier error, and it
+is a reason to read `churn_intent` as a loose signal.
 
 **Classifier:** multilingual sentence embeddings
 (`paraphrase-multilingual-MiniLM-L12-v2`, chosen for Hinglish/Hindi

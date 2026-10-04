@@ -737,3 +737,25 @@ This closes all 10 phases of `ROADMAP.md`.
 **Why:** ...
 **Alternatives considered:** ...
 **Result / what I'd check next:** ...
+
+## 2026-10-04 -- Blind spot-check scored
+
+120 reviews labeled by one human (the project owner) without seeing the
+AI labels, scored with `score_spotcheck.py`.
+
+- Topics with >=5 human positives (8 of 18): mean kappa 0.71, mean F1
+  0.74. The other 10 topics have 0-4 positives, so their kappas are
+  reported in `data/labels/spotcheck_results.csv` but not interpreted.
+- AI over-tags general_praise and payment_failure; under-tags
+  app_performance, customer_support, ui_ux, uninformative.
+- churn_intent kappa 0.35 (human 9 positives, AI 2). Every
+  disagreement was "warns others off / threatens RBI or consumer
+  court / better to use other apps", with no explicit switch or
+  uninstall. The codebook rule is stricter than the labeler's reading.
+  Not changed retroactively: the churn classifier stays as trained, and
+  the finding is recorded as a limit on how far churn_intent can be
+  trusted.
+- Limitation: one labeler, so this is agreement with one person, not
+  inter-annotator reliability.
+- Tooling note: the project .venv lacked openpyxl; installed it there
+  for the xlsx-to-csv step.
